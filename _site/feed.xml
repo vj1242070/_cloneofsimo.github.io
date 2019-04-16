@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-04-17T00:56:04+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Simo Ryu’s Blog</title><subtitle>Simo Ryu's Blog. Korea University, Dept of CYDF Seoul Science High School</subtitle><entry><title type="html">My First Post</title><link href="http://localhost:4000/jekyll/update/2019/04/16/firstpost.html" rel="alternate" type="text/html" title="My First Post" /><published>2019-04-16T11:21:23+09:00</published><updated>2019-04-16T11:21:23+09:00</updated><id>http://localhost:4000/jekyll/update/2019/04/16/firstpost</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2019/04/16/firstpost.html">&lt;p&gt;This is my first post on my blog, made with jekyll &amp;amp; github pages. Even though this post will remain meaningless, I wish to make notes for the first time.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The DNS domain server that I used was namesilo.com. It was overall very cheap.&lt;/li&gt;
+  &lt;li&gt;I wish to post about stuff around mathematic, physic, computer science, economics, and financial studies.&lt;/li&gt;
+  &lt;li&gt;I love 떡볶이, which is traditional spicy rice cake plate. My favorite 떡볶이 brand is “신전 떡볶이”, which is famous for its chewyness and special spice.&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">This is my first post on my blog, made with jekyll &amp;amp; github pages. Even though this post will remain meaningless, I wish to make notes for the first time.</summary></entry><entry><title type="html">Discrepency problem of n unit vectors</title><link href="http://localhost:4000/discrete/analysis/2019/04/16/On-the-discrepency-problem-with-n-unit-vectors.html" rel="alternate" type="text/html" title="Discrepency problem of n unit vectors" /><published>2019-04-16T11:21:23+09:00</published><updated>2019-04-16T11:21:23+09:00</updated><id>http://localhost:4000/discrete/analysis/2019/04/16/On%20the%20discrepency%20problem%20with%20n%20unit%20vectors</id><content type="html" xml:base="http://localhost:4000/discrete/analysis/2019/04/16/On-the-discrepency-problem-with-n-unit-vectors.html">&lt;p&gt;Unavalible now.&lt;/p&gt;</content><author><name></name></author><summary type="html">Unavalible now.</summary></entry><entry><title type="html">Power set and the set of indicator functions have the same cardinality</title><link href="http://localhost:4000/jekyll/update/2019/04/16/Power-set-and-the-indicator-functions-have-the-same-cardinality.html" rel="alternate" type="text/html" title="Power set and the set of indicator functions have the same cardinality" /><published>2019-04-16T11:00:00+09:00</published><updated>2019-04-16T11:00:00+09:00</updated><id>http://localhost:4000/jekyll/update/2019/04/16/Power%20set%20and%20the%20indicator%20functions%20have%20the%20same%20cardinality</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2019/04/16/Power-set-and-the-indicator-functions-have-the-same-cardinality.html">&lt;p&gt;This post is the proof of the following statement.&lt;/p&gt;
+
+&lt;p&gt;Let &lt;script type=&quot;math/tex&quot;&gt;P(S)&lt;/script&gt; be the set of all subsets of &lt;script type=&quot;math/tex&quot;&gt;S&lt;/script&gt;, and let &lt;script type=&quot;math/tex&quot;&gt;T&lt;/script&gt; be the
+set of all functuins from &lt;script type=&quot;math/tex&quot;&gt;S&lt;/script&gt; to &lt;script type=&quot;math/tex&quot;&gt;\{0,1\}&lt;/script&gt;. Show that &lt;script type=&quot;math/tex&quot;&gt;P(S)&lt;/script&gt; and
+&lt;script type=&quot;math/tex&quot;&gt;T&lt;/script&gt; have the same cardinality.&lt;/p&gt;
+
+&lt;p&gt;To see that there exists a bijective function &lt;script type=&quot;math/tex&quot;&gt;f&lt;/script&gt; that maps &lt;script type=&quot;math/tex&quot;&gt;T&lt;/script&gt;
+to &lt;script type=&quot;math/tex&quot;&gt;S&lt;/script&gt;, we have to define &lt;script type=&quot;math/tex&quot;&gt;T&lt;/script&gt; in much more set-theoriotic way. It
+follows as;&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;T:=\{g|g:S\rightarrow\{0,1\}\}&lt;/script&gt;
+
+&lt;p&gt;In which case, by the definition of function, one has&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;g:S\rightarrow\{0,1\}:=\{(a_{i},g(a_{i}))|a_{i}\in S,g(a_{i})\in\{0,1\}\}&lt;/script&gt;
+
+&lt;p&gt;where &lt;script type=&quot;math/tex&quot;&gt;i&lt;/script&gt; is an index. This expression gives direct intuition on
+the function &lt;script type=&quot;math/tex&quot;&gt;f&lt;/script&gt;that we are planning to design. Let &lt;script type=&quot;math/tex&quot;&gt;f(X)=Y&lt;/script&gt; for &lt;script type=&quot;math/tex&quot;&gt;X\in T&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;Y\in P(S)&lt;/script&gt; if &lt;script type=&quot;math/tex&quot;&gt;X(a)=1&lt;/script&gt; imply &lt;script type=&quot;math/tex&quot;&gt;a\in Y&lt;/script&gt;
+and &lt;script type=&quot;math/tex&quot;&gt;X(a)=0&lt;/script&gt; imply &lt;script type=&quot;math/tex&quot;&gt;a\notin Y&lt;/script&gt;. We will prove that this function is bijective indeed.&lt;/p&gt;
+
+&lt;p&gt;First it is surjective hence one can directly get &lt;script type=&quot;math/tex&quot;&gt;X&lt;/script&gt; for every given
+&lt;script type=&quot;math/tex&quot;&gt;Y&lt;/script&gt;.&lt;/p&gt;
+
+&lt;p&gt;Now, assume that it is not injective. That is, &lt;script type=&quot;math/tex&quot;&gt;f(X_{1})=f(X_{2})&lt;/script&gt;
+for &lt;script type=&quot;math/tex&quot;&gt;X_{1}\neq X_{2}&lt;/script&gt;. Because &lt;script type=&quot;math/tex&quot;&gt;X_{1}\neq X_{2}&lt;/script&gt;, there must exist
+some element &lt;script type=&quot;math/tex&quot;&gt;\alpha\in S&lt;/script&gt; that &lt;script type=&quot;math/tex&quot;&gt;X_{1}(\alpha)\neq X_{2}(\alpha)&lt;/script&gt;.
+But clearly this contradicts because &lt;script type=&quot;math/tex&quot;&gt;\alpha&lt;/script&gt; is either in the set
+&lt;script type=&quot;math/tex&quot;&gt;f(X_{1})&lt;/script&gt; or not.&lt;/p&gt;
+
+&lt;p&gt;2019330001&lt;/p&gt;</content><author><name></name></author><summary type="html">This post is the proof of the following statement.</summary></entry></feed>
