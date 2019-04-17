@@ -3,7 +3,7 @@ layout: post
 title:  "Power set and the set of indicator functions have the same cardinality"
 date:   2019-04-16 11:00:00 +0900
 use_math: false
-categories: jekyll update
+categories: math
 ---
 This post is the proof of the following statement.
 
@@ -33,5 +33,3 @@ for $$X_{1}\neq X_{2}$$. Because $$X_{1}\neq X_{2}$$, there must exist
 some element $$\alpha\in S$$ that $$X_{1}(\alpha)\neq X_{2}(\alpha)$$.
 But clearly this contradicts because $$\alpha$$ is either in the set
 $$f(X_{1})$$ or not.
-
-2019330001
