@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Vibration of Circular Membrane Part 2: Solving the Wave Equation"
-date:   2019-04-18 11:21:23 +0900
+date:   2019-04-18 01:21:23 +0900
 categories: math
 ---
 
@@ -15,7 +15,7 @@ In this post, I will introduce you Wave equation, 2-dim wave equation
 and the solution for the case where $u(x,y,t)=u(r,t)$. i.e., $u$
 is circularly symmetric (radially symmetric).
 
-1. Two Dimensional Wave Equation
+1.Two Dimensional Wave Equation
 
 How would one describe the movement of a wave? More explicitly, suppose
 that you have an infinitely thin rubber cloak. This piece of rubber
