@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.0 -->
+<title>Vibrations of a Circular Membrane Part 1: Easy Way to Achieve Laplacian for Cylindrical Coordinate | Simo Ryu’s Blog</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="Vibrations of a Circular Membrane Part 1: Easy Way to Achieve Laplacian for Cylindrical Coordinate" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="As a freshman, one is indirectly forced to take a lot of introductory courses before taking PDE course. However, it isn’t always mandatory, so I took the class anyway." />
+<meta property="og:description" content="As a freshman, one is indirectly forced to take a lot of introductory courses before taking PDE course. However, it isn’t always mandatory, so I took the class anyway." />
+<link rel="canonical" href="http://localhost:4000/math/2019/04/17/Vibrations-of-a-Circular-Membrane-Part-1-Easy-Way-to-Achieve-Laplacian-for-Cylindrical-Coordinate.html" />
+<meta property="og:url" content="http://localhost:4000/math/2019/04/17/Vibrations-of-a-Circular-Membrane-Part-1-Easy-Way-to-Achieve-Laplacian-for-Cylindrical-Coordinate.html" />
+<meta property="og:site_name" content="Simo Ryu’s Blog" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-04-17T11:21:23+09:00" />
+<script type="application/ld+json">
+{"url":"http://localhost:4000/math/2019/04/17/Vibrations-of-a-Circular-Membrane-Part-1-Easy-Way-to-Achieve-Laplacian-for-Cylindrical-Coordinate.html","headline":"Vibrations of a Circular Membrane Part 1: Easy Way to Achieve Laplacian for Cylindrical Coordinate","dateModified":"2019-04-17T11:21:23+09:00","datePublished":"2019-04-17T11:21:23+09:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/math/2019/04/17/Vibrations-of-a-Circular-Membrane-Part-1-Easy-Way-to-Achieve-Laplacian-for-Cylindrical-Coordinate.html"},"description":"As a freshman, one is indirectly forced to take a lot of introductory courses before taking PDE course. However, it isn’t always mandatory, so I took the class anyway.","@type":"BlogPosting","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Simo Ryu's Blog" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Simo Ryu&#39;s Blog</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Vibrations of a Circular Membrane Part 1: Easy Way to Achieve Laplacian for Cylindrical Coordinate</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2019-04-17T11:21:23+09:00" itemprop="datePublished">Apr 17, 2019
+      </time></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p>As a freshman, one is indirectly forced to take a lot of introductory
+courses before taking PDE course. However, it isn’t always mandatory,
+so I took the class anyway.</p>
+
+<p>Most of the topics, theorems, and problems are straightforward and
+intuitive. This turned out to be rather biased, because the only reason
+it felt that way was because that</p>
+
+<p>I already had some background study(mainly by quantum mechanics and
+analytical number theory). This post was made because I was ‘‘organizing’’
+my study on this specific topic, on Polar PDE.</p>
+
+<p>One of the thing that is rather tiresome is getting the Laplacian
+of cylindrical coordinate. Beforehand, let’s quickly brief about the Laplacian
+in polar coordinates.</p>
+
+<p>We wish to express <script type="math/tex">\Delta u(x,y)</script> with derivatives by <script type="math/tex">r</script> and <script type="math/tex">\theta</script>.
+In other words, suppose that
+<script type="math/tex">\Delta u=\frac{\partial^{2}u}{\partial x^{2}}+\frac{\partial^{2}u}{\partial y^{2}}=A\frac{\partial^{2}u}{\partial r^{2}}+B\frac{\partial u}{\partial r}+C\frac{\partial^{2}u}{\partial\theta^{2}}+D\frac{\partial u}{\partial\theta}+E\frac{\partial^{2}u}{\partial r\partial\theta}</script></p>
+
+<p>, how would one determine <script type="math/tex">A,B,C,D,E\in \mathbb{R}</script>?</p>
+
+<p>Is it even clear that the above statement is true? Is the above variable
+<script type="math/tex">A,B,C,D,E</script> is constant, or function of <script type="math/tex">r,\theta</script> in general? If
+one takes the chain rule, it is clear that it is not the case, yet</p>
+
+<p>the above equation holds true for some <script type="math/tex">A,B,C,D,E</script> that is function
+of <script type="math/tex">r</script> and <script type="math/tex">\theta</script>. One is tempted to use brute force and check
+the coefficients, but I came up with non rigorous, but much more fast
+and intuitive way.</p>
+
+<p>First, let’s only consider the case <script type="math/tex">u(x,y)=f(r)g(\theta)</script> . From
+now we will abuse notation so that<script type="math/tex">f'=\frac{\partial}{\partial r}f(r)</script>
+, <script type="math/tex">g'=\frac{_{\partial}}{\partial\theta}g(\theta)</script> , <script type="math/tex">s=\sin(\theta),c=\cos(\theta)</script>.
+We will use chain rule,</p>
+
+<script type="math/tex; mode=display">\frac{\partial u}{\partial x}=\frac{\partial u}{\partial r}\frac{\partial r}{\partial x}+\frac{\partial u}{\partial\theta}\frac{\partial\theta}{\partial x}</script>
+
+<p>so that</p>
+
+<script type="math/tex; mode=display">\frac{\partial u}{\partial x}=fg'(-\frac{y}{r^{2}})+f'g\frac{x}{r}=(\frac{f}{r})(g's)+f'(gc)</script>
+
+<p>Notice that using the equation to itself,</p>
+
+<script type="math/tex; mode=display">\frac{\partial^{2}u}{\partial x^{2}}=\frac{\partial}{\partial x}(\frac{f}{r})(g's)+\frac{\partial}{\partial x}f'(gc)=(\frac{f}{r^{2}})s(sg')'+(-\frac{f}{r})'sg'c+(-\frac{f'}{r})s(gc)'+f''gc^{2}</script>
+
+<script type="math/tex; mode=display">=\frac{f}{r^{2}}scg'+\frac{f}{r^{2}}s^{2}g''-(\frac{f'r-f}{r^{2}})scg'-\frac{f'}{r}s(-sg+g'c)+f''gc^{2}</script>
+
+<p>Now here is where beautiful part takes place. When we get <script type="math/tex">\frac{\partial^{2}u}{\partial y^{2}}</script>,
+It is same as substituting <script type="math/tex">\cos(\theta)</script> as <script type="math/tex">\sin(\theta)</script>. But
+wait, the derivative part needs to correlate too! Thus we instead
+think of taking <script type="math/tex">\theta</script> to <script type="math/tex">\theta-\pi/2</script>. This is consistent.
+Also, this means all the ‘‘sc’’ above changes it’s sign, because
+<script type="math/tex">\cos(\theta-\pi/2)\sin(\theta-\pi/2)=-\sin(\theta)\cos(\theta)</script>.</p>
+
+<p>Thus, one can easily get
+<script type="math/tex">\Delta u=\frac{f}{r^{2}}g''+\frac{f'}{r}g+f''g</script></p>
+
+<p>Since <script type="math/tex">\frac{\partial^{2}u}{\partial\theta^{2}}=fg''</script>, <script type="math/tex">\frac{\partial u}{\partial r}=f'g</script>
+and <script type="math/tex">\frac{\partial^{2}u}{\partial r^{2}}=f''g</script>, this simply implies
+that <script type="math/tex">A=1,</script><script type="math/tex">B=1/r</script>, <script type="math/tex">C=1/r^{2},D=E=0</script>.</p>
+
+<p>Because of additivity of derivatives, if one can every ‘‘smooth’’
+function (in this case, into sum of function in form of <script type="math/tex">f(r)g(\theta)</script>,
+one can gurantee that indeed above equation holds in general. When
+we use Seperation of variables to solve PDE problems, this is already
+under the assumption, so it is rather safe assumption to make. Also,
+most function that we care about has a closed form expression, rather
+that is in form of taylor series or fourier series. Either case it
+is under the realm of ‘‘Seperation of variables’’. However, do notice
+that this is not rigirous, and would need much more proof and work
+to make it viable for general <script type="math/tex">C^{2}</script> functions.</p>
+
+<p>Finally, let’s get into the cylindrical coordinates. The relationship
+between <script type="math/tex">(x,y,z)</script> and <script type="math/tex">(r,\theta,z)</script> is</p>
+
+<script type="math/tex; mode=display">x=r\cos(\theta),y=r\sin(\theta),z=z</script>
+
+<p>we wish to find</p>
+
+<script type="math/tex; mode=display">\Delta u=\frac{\partial^{2}u}{\partial x^{2}}+\frac{\partial^{2}u}{\partial y^{2}}+\frac{\partial^{2}u}{\partial z^{2}}=A\frac{\partial^{2}u}{\partial r^{2}}+B\frac{\partial u}{\partial r}+C\frac{\partial^{2}u}{\partial\theta^{2}}+D\frac{\partial u}{\partial\theta}+E\frac{\partial^{2}u}{\partial z^{2}}+F\frac{\partial u}{\partial z}+G\frac{\partial^{2}u}{\partial r\partial\theta}+H\frac{\partial^{2}u}{\partial r\partial z}+I\frac{\partial^{2}u}{\partial\theta\partial z}</script>
+
+<p>functions <script type="math/tex">A,B,C,D,E,F,G,H,I</script>. again, we assume that <script type="math/tex">u</script> is ``nice’’
+in the sense that <script type="math/tex">u(r,\theta,z)=\sum f(r)g(\theta)h(z)</script>. Using the
+same idea, we have</p>
+
+<script type="math/tex; mode=display">\frac{\partial u}{\partial x}=\frac{\partial u}{\partial r}\frac{\partial r}{\partial x}+\frac{\partial u}{\partial\theta}\frac{\partial\theta}{\partial x}+\frac{\partial u}{\partial z}\frac{\partial z}{\partial x}=(\frac{f}{r})(g's)+f'(gc)</script>
+
+<p>because <script type="math/tex">\frac{\partial z}{\partial x}</script>=0.</p>
+
+<p>This is same as our previous polar coordinate case, thus immediately
+we get</p>
+
+<script type="math/tex; mode=display">\frac{\partial^{2}u}{\partial x^{2}}+\frac{\partial^{2}u}{\partial y^{2}}=\frac{\partial^{2}u}{\partial r^{2}}+\frac{1}{r}\frac{\partial u}{\partial r}+\frac{1}{r^{2}}\frac{\partial^{2}u}{\partial\theta^{2}}</script>
+
+<p>Therefore we have</p>
+
+<script type="math/tex; mode=display">\Delta u=\frac{\partial^{2}u}{\partial x^{2}}+\frac{\partial^{2}u}{\partial y^{2}}+\frac{\partial^{2}u}{\partial z^{2}}=\frac{\partial^{2}u}{\partial r^{2}}+\frac{1}{r}\frac{\partial u}{\partial r}+\frac{1}{r^{2}}\frac{\partial^{2}u}{\partial\theta^{2}}+\frac{\partial^{2}u}{\partial z^{2}}</script>
+
+<p>.</p>
+
+<p>Now that we have covered (what is basically undergraduate calculus
+level) mathematics for two-dimensional radially symmetric wave PDE, we will continue on next post.</p>
+
+  </div><a class="u-url" href="/math/2019/04/17/Vibrations-of-a-Circular-Membrane-Part-1-Easy-Way-to-Achieve-Laplacian-for-Cylindrical-Coordinate.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Simo Ryu&#39;s Blog</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Simo Ryu&#39;s Blog</li><li><a class="u-email" href="mailto:cloneofsimo@gmail.com">cloneofsimo@gmail.com</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>Simo Ryu&#39;s Blog. Korea University, Dept of CYDF Seoul Science High School</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

@@ -1,4 +1,106 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-04-17T12:04:53+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Simo Ryu’s Blog</title><subtitle>Simo Ryu's Blog. Korea University, Dept of CYDF Seoul Science High School</subtitle><entry><title type="html">My First Post</title><link href="http://localhost:4000/jekyll/update/2019/04/16/firstpost.html" rel="alternate" type="text/html" title="My First Post" /><published>2019-04-16T11:21:23+09:00</published><updated>2019-04-16T11:21:23+09:00</updated><id>http://localhost:4000/jekyll/update/2019/04/16/firstpost</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2019/04/16/firstpost.html">&lt;p&gt;This is my first post on my blog, made with jekyll &amp;amp; github pages. Even though this post will remain meaningless, I wish to make notes for the first time.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-04-17T17:25:49+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Simo Ryu’s Blog</title><subtitle>Simo Ryu's Blog. Korea University, Dept of CYDF Seoul Science High School</subtitle><entry><title type="html">Vibrations of a Circular Membrane Part 1: Easy Way to Achieve Laplacian for Cylindrical Coordinate</title><link href="http://localhost:4000/math/2019/04/17/Vibrations-of-a-Circular-Membrane-Part-1-Easy-Way-to-Achieve-Laplacian-for-Cylindrical-Coordinate.html" rel="alternate" type="text/html" title="Vibrations of a Circular Membrane Part 1: Easy Way to Achieve Laplacian for Cylindrical Coordinate" /><published>2019-04-17T11:21:23+09:00</published><updated>2019-04-17T11:21:23+09:00</updated><id>http://localhost:4000/math/2019/04/17/Vibrations%20of%20a%20Circular%20Membrane%20Part%201%20Easy%20Way%20to%20Achieve%20Laplacian%20for%20Cylindrical%20Coordinate</id><content type="html" xml:base="http://localhost:4000/math/2019/04/17/Vibrations-of-a-Circular-Membrane-Part-1-Easy-Way-to-Achieve-Laplacian-for-Cylindrical-Coordinate.html">&lt;p&gt;As a freshman, one is indirectly forced to take a lot of introductory
+courses before taking PDE course. However, it isn’t always mandatory,
+so I took the class anyway.&lt;/p&gt;
+
+&lt;p&gt;Most of the topics, theorems, and problems are straightforward and
+intuitive. This turned out to be rather biased, because the only reason
+it felt that way was because that&lt;/p&gt;
+
+&lt;p&gt;I already had some background study(mainly by quantum mechanics and
+analytical number theory). This post was made because I was ‘‘organizing’’
+my study on this specific topic, on Polar PDE.&lt;/p&gt;
+
+&lt;p&gt;One of the thing that is rather tiresome is getting the Laplacian
+of cylindrical coordinate. Beforehand, let’s quickly brief about the Laplacian
+in polar coordinates.&lt;/p&gt;
+
+&lt;p&gt;We wish to express &lt;script type=&quot;math/tex&quot;&gt;\Delta u(x,y)&lt;/script&gt; with derivatives by &lt;script type=&quot;math/tex&quot;&gt;r&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;\theta&lt;/script&gt;.
+In other words, suppose that
+&lt;script type=&quot;math/tex&quot;&gt;\Delta u=\frac{\partial^{2}u}{\partial x^{2}}+\frac{\partial^{2}u}{\partial y^{2}}=A\frac{\partial^{2}u}{\partial r^{2}}+B\frac{\partial u}{\partial r}+C\frac{\partial^{2}u}{\partial\theta^{2}}+D\frac{\partial u}{\partial\theta}+E\frac{\partial^{2}u}{\partial r\partial\theta}&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;, how would one determine &lt;script type=&quot;math/tex&quot;&gt;A,B,C,D,E\in \mathbb{R}&lt;/script&gt;?&lt;/p&gt;
+
+&lt;p&gt;Is it even clear that the above statement is true? Is the above variable
+&lt;script type=&quot;math/tex&quot;&gt;A,B,C,D,E&lt;/script&gt; is constant, or function of &lt;script type=&quot;math/tex&quot;&gt;r,\theta&lt;/script&gt; in general? If
+one takes the chain rule, it is clear that it is not the case, yet&lt;/p&gt;
+
+&lt;p&gt;the above equation holds true for some &lt;script type=&quot;math/tex&quot;&gt;A,B,C,D,E&lt;/script&gt; that is function
+of &lt;script type=&quot;math/tex&quot;&gt;r&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;\theta&lt;/script&gt;. One is tempted to use brute force and check
+the coefficients, but I came up with non rigorous, but much more fast
+and intuitive way.&lt;/p&gt;
+
+&lt;p&gt;First, let’s only consider the case &lt;script type=&quot;math/tex&quot;&gt;u(x,y)=f(r)g(\theta)&lt;/script&gt; . From
+now we will abuse notation so that&lt;script type=&quot;math/tex&quot;&gt;f'=\frac{\partial}{\partial r}f(r)&lt;/script&gt;
+, &lt;script type=&quot;math/tex&quot;&gt;g'=\frac{_{\partial}}{\partial\theta}g(\theta)&lt;/script&gt; , &lt;script type=&quot;math/tex&quot;&gt;s=\sin(\theta),c=\cos(\theta)&lt;/script&gt;.
+We will use chain rule,&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\frac{\partial u}{\partial x}=\frac{\partial u}{\partial r}\frac{\partial r}{\partial x}+\frac{\partial u}{\partial\theta}\frac{\partial\theta}{\partial x}&lt;/script&gt;
+
+&lt;p&gt;so that&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\frac{\partial u}{\partial x}=fg'(-\frac{y}{r^{2}})+f'g\frac{x}{r}=(\frac{f}{r})(g's)+f'(gc)&lt;/script&gt;
+
+&lt;p&gt;Notice that using the equation to itself,&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\frac{\partial^{2}u}{\partial x^{2}}=\frac{\partial}{\partial x}(\frac{f}{r})(g's)+\frac{\partial}{\partial x}f'(gc)=(\frac{f}{r^{2}})s(sg')'+(-\frac{f}{r})'sg'c+(-\frac{f'}{r})s(gc)'+f''gc^{2}&lt;/script&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;=\frac{f}{r^{2}}scg'+\frac{f}{r^{2}}s^{2}g''-(\frac{f'r-f}{r^{2}})scg'-\frac{f'}{r}s(-sg+g'c)+f''gc^{2}&lt;/script&gt;
+
+&lt;p&gt;Now here is where beautiful part takes place. When we get &lt;script type=&quot;math/tex&quot;&gt;\frac{\partial^{2}u}{\partial y^{2}}&lt;/script&gt;,
+It is same as substituting &lt;script type=&quot;math/tex&quot;&gt;\cos(\theta)&lt;/script&gt; as &lt;script type=&quot;math/tex&quot;&gt;\sin(\theta)&lt;/script&gt;. But
+wait, the derivative part needs to correlate too! Thus we instead
+think of taking &lt;script type=&quot;math/tex&quot;&gt;\theta&lt;/script&gt; to &lt;script type=&quot;math/tex&quot;&gt;\theta-\pi/2&lt;/script&gt;. This is consistent.
+Also, this means all the ‘‘sc’’ above changes it’s sign, because
+&lt;script type=&quot;math/tex&quot;&gt;\cos(\theta-\pi/2)\sin(\theta-\pi/2)=-\sin(\theta)\cos(\theta)&lt;/script&gt;.&lt;/p&gt;
+
+&lt;p&gt;Thus, one can easily get
+&lt;script type=&quot;math/tex&quot;&gt;\Delta u=\frac{f}{r^{2}}g''+\frac{f'}{r}g+f''g&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;Since &lt;script type=&quot;math/tex&quot;&gt;\frac{\partial^{2}u}{\partial\theta^{2}}=fg''&lt;/script&gt;, &lt;script type=&quot;math/tex&quot;&gt;\frac{\partial u}{\partial r}=f'g&lt;/script&gt;
+and &lt;script type=&quot;math/tex&quot;&gt;\frac{\partial^{2}u}{\partial r^{2}}=f''g&lt;/script&gt;, this simply implies
+that &lt;script type=&quot;math/tex&quot;&gt;A=1,&lt;/script&gt;&lt;script type=&quot;math/tex&quot;&gt;B=1/r&lt;/script&gt;, &lt;script type=&quot;math/tex&quot;&gt;C=1/r^{2},D=E=0&lt;/script&gt;.&lt;/p&gt;
+
+&lt;p&gt;Because of additivity of derivatives, if one can every ‘‘smooth’’
+function (in this case, into sum of function in form of &lt;script type=&quot;math/tex&quot;&gt;f(r)g(\theta)&lt;/script&gt;,
+one can gurantee that indeed above equation holds in general. When
+we use Seperation of variables to solve PDE problems, this is already
+under the assumption, so it is rather safe assumption to make. Also,
+most function that we care about has a closed form expression, rather
+that is in form of taylor series or fourier series. Either case it
+is under the realm of ‘‘Seperation of variables’’. However, do notice
+that this is not rigirous, and would need much more proof and work
+to make it viable for general &lt;script type=&quot;math/tex&quot;&gt;C^{2}&lt;/script&gt; functions.&lt;/p&gt;
+
+&lt;p&gt;Finally, let’s get into the cylindrical coordinates. The relationship
+between &lt;script type=&quot;math/tex&quot;&gt;(x,y,z)&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;(r,\theta,z)&lt;/script&gt; is&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;x=r\cos(\theta),y=r\sin(\theta),z=z&lt;/script&gt;
+
+&lt;p&gt;we wish to find&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\Delta u=\frac{\partial^{2}u}{\partial x^{2}}+\frac{\partial^{2}u}{\partial y^{2}}+\frac{\partial^{2}u}{\partial z^{2}}=A\frac{\partial^{2}u}{\partial r^{2}}+B\frac{\partial u}{\partial r}+C\frac{\partial^{2}u}{\partial\theta^{2}}+D\frac{\partial u}{\partial\theta}+E\frac{\partial^{2}u}{\partial z^{2}}+F\frac{\partial u}{\partial z}+G\frac{\partial^{2}u}{\partial r\partial\theta}+H\frac{\partial^{2}u}{\partial r\partial z}+I\frac{\partial^{2}u}{\partial\theta\partial z}&lt;/script&gt;
+
+&lt;p&gt;functions &lt;script type=&quot;math/tex&quot;&gt;A,B,C,D,E,F,G,H,I&lt;/script&gt;. again, we assume that &lt;script type=&quot;math/tex&quot;&gt;u&lt;/script&gt; is ``nice’’
+in the sense that &lt;script type=&quot;math/tex&quot;&gt;u(r,\theta,z)=\sum f(r)g(\theta)h(z)&lt;/script&gt;. Using the
+same idea, we have&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\frac{\partial u}{\partial x}=\frac{\partial u}{\partial r}\frac{\partial r}{\partial x}+\frac{\partial u}{\partial\theta}\frac{\partial\theta}{\partial x}+\frac{\partial u}{\partial z}\frac{\partial z}{\partial x}=(\frac{f}{r})(g's)+f'(gc)&lt;/script&gt;
+
+&lt;p&gt;because &lt;script type=&quot;math/tex&quot;&gt;\frac{\partial z}{\partial x}&lt;/script&gt;=0.&lt;/p&gt;
+
+&lt;p&gt;This is same as our previous polar coordinate case, thus immediately
+we get&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\frac{\partial^{2}u}{\partial x^{2}}+\frac{\partial^{2}u}{\partial y^{2}}=\frac{\partial^{2}u}{\partial r^{2}}+\frac{1}{r}\frac{\partial u}{\partial r}+\frac{1}{r^{2}}\frac{\partial^{2}u}{\partial\theta^{2}}&lt;/script&gt;
+
+&lt;p&gt;Therefore we have&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\Delta u=\frac{\partial^{2}u}{\partial x^{2}}+\frac{\partial^{2}u}{\partial y^{2}}+\frac{\partial^{2}u}{\partial z^{2}}=\frac{\partial^{2}u}{\partial r^{2}}+\frac{1}{r}\frac{\partial u}{\partial r}+\frac{1}{r^{2}}\frac{\partial^{2}u}{\partial\theta^{2}}+\frac{\partial^{2}u}{\partial z^{2}}&lt;/script&gt;
+
+&lt;p&gt;.&lt;/p&gt;
+
+&lt;p&gt;Now that we have covered (what is basically undergraduate calculus
+level) mathematics for two-dimensional radially symmetric wave PDE, we will continue on next post.&lt;/p&gt;</content><author><name></name></author><summary type="html">As a freshman, one is indirectly forced to take a lot of introductory courses before taking PDE course. However, it isn’t always mandatory, so I took the class anyway.</summary></entry><entry><title type="html">My First Post</title><link href="http://localhost:4000/jekyll/update/2019/04/16/firstpost.html" rel="alternate" type="text/html" title="My First Post" /><published>2019-04-16T11:21:23+09:00</published><updated>2019-04-16T11:21:23+09:00</updated><id>http://localhost:4000/jekyll/update/2019/04/16/firstpost</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2019/04/16/firstpost.html">&lt;p&gt;This is my first post on my blog, made with jekyll &amp;amp; github pages. Even though this post will remain meaningless, I wish to make notes for the first time.&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;The DNS domain server that I used was namesilo.com. It was overall very cheap.&lt;/li&gt;
