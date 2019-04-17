@@ -2,7 +2,7 @@
 layout: post
 title:  "Power set and the set of indicator functions have the same cardinality"
 date:   2019-04-16 11:00:00 +0900
-use_math: true
+use_math: false
 categories: jekyll update
 ---
 This post is the proof of the following statement.
