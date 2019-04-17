@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Vibration of Circular Membrane Part 2: Solving the Wave Equation"
+title:  "Vibration of a Circular Membrane Part 2: Solving the Wave Equation"
 date:   2019-04-18 01:21:23 +0900
 categories: math
 ---
@@ -32,7 +32,6 @@ that total changes of the wave as time passes is not large.
 For every point of the cloak, it moves only if there are some curvature
 at that point. We can think of this as some kind of a trampoline,
 since trampoline only pushes things up when it has a positive
-
 second derivative(i.e., positive curvature). Also, one can easily guess
 that the second derivative of the trampoline is proportional to the
 amount of force it will provide
