@@ -102,7 +102,7 @@ $$
 \Delta u=\frac{\partial^{2}u}{\partial x^{2}}+\frac{\partial^{2}u}{\partial y^{2}}+\frac{\partial^{2}u}{\partial z^{2}}=A\frac{\partial^{2}u}{\partial r^{2}}+B\frac{\partial u}{\partial r}+C\frac{\partial^{2}u}{\partial\theta^{2}}+D\frac{\partial u}{\partial\theta}+E\frac{\partial^{2}u}{\partial z^{2}}+F\frac{\partial u}{\partial z}+G\frac{\partial^{2}u}{\partial r\partial\theta}+H\frac{\partial^{2}u}{\partial r\partial z}+I\frac{\partial^{2}u}{\partial\theta\partial z}
 $$
 
-functions $$A,B,C,D,E,F,G,H,I$$. again, we assume that $$u$$ is ``nice''
+functions $$A,B,C,D,E,F,G,H,I$$. again, we assume that $$u$$ is nice''
 in the sense that $$u(r,\theta,z)=\sum f(r)g(\theta)h(z)$$. Using the
 same idea, we have
 
