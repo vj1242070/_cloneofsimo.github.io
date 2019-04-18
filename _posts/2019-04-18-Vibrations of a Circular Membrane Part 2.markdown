@@ -15,7 +15,7 @@ In this post, I will introduce you Wave equation, 2-dim wave equation
 and the solution for the case where $$u(x,y,t)=u(r,t)$$. i.e., $$u$$
 is circularly symmetric (radially symmetric).
 
-1.Two Dimensional Wave Equation
+## 1.Two Dimensional Wave Equation
 
 How would one describe the movement of a wave? More explicitly, suppose
 that you have an infinitely thin rubber cloak. This piece of rubber
@@ -32,7 +32,7 @@ that total changes of the wave as time passes is not large.
 For every point of the cloak, it moves only if there are some curvature
 at that point. We can think of this as some kind of a trampoline,
 since trampoline only pushes things up when it has a positive
-second derivative(i.e., positive curvature). Also, one can easily guess
+second derivative(i.e., positive curvature). Also, one can educatedly guess
 that the second derivative of the trampoline is proportional to the
 amount of force it will provide
 
@@ -45,16 +45,16 @@ F_{z}=C(\frac{\partial^{2}u}{\partial x^{2}}+\frac{\partial^{2}u}{\partial y^{2}
 $$
 
 where $$F_{z}$$is force (more precisely, force per area) caused by
-the rubber cloak in upward direction. We will use the famous ''Newton's
-law'' to get
+the rubber cloak in upward direction. We will use the famous **Newton's
+law** to get
 
 $$
 \frac{\partial^{2}u}{\partial t^{2}}=c^{2}(\frac{\partial^{2}u}{\partial x^{2}}+\frac{\partial^{2}u}{\partial y^{2}})
 $$
 
-This is the ''Two Dimensional Wave equation''.
+This is the **Two Dimensional Wave equation**.
 
-2. Radially Symmetric, Finite Wave Equation
+## 2. Radially Symmetric, Finite Wave Equation
 Taking the Laplacian for polar coordinate, we have
 
 $$
@@ -114,7 +114,7 @@ $$
 $$
 T''+c^{2}\lambda^{2}T=0
 $$
-
+## 3. Bessel Functions
 The first equation is strange. Specifically, the differential equation
 $$
 xy''+y'+xy=0

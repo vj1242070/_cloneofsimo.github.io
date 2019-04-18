@@ -1,4 +1,174 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-04-18T01:19:30+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Simo Ryu’s Blog</title><subtitle>Simo Ryu's Blog. Korea University, Dept of CYDF Seoul Science High School</subtitle><entry><title type="html">Vibrations of a Circular Membrane Part 1: Easy Way to Achieve Laplacian for Cylindrical Coordinate</title><link href="http://localhost:4000/math/2019/04/17/Vibrations-of-a-Circular-Membrane-Part-1.html" rel="alternate" type="text/html" title="Vibrations of a Circular Membrane Part 1: Easy Way to Achieve Laplacian for Cylindrical Coordinate" /><published>2019-04-17T11:21:23+09:00</published><updated>2019-04-17T11:21:23+09:00</updated><id>http://localhost:4000/math/2019/04/17/Vibrations%20of%20a%20Circular%20Membrane%20Part%201</id><content type="html" xml:base="http://localhost:4000/math/2019/04/17/Vibrations-of-a-Circular-Membrane-Part-1.html">&lt;p&gt;As a freshman, one is indirectly forced to take a lot of introductory
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-04-19T00:52:21+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Simo Ryu’s Blog</title><subtitle>Simo Ryu's Blog. Korea University, Dept of CYDF Seoul Science High School</subtitle><entry><title type="html">Vibration of a Circular Membrane Part 2: Solving the Wave Equation</title><link href="http://localhost:4000/math/2019/04/18/Vibrations-of-a-Circular-Membrane-Part-2.html" rel="alternate" type="text/html" title="Vibration of a Circular Membrane Part 2: Solving the Wave Equation" /><published>2019-04-18T01:21:23+09:00</published><updated>2019-04-18T01:21:23+09:00</updated><id>http://localhost:4000/math/2019/04/18/Vibrations%20of%20a%20Circular%20Membrane%20Part%202</id><content type="html" xml:base="http://localhost:4000/math/2019/04/18/Vibrations-of-a-Circular-Membrane-Part-2.html">&lt;p&gt;Last time we ended with the Laplacian of polar coordinates, namely&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\Delta u(x,y)=\nabla^{2}u=\frac{\partial^{2}u}{\partial x^{2}}+\frac{\partial^{2}u}{\partial y^{2}}=\frac{\partial^{2}u}{\partial r^{2}}+\frac{1}{r}\frac{\partial u}{\partial r}+\frac{1}{r^{2}}\frac{\partial^{2}u}{\partial\theta^{2}}&lt;/script&gt;
+
+&lt;p&gt;In this post, I will introduce you Wave equation, 2-dim wave equation
+and the solution for the case where &lt;script type=&quot;math/tex&quot;&gt;u(x,y,t)=u(r,t)&lt;/script&gt;. i.e., &lt;script type=&quot;math/tex&quot;&gt;u&lt;/script&gt;
+is circularly symmetric (radially symmetric).&lt;/p&gt;
+
+&lt;h2 id=&quot;1two-dimensional-wave-equation&quot;&gt;1.Two Dimensional Wave Equation&lt;/h2&gt;
+
+&lt;p&gt;How would one describe the movement of a wave? More explicitly, suppose
+that you have an infinitely thin rubber cloak. This piece of rubber
+is extremely&lt;/p&gt;
+
+&lt;p&gt;precise and tensionly even, so that every molecule(or, infinitesimal
+amount of local part of the cloak) of the rubber is being pulled by
+the same force, every time, evenly.&lt;/p&gt;
+
+&lt;p&gt;Notice that if the rubber cloak changes its form with ‘‘meaningfully
+big amount’’, the tension would not be even, thus we need the assumption
+that total changes of the wave as time passes is not large.&lt;/p&gt;
+
+&lt;p&gt;For every point of the cloak, it moves only if there are some curvature
+at that point. We can think of this as some kind of a trampoline,
+since trampoline only pushes things up when it has a positive
+second derivative(i.e., positive curvature). Also, one can educatedly guess
+that the second derivative of the trampoline is proportional to the
+amount of force it will provide&lt;/p&gt;
+
+&lt;p&gt;upward. (You can get this result much more rigorously, but that’s
+rather simple and you probably already know why it works.) Therefore,
+one has&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;F_{z}=C(\frac{\partial^{2}u}{\partial x^{2}}+\frac{\partial^{2}u}{\partial y^{2}})&lt;/script&gt;
+
+&lt;p&gt;where &lt;script type=&quot;math/tex&quot;&gt;F_{z}&lt;/script&gt;is force (more precisely, force per area) caused by
+the rubber cloak in upward direction. We will use the famous &lt;strong&gt;Newton’s
+law&lt;/strong&gt; to get&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\frac{\partial^{2}u}{\partial t^{2}}=c^{2}(\frac{\partial^{2}u}{\partial x^{2}}+\frac{\partial^{2}u}{\partial y^{2}})&lt;/script&gt;
+
+&lt;p&gt;This is the &lt;strong&gt;Two Dimensional Wave equation&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;2-radially-symmetric-finite-wave-equation&quot;&gt;2. Radially Symmetric, Finite Wave Equation&lt;/h2&gt;
+&lt;p&gt;Taking the Laplacian for polar coordinate, we have&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\frac{\partial^{2}u}{\partial t^{2}}=c^{2}(\frac{\partial^{2}u}{\partial r^{2}}+\frac{1}{r}\frac{\partial u}{\partial r}+\frac{1}{r^{2}}\frac{\partial^{2}u}{\partial\theta^{2}})&lt;/script&gt;
+
+&lt;p&gt;Since we are considering radially symmetric case, we have&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\frac{\partial^{2}u}{\partial t^{2}}=c^{2}(\frac{\partial^{2}u}{\partial r^{2}}+\frac{1}{r}\frac{\partial u}{\partial r})&lt;/script&gt;
+
+&lt;p&gt;We will now consider &lt;script type=&quot;math/tex&quot;&gt;u&lt;/script&gt; as a function with two variables, &lt;script type=&quot;math/tex&quot;&gt;r&lt;/script&gt; and
+&lt;script type=&quot;math/tex&quot;&gt;t&lt;/script&gt;.&lt;/p&gt;
+
+&lt;p&gt;But this is not enough to fully solve the wave equation. As all differential
+equations, one needs initial conditions and boundary conditions. In this
+case, we will have a condition that describe&lt;/p&gt;
+
+&lt;p&gt;a finite wave. That is;&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;u(a,t)=0\text{ for some }a&gt;0&lt;/script&gt;
+
+&lt;p&gt;Also, the starting state of the wave is also known, because we need
+at least somewhere to start with.
+&lt;script type=&quot;math/tex&quot;&gt;u(r,0)=f(r),\frac{\partial u}{\partial t}(r,0)=g(r)&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;So we know the position and velocity of the overall cloak at time
+&lt;script type=&quot;math/tex&quot;&gt;t=0&lt;/script&gt;.&lt;/p&gt;
+
+&lt;p&gt;Now to solve the equation, we will use separation of variables &lt;script type=&quot;math/tex&quot;&gt;u(r,t)=R(r)T(t)&lt;/script&gt;.&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\frac{T''}{c^{2}T}=\frac{1}{R}(R''+\frac{1}{r}R')&lt;/script&gt;
+
+&lt;p&gt;The left hand side and the right hand side has the equality, but with
+different variables. This must mean that they equal to some constant
+&lt;script type=&quot;math/tex&quot;&gt;-\lambda^{2}&lt;/script&gt;. The reason why it is negative is because we expect&lt;/p&gt;
+
+&lt;p&gt;non-trivial solutions, and that if it is positive, for fixed &lt;script type=&quot;math/tex&quot;&gt;r&lt;/script&gt;
+we have exponential solution. This is contradictory because physically
+we expect finite solution for arbitrary given time(of course,&lt;/p&gt;
+
+&lt;p&gt;more rigorous argument can be made. We will not mention it now.Perhaps
+later? lol). We now have full description of equations we need to
+solve.&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;rR''+R'+\lambda^{2}rR=0,R(a)=0&lt;/script&gt;
+
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;T''+c^{2}\lambda^{2}T=0&lt;/script&gt;&lt;/p&gt;
+&lt;h2 id=&quot;3-bessel-functions&quot;&gt;3. Bessel Functions&lt;/h2&gt;
+&lt;p&gt;The first equation is strange. Specifically, the differential equation
+&lt;script type=&quot;math/tex&quot;&gt;xy''+y'+xy=0&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;is not the kind that we know of. We can assume it’s existence and
+use Taylor expansion&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;y=\sum_{k=0}^{\infty}a_{k}\frac{x^{k}}{k!},(k+1)a_{k+1}=-a_{k-1}&lt;/script&gt;
+
+&lt;p&gt;Indeed, such function exists and are called ‘‘Bessel Functions’’.
+There are two solution to above differential equation, and one can
+easily see that by the Taylor expansion,&lt;/p&gt;
+
+&lt;p&gt;since the parity of the coefficients’ index doesn’t change. There are
+actually a lot of different kinds of Bessel function and we will talk
+about it in different post.&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;J_{0}(x)=\sum_{k=0}^{\infty}\frac{(-1)^{k}}{k!^{2}}(\frac{x}{2})^{2k}&lt;/script&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;Y_{0}(x)=\frac{2}{\pi}J_{0}(x)\log(\frac{x}{2})-\frac{2}{\pi}\sum_{k=0}^{\infty}\frac{(-1)^{k}}{k!^{2}}(\frac{x}{2})^{2k}\psi(k+1)&lt;/script&gt;
+
+&lt;p&gt;Let’s just realize that these are called ‘‘Bessel functions of order
+0 of the first and second kind’’. Just in case you are unfamiliar
+with function &lt;script type=&quot;math/tex&quot;&gt;\psi(k)&lt;/script&gt;, they satisfy&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\psi(n+1)=-\gamma+\sum_{m=1}^{n}\frac{1}{n}&lt;/script&gt;
+
+&lt;p&gt;where &lt;script type=&quot;math/tex&quot;&gt;\gamma&lt;/script&gt; is Eular- Mascheroni constant.&lt;/p&gt;
+
+&lt;p&gt;We now have the solution for &lt;script type=&quot;math/tex&quot;&gt;R&lt;/script&gt; part. Namely that&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;R(r)=c_{1}J_{0}(\lambda r)+c_{2}Y_{0}(\lambda r)&lt;/script&gt;
+
+&lt;p&gt;But unfortunately, function &lt;script type=&quot;math/tex&quot;&gt;Y_{0}&lt;/script&gt;is unbounded near 0. You can see
+this by the &lt;script type=&quot;math/tex&quot;&gt;\log(x/2)&lt;/script&gt; part in the formula above. Thus, we are left
+with the first kind.&lt;/p&gt;
+
+&lt;p&gt;Now using boundary condition &lt;script type=&quot;math/tex&quot;&gt;R(a)=0&lt;/script&gt;, it must imply that &lt;script type=&quot;math/tex&quot;&gt;J_{0}(\lambda a)=0&lt;/script&gt;.
+Now the set of possible &lt;script type=&quot;math/tex&quot;&gt;\lambda&lt;/script&gt; one can take is now only countably
+many,because there are countably many&lt;/p&gt;
+
+&lt;p&gt;solutions to the equation &lt;script type=&quot;math/tex&quot;&gt;J_{0}(x)=0&lt;/script&gt; and one can arrange them in
+order&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\alpha_{1}&lt;\alpha_{2}&lt;\alpha_{3}\cdots %]]&gt;&lt;/script&gt;
+
+&lt;p&gt;Immediately &lt;script type=&quot;math/tex&quot;&gt;\lambda&lt;/script&gt;’s are now arrangeable in order&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\lambda_{n}=\frac{\alpha_{n}}{a}&lt;/script&gt;
+
+&lt;p&gt;These solutions now uniquely determines &lt;script type=&quot;math/tex&quot;&gt;T,R&lt;/script&gt;, and therefore one
+can write the full solution in the form of the following.&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;u(r,t)=\sum_{n=1}^{\infty}(A_{n}\cos(c\lambda_{n}t)+B_{n}\sin(c\lambda_{n}t))J_{0}(\lambda_{n}r)&lt;/script&gt;
+
+&lt;p&gt;Now we use initial conditions to determine &lt;script type=&quot;math/tex&quot;&gt;A_{n}&lt;/script&gt;and &lt;script type=&quot;math/tex&quot;&gt;B_{n}&lt;/script&gt;. taking
+&lt;script type=&quot;math/tex&quot;&gt;t=0&lt;/script&gt; gives&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;u(r,0)=f(r)=\sum_{n=1}^{\infty}A_{n}J_{0}(\lambda_{n}r)&lt;/script&gt;
+
+&lt;p&gt;This looks familiar. We already know that, if it was the case for
+&lt;script type=&quot;math/tex&quot;&gt;\sin(nr)&lt;/script&gt; instead of &lt;script type=&quot;math/tex&quot;&gt;J_{0}(\lambda_{n}r)&lt;/script&gt;, way to determine &lt;script type=&quot;math/tex&quot;&gt;A_{n}&lt;/script&gt;.
+That was done by using fourier transformation! Using similar method
+as in&lt;/p&gt;
+
+&lt;p&gt;fourier series, coefficients are actually determined as&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;A_{n}=\frac{2}{a^{2}J_{1}(\alpha_{n})}\int_{0}^{a}f(r)J_{0}(\lambda_{n}r)rdr&lt;/script&gt;
+
+&lt;p&gt;Where &lt;script type=&quot;math/tex&quot;&gt;J_{1}(x)=\sum_{k=0}^{\infty}(-1)^{k}(x/2)^{2k+1}/k!(k+1)!&lt;/script&gt;.&lt;/p&gt;
+
+&lt;p&gt;Done with &lt;script type=&quot;math/tex&quot;&gt;A_{n},&lt;/script&gt;as for &lt;script type=&quot;math/tex&quot;&gt;B_{n},&lt;/script&gt;&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\frac{\partial}{\partial t}u(r,0)=g(r)=\sum_{n=1}^{\infty}c\lambda_{n}B_{n}J_{0}(\lambda_{n}r)&lt;/script&gt;
+
+&lt;p&gt;Which looks similar to the first case and indeed,&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;c\lambda_{n}B_{n}=\frac{2}{a^{2}J_{1}(\alpha_{n})}\int_{0}^{a}g(r)J_{0}(\lambda_{n}r)rdr&lt;/script&gt;
+
+&lt;p&gt;Therefore we have the wanted solution for two-dimensional, finite,
+radially symmetric wave equation.&lt;/p&gt;</content><author><name></name></author><summary type="html">Last time we ended with the Laplacian of polar coordinates, namely</summary></entry><entry><title type="html">Vibrations of a Circular Membrane Part 1: Easy Way to Achieve Laplacian for Cylindrical Coordinate</title><link href="http://localhost:4000/math/2019/04/17/Vibrations-of-a-Circular-Membrane-Part-1.html" rel="alternate" type="text/html" title="Vibrations of a Circular Membrane Part 1: Easy Way to Achieve Laplacian for Cylindrical Coordinate" /><published>2019-04-17T11:21:23+09:00</published><updated>2019-04-17T11:21:23+09:00</updated><id>http://localhost:4000/math/2019/04/17/Vibrations%20of%20a%20Circular%20Membrane%20Part%201</id><content type="html" xml:base="http://localhost:4000/math/2019/04/17/Vibrations-of-a-Circular-Membrane-Part-1.html">&lt;p&gt;As a freshman, one is indirectly forced to take a lot of introductory
 courses before taking PDE course. However, it isn’t always mandatory,
 so I took the class anyway.&lt;/p&gt;
 
@@ -100,13 +270,13 @@ we get&lt;/p&gt;
 &lt;p&gt;.&lt;/p&gt;
 
 &lt;p&gt;Now that we have covered (what is basically undergraduate calculus
-level) mathematics for two-dimensional radially symmetric wave PDE, we will continue on next post.&lt;/p&gt;</content><author><name></name></author><summary type="html">As a freshman, one is indirectly forced to take a lot of introductory courses before taking PDE course. However, it isn’t always mandatory, so I took the class anyway.</summary></entry><entry><title type="html">My First Post</title><link href="http://localhost:4000/jekyll/update/2019/04/16/firstpost.html" rel="alternate" type="text/html" title="My First Post" /><published>2019-04-16T11:21:23+09:00</published><updated>2019-04-16T11:21:23+09:00</updated><id>http://localhost:4000/jekyll/update/2019/04/16/firstpost</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2019/04/16/firstpost.html">&lt;p&gt;This is my first post on my blog, made with jekyll &amp;amp; github pages. Even though this post will remain meaningless, I wish to make notes for the first time.&lt;/p&gt;
+level) mathematics for two-dimensional radially symmetric wave PDE, we will continue on next post.&lt;/p&gt;</content><author><name></name></author><summary type="html">As a freshman, one is indirectly forced to take a lot of introductory courses before taking PDE course. However, it isn’t always mandatory, so I took the class anyway.</summary></entry><entry><title type="html">Discrepency problem of n unit vectors</title><link href="http://localhost:4000/discrete/analysis/2019/04/16/On-the-discrepency-problem-with-n-unit-vectors.html" rel="alternate" type="text/html" title="Discrepency problem of n unit vectors" /><published>2019-04-16T11:21:23+09:00</published><updated>2019-04-16T11:21:23+09:00</updated><id>http://localhost:4000/discrete/analysis/2019/04/16/On%20the%20discrepency%20problem%20with%20n%20unit%20vectors</id><content type="html" xml:base="http://localhost:4000/discrete/analysis/2019/04/16/On-the-discrepency-problem-with-n-unit-vectors.html">&lt;p&gt;Unavalible now.&lt;/p&gt;</content><author><name></name></author><summary type="html">Unavalible now.</summary></entry><entry><title type="html">My First Post</title><link href="http://localhost:4000/jekyll/update/2019/04/16/firstpost.html" rel="alternate" type="text/html" title="My First Post" /><published>2019-04-16T11:21:23+09:00</published><updated>2019-04-16T11:21:23+09:00</updated><id>http://localhost:4000/jekyll/update/2019/04/16/firstpost</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2019/04/16/firstpost.html">&lt;p&gt;This is my first post on my blog, made with jekyll &amp;amp; github pages. Even though this post will remain meaningless, I wish to make notes for the first time.&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;The DNS domain server that I used was namesilo.com. It was overall very cheap.&lt;/li&gt;
   &lt;li&gt;I wish to post about stuff around mathematic, physic, computer science, economics, and financial studies.&lt;/li&gt;
   &lt;li&gt;I love 떡볶이, which is traditional spicy rice cake plate. My favorite 떡볶이 brand is “신전 떡볶이”, which is famous for its chewyness and special spice.&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html">This is my first post on my blog, made with jekyll &amp;amp; github pages. Even though this post will remain meaningless, I wish to make notes for the first time.</summary></entry><entry><title type="html">Discrepency problem of n unit vectors</title><link href="http://localhost:4000/discrete/analysis/2019/04/16/On-the-discrepency-problem-with-n-unit-vectors.html" rel="alternate" type="text/html" title="Discrepency problem of n unit vectors" /><published>2019-04-16T11:21:23+09:00</published><updated>2019-04-16T11:21:23+09:00</updated><id>http://localhost:4000/discrete/analysis/2019/04/16/On%20the%20discrepency%20problem%20with%20n%20unit%20vectors</id><content type="html" xml:base="http://localhost:4000/discrete/analysis/2019/04/16/On-the-discrepency-problem-with-n-unit-vectors.html">&lt;p&gt;Unavalible now.&lt;/p&gt;</content><author><name></name></author><summary type="html">Unavalible now.</summary></entry><entry><title type="html">Power set and the set of indicator functions have the same cardinality</title><link href="http://localhost:4000/math/2019/04/16/Power-set-and-the-indicator-functions-have-the-same-cardinality.html" rel="alternate" type="text/html" title="Power set and the set of indicator functions have the same cardinality" /><published>2019-04-16T11:00:00+09:00</published><updated>2019-04-16T11:00:00+09:00</updated><id>http://localhost:4000/math/2019/04/16/Power%20set%20and%20the%20indicator%20functions%20have%20the%20same%20cardinality</id><content type="html" xml:base="http://localhost:4000/math/2019/04/16/Power-set-and-the-indicator-functions-have-the-same-cardinality.html">&lt;p&gt;This post is the proof of the following statement.&lt;/p&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">This is my first post on my blog, made with jekyll &amp;amp; github pages. Even though this post will remain meaningless, I wish to make notes for the first time.</summary></entry><entry><title type="html">Power set and the set of indicator functions have the same cardinality</title><link href="http://localhost:4000/math/2019/04/16/Power-set-and-the-indicator-functions-have-the-same-cardinality.html" rel="alternate" type="text/html" title="Power set and the set of indicator functions have the same cardinality" /><published>2019-04-16T11:00:00+09:00</published><updated>2019-04-16T11:00:00+09:00</updated><id>http://localhost:4000/math/2019/04/16/Power%20set%20and%20the%20indicator%20functions%20have%20the%20same%20cardinality</id><content type="html" xml:base="http://localhost:4000/math/2019/04/16/Power-set-and-the-indicator-functions-have-the-same-cardinality.html">&lt;p&gt;This post is the proof of the following statement.&lt;/p&gt;
 
 &lt;p&gt;Let &lt;script type=&quot;math/tex&quot;&gt;P(S)&lt;/script&gt; be the set of all subsets of &lt;script type=&quot;math/tex&quot;&gt;S&lt;/script&gt;, and let &lt;script type=&quot;math/tex&quot;&gt;T&lt;/script&gt; be the
 set of all functuins from &lt;script type=&quot;math/tex&quot;&gt;S&lt;/script&gt; to &lt;script type=&quot;math/tex&quot;&gt;\{0,1\}&lt;/script&gt;. Show that &lt;script type=&quot;math/tex&quot;&gt;P(S)&lt;/script&gt; and
