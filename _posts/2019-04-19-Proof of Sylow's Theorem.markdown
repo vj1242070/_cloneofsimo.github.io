@@ -8,14 +8,14 @@ categories: math
 The first thing we learn in number theory is (I actually don't remember
 that well, as it was something like 5 years ago) is probably multiples
 and divisors. From that one naturally arise the question
-of diophantine equations and $$(\mod)$$ arithmetic. One of the thing
+of diophantine equations and $$(\text{mod})$$ arithmetic. One of the thing
 that I remember quite clearly is the fact that one can always think
 of number $$u\in\mathbb{Z}/nm\mathbb{Z}$$, given $$gcd(m,n)=1$$, $$u_{1}\in\mathbb{Z}/n\mathbb{Z}$$,
 
 $$u_{2}\in\mathbb{Z}/m\mathbb{Z}$$ that satisfy
 
 $$
-u_{1}=u(\mod n),u_{2}=u(\mod m)
+u_{1}=u(\text{mod} n),u_{2}=u(\text{mod} m)
 $$
 
 This really seems intuitive, but indeed the similar feeling arise
@@ -32,7 +32,7 @@ Before we go for the proof, one must know the following concepts.
 If you don't know them, go ahead and study them on wikipedia. It
 is nice enough.
 
-###**Conjugacy class of $$a$$**
+### **Conjugacy class of $$a$$**
 
 $$
 C_{a}=\{\text{all }z\in G\text{ | }z=bab^{-1}\text{for some }b\in G\}
@@ -43,7 +43,7 @@ or equal if $$a$$ is different and therefore $$G$$ is disjoint union
 of the distinct $$C_{a}$$s. Their cardinality is known in the following
 way.
 
-###**Centralizer of $$a$$**
+### **Centralizer of $$a$$**
 
 $$
 Z_{a}=\{\text{all }z\in G\text{ | }za=az\}
@@ -52,13 +52,13 @@ $$
 $$Z_{a}$$ is normally a subgroup of $$G$$, therefore $$[G:Z_{a}]$$ is
 well defined. Indeed, $$|C_{a}|=[G:Z_{a}|$$.
 
-###**Center of a Group.**
+### **Center of a Group.**
 
 $$
 Z(G)=\{\text{all }z\in G\text{ | }zb=bz\text{ for all }b\in G\}
 $$
 
-###**First Isomorphism Theorem.**
+### **First Isomorphism Theorem.**
 
 Let $$\phi:G_{1}\rightarrow G_{2}$$be a homomorphism. Then $$\ker(\phi)$$
 is a normal subgroup of $$G_{1}$$and there is an isomorphism of the
@@ -80,7 +80,7 @@ $$
 Now inductively, one can assume that the theorem holds for all group
 with order smaller than $$|G|$$.
 
-##Case 1.
+## Case 1.
 
 If there are some element $$a_{j}$$ that $$gcd(p,[G:Z_{a_{j}}])=1$$,
 then $$v_{p}(|Z_{a_{j}}|)=k$$.
@@ -88,7 +88,7 @@ then $$v_{p}(|Z_{a_{j}}|)=k$$.
 Clearly $$Z_{a_{j}}\neq G$$ therefore $$|Z_{a_{j}}|<|G|$$ , and theorem
 holds.
 
-##Case 2.
+## Case 2.
 
 We are left with the case when all $$[G:Z_{a_{j}}]$$ is multiple of
 $$p$$ for all $$j$$s. This gives $$p|\text{ }|Z(G)|$$. Given that
