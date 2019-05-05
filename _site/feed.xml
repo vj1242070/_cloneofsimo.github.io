@@ -1,4 +1,265 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-04-19T00:56:59+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Simo Ryu’s Blog</title><subtitle>Simo Ryu's Blog. Korea University, Dept of CYDF Seoul Science High School</subtitle><entry><title type="html">Vibration of a Circular Membrane Part 2: Solving the Wave Equation</title><link href="http://localhost:4000/math/2019/04/18/Vibrations-of-a-Circular-Membrane-Part-2.html" rel="alternate" type="text/html" title="Vibration of a Circular Membrane Part 2: Solving the Wave Equation" /><published>2019-04-18T01:21:23+09:00</published><updated>2019-04-18T01:21:23+09:00</updated><id>http://localhost:4000/math/2019/04/18/Vibrations%20of%20a%20Circular%20Membrane%20Part%202</id><content type="html" xml:base="http://localhost:4000/math/2019/04/18/Vibrations-of-a-Circular-Membrane-Part-2.html">&lt;p&gt;Last time we ended with the Laplacian of polar coordinates, namely&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-05-05T21:09:56+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Simo Ryu’s Blog</title><subtitle>Simo Ryu's Blog. Korea University, Dept of CYDF Seoul Science High School</subtitle><entry><title type="html">Trigonometric, Harmonic Series</title><link href="http://localhost:4000/math/2019/05/05/Trigonometric,-Harmonic-series/html" rel="alternate" type="text/html" title="Trigonometric, Harmonic Series " /><published>2019-05-05T01:21:23+09:00</published><updated>2019-05-05T01:21:23+09:00</updated><id>http://localhost:4000/math/2019/05/05/Trigonometric,-Harmonic-series/Trigonometric,%20Harmonic%20series.</id><content type="html" xml:base="http://localhost:4000/math/2019/05/05/Trigonometric,-Harmonic-series/html">&lt;p&gt;Investigating and studying in MSE, people often come across various
+problems related to trigonometric series. Some problems tend to be
+wildly interesting, especially the question that asks rather the sum
+converges or not. e.g.
+&lt;script type=&quot;math/tex&quot;&gt;% &lt;![CDATA[
+\sum_{n=1}^{\infty}\frac{\sin n}{n}&lt;\infty? %]]&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;This is by far the simplest of it’s kind. In fact, the above value
+is so well known that in general,&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\sum_{n=1}^{\infty}\frac{\sin nx}{n}=\frac{\pi-x}{2}&lt;/script&gt;
+
+&lt;p&gt;for &lt;script type=&quot;math/tex&quot;&gt;x\in(0,2\pi)&lt;/script&gt;. This can be proven by simple Fourier transformation.
+Alternatively (and probably the simplest way) one can prove the convergence
+by Dirichlet’s test.&lt;/p&gt;
+
+&lt;p&gt;Also, using the Dirichlet’s test we can prove that&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\sum_{n=1}^{\infty}\frac{\sin n}{n^{\epsilon}}&lt;\infty %]]&gt;&lt;/script&gt;
+
+&lt;p&gt;for all positive real &lt;script type=&quot;math/tex&quot;&gt;\epsilon&lt;/script&gt;.&lt;/p&gt;
+
+&lt;p&gt;Next is the question of convergence of infinite sum&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\sum_{n=1}^{\infty}\frac{\sin n^{2}}{n}&lt;\infty? %]]&gt;&lt;/script&gt;
+
+&lt;p&gt;In fact in this post we will investigate on much more general form.
+However for the sake of motive, let’s begin with above case.&lt;/p&gt;
+
+&lt;p&gt;Abel’s Summation Formula&lt;/p&gt;
+
+&lt;p&gt;Suppose that we thoroughly know about the series &lt;script type=&quot;math/tex&quot;&gt;a_{n}&lt;/script&gt;, so that the
+partial sum &lt;script type=&quot;math/tex&quot;&gt;\sum_{i=1}^{m}a_{i}&lt;/script&gt; is well known. Now suppose that
+we wish to investigate on the following form of sum:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\sum_{n=1}^{m}a_{n}f(n)&lt;/script&gt;
+
+&lt;p&gt;Indeed, there is a way to express the above sum in the sense of &lt;strong&gt;integration
+by parts&lt;/strong&gt;. Denote &lt;script type=&quot;math/tex&quot;&gt;A(t)=\sum_{1\leq i\leq t}a_{t}&lt;/script&gt;. We have&lt;/p&gt;
+
+&lt;h3 id=&quot;abels-summation-formula&quot;&gt;Abel’s summation formula&lt;/h3&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\sum_{n=1}^{m}a_{n}f(n)=A(m)f(m)-\int_{1}^{m}A(t)f'(t)dt&lt;/script&gt;
+
+&lt;p&gt;The proof is actually extremely simple: one can simply notice that&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;a_{m}f(m)+\int_{m-1}^{m}A(t)f'(t)dt=A(m)f(m)-A(m-1)f(m-1)&lt;/script&gt;
+
+&lt;p&gt;Specifically, let &lt;script type=&quot;math/tex&quot;&gt;f(n)=1/n&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;a_{n}=\sin n^{2}&lt;/script&gt;,&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\sum_{n=1}^{\infty}\frac{\sin n^{2}}{n}=\lim_{m\rightarrow\infty}\sum_{n=1}^{m}\frac{\sin n^{2}}{n}=\lim_{m\rightarrow\infty}\frac{A(m)}{m}+\int_{1}^{m}\frac{A(t)}{t^{2}}dt&lt;/script&gt;
+
+&lt;p&gt;So, the problem of rather the above sum is convergent or not is actually
+equivalent to asking rather the following limit exists&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\frac{A(m)}{m},\int_{1}^{m}\frac{A(t)}{t^{2}}dt&lt;/script&gt;
+
+&lt;p&gt;where &lt;script type=&quot;math/tex&quot;&gt;A(t)=\sum_{1\leq i\leq t}a_{t}&lt;/script&gt;.&lt;/p&gt;
+
+&lt;p&gt;Intuitively above sum is bounded somewhere with &lt;script type=&quot;math/tex&quot;&gt;O(\sqrt{t})&lt;/script&gt;, and
+indeed, that is the case. By using the Weyl’s bound,(which we will
+prove later) the result is straightforward.&lt;/p&gt;
+
+&lt;p&gt;Now here is the cool part. After considering these series, it is natural
+to think of the following series.&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\sum_{n=1}^{\infty}\frac{\sin n^{2}}{n^{\alpha}}&lt;/script&gt;
+
+&lt;p&gt;However, this sum is not convergent for all &lt;script type=&quot;math/tex&quot;&gt;% &lt;![CDATA[
+\alpha&lt;0.29... %]]&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;Suppose that indeed above sum is convergent. This implies for every
+&lt;script type=&quot;math/tex&quot;&gt;m,H&lt;/script&gt;, one has&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\sum_{n=m+1}^{m+H}\frac{\sin n^{2}}{n^{\alpha}}&lt;/script&gt;
+
+&lt;p&gt;is bounded. Moreover, for some positive &lt;script type=&quot;math/tex&quot;&gt;\delta&lt;/script&gt; if &lt;script type=&quot;math/tex&quot;&gt;H=m^{1/(2-\alpha)-\delta}&lt;/script&gt;,&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\sum_{n=m+1}^{m+H}\frac{\sin n^{2}}{(m+1)^{\alpha}}&lt;/script&gt;
+
+&lt;p&gt;is also bounded as &lt;script type=&quot;math/tex&quot;&gt;o(1)&lt;/script&gt;, because *&lt;/p&gt;
+
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;|\sum_{n=m+1}^{m+H}\frac{\sin n^{2}}{n^{\alpha}}-\sum_{n=m+1}^{m+H}\frac{\sin n^{2}}{(m+1)^{\alpha}}|=|\sum_{n=1}^{H}\frac{\sin(m+n)^{2}}{(m+1)^{\alpha}}((1+\frac{n-1}{m+1})^{-\alpha}-1)|\sim|\sum_{n=1}^{H}\frac{\sin(m+n)^{2}}{(m+n)^{\alpha}}(-\alpha\frac{n-1}{(m+1)})|&lt;/script&gt;
+&lt;script type=&quot;math/tex&quot;&gt;=O(H^{1-\alpha})O(H)/(m+1)=o(1)&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;On the other hand,
+&lt;script type=&quot;math/tex&quot;&gt;|\sum_{n=m+1}^{m+H}\sin n^{2}|&gt;H^{1/2}&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;holds infinitely often for all &lt;script type=&quot;math/tex&quot;&gt;\epsilon&gt;0&lt;/script&gt;. We will prove this later
+on. Thus for large enough &lt;script type=&quot;math/tex&quot;&gt;m&lt;/script&gt;,&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\frac{|\sum_{n=m+1}^{m+H}\sin n^{2}|}{(m+1)^{\alpha}}&gt;\frac{H^{1/2-\epsilon}}{(m+1)^{\alpha}}=m^{1/(4-2\alpha)-\alpha-\epsilon_{2}}&gt;1&lt;/script&gt;
+
+&lt;p&gt;which is not &lt;script type=&quot;math/tex&quot;&gt;o(1)&lt;/script&gt;. Thus we are done.&lt;/p&gt;
+
+&lt;h3 id=&quot;discrete-gauss-summations&quot;&gt;Discrete Gauss summations&lt;/h3&gt;
+
+&lt;p&gt;Now we are left to prove that discrete gauss sums, have fluctuation
+of about &lt;script type=&quot;math/tex&quot;&gt;\sqrt{N}&lt;/script&gt; infinitely often. This is intuitively true, because
+sum of &lt;script type=&quot;math/tex&quot;&gt;N&lt;/script&gt; random variables tends to have positive probability to
+be&lt;/p&gt;
+
+&lt;p&gt;greater than &lt;script type=&quot;math/tex&quot;&gt;O(\sqrt{N})&lt;/script&gt;, even sometimes greater than&lt;script type=&quot;math/tex&quot;&gt;O(\sqrt{N\log\log N})&lt;/script&gt;.
+Sketch of the proof goes something like this, we first prove that
+for irrational &lt;script type=&quot;math/tex&quot;&gt;\beta&lt;/script&gt;,&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;|\sum_{n=m+1}^{m+H}e^{2\pi i\beta n^{2}}|&gt;\sqrt{H}&lt;/script&gt;
+
+&lt;p&gt;infinitely often, for fixed &lt;script type=&quot;math/tex&quot;&gt;N&lt;/script&gt; and variable &lt;script type=&quot;math/tex&quot;&gt;m,&lt;/script&gt; ranging with constraint
+that &lt;script type=&quot;math/tex&quot;&gt;H=m^{1/(2-\alpha)-\delta}.&lt;/script&gt; Let’s just assume that &lt;script type=&quot;math/tex&quot;&gt;% &lt;![CDATA[
+H^{\frac{1}{1/(2-\alpha)-\delta}}=D,D&lt;m&lt;2D+1 %]]&gt;&lt;/script&gt;
+. Define &lt;script type=&quot;math/tex&quot;&gt;X_{1},X_{2},\cdots,X_{H}&lt;/script&gt; as &lt;script type=&quot;math/tex&quot;&gt;X_{n}(m):=e^{2\pi i\beta(n+m)^{2}}&lt;/script&gt;.&lt;/p&gt;
+
+&lt;p&gt;One can see that&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\mathbb{E}(e^{2\pi i\beta n})=\frac{\sum_{m=D+1}^{2D}e^{2\pi i\beta n}}{D}=O(1/D)\text{ (Dirichlet kernel)}&lt;/script&gt;
+
+&lt;p&gt;Now we wish to calculate the variance of the sum &lt;script type=&quot;math/tex&quot;&gt;|X_{1}+X_{2}+\cdots+X_{H}|.&lt;/script&gt;
+For a moment let’s suppose that two variable &lt;script type=&quot;math/tex&quot;&gt;X_{i}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;X_{j}&lt;/script&gt;
+is independent (or nearly independent). This gives&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+V(|\sum_{n=1}^{H}X_{n}|^{2})=\sum_{n=1}^{H}V(|X_{n}|^{2})+\sum_{1\leq u&lt;v\leq H}V(X_{u}\overline{X_{v}}+\overline{X_{u}}X_{v})=\sum_{1\leq u&lt;v\leq H}\mathbb{E}(X_{u}^{2}\overline{X_{v}^{2}}+\overline{X_{u}^{2}}X_{v}^{2}+2)-\mathbb{E}(X_{u}\overline{X_{v}}+\overline{X_{u}}X_{v})^{2} %]]&gt;&lt;/script&gt;
+
+&lt;p&gt;Indeed, given that &lt;script type=&quot;math/tex&quot;&gt;\mathbb{E}(X_{a}\overline{X_{b}})=O(1/D),&lt;/script&gt;we
+have&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;V(|\sum_{n=1}^{H}X_{n}|^{2})=H(H-1)(1+O(1/D))\sim H^{2}&lt;/script&gt;
+
+&lt;p&gt;Therefore we are left to prove that &lt;script type=&quot;math/tex&quot;&gt;X_{a}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;X_{b}&lt;/script&gt; has small
+covariance. More precisely,&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\text{cov}(X_{u}\overline{X_{v}}+\overline{X_{u}}X_{v},X_{w}\overline{X_{r}}+\overline{X_{w}}X_{r})=\mathbb{E}((X_{u}\overline{X_{v}}+\overline{X_{u}}X_{v})(X_{w}\overline{X_{r}}+\overline{X_{w}}X_{r}))-\mathbb{E}(X_{w}\overline{X_{r}}+\overline{X_{w}}X_{r})\mathbb{E}(X_{u}\overline{X_{v}}+\overline{X_{u}}X_{v})=O(1/D)&lt;/script&gt;
+
+&lt;p&gt;for arbitrary (not necessarily distinct) &lt;script type=&quot;math/tex&quot;&gt;u,v,w,r&lt;/script&gt;.&lt;/p&gt;
+
+&lt;p&gt;This is almost trivial from the fact that again, &lt;script type=&quot;math/tex&quot;&gt;\mathbb{E}(X_{a}\overline{X_{b}})=O(1/D)&lt;/script&gt;
+and linearity of expectation. Therefore we have&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+V(|\sum_{n=1}^{H}X_{n}|^{2})=\sum_{n=1}^{H}V(|X_{n}|^{2})+\sum_{1\leq u&lt;v\leq H}V(X_{u}\overline{X_{v}}+\overline{X_{u}}X_{v})+\sum_{r,u\neq v}\text{cov}(X_{r}\overline{X_{r}},X_{u}\overline{X_{v}}+\overline{X_{u}}X_{v}) %]]&gt;&lt;/script&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;+\sum_{u\neq v,w\neq r}\text{cov}(X_{u}\overline{X_{v}}+\overline{X_{u}}X_{v},X_{w}\overline{X_{r}}+\overline{X_{w}}X_{r})+\sum_{u\neq v}\text{cov}(X_{u}\overline{X_{u}},X_{v}\overline{X_{v}})&lt;/script&gt;
+
+&lt;p&gt;From the above argument, all the covariance part is really just of
+&lt;script type=&quot;math/tex&quot;&gt;O(1/D)&lt;/script&gt;, and the number of summations is of function &lt;script type=&quot;math/tex&quot;&gt;H&lt;/script&gt;, therefore
+is ignorable.&lt;/p&gt;
+
+&lt;p&gt;(The last summation count is &lt;script type=&quot;math/tex&quot;&gt;O(H^{4}).&lt;/script&gt;This implies that the total
+value is &lt;script type=&quot;math/tex&quot;&gt;V(|\sum X_{n}|)=H^{2}+O(H^{4}/D)=H^{2}(1+o(1)))&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;Finally, we have that&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\mathbb{E}(|\sum_{n=1}^{H}X_{n}|^{4})&gt;V(|\sum_{n=1}^{H}X_{n}|^{2})=H^{2}(1+o(1))&lt;/script&gt;
+
+&lt;p&gt;Meaning that&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;|\sum_{n=m+1}^{m+H}e^{2\pi i\beta n^{2}}|&gt;\sqrt{H}&lt;/script&gt;
+
+&lt;p&gt;infinitely often, thus we have the final result.&lt;/p&gt;
+
+&lt;p&gt;As I finish off, notice that at * one can expect cancellation to
+happen with &lt;script type=&quot;math/tex&quot;&gt;O(H^{1/2})&lt;/script&gt; leftovers. If that is the case, one can reduce
+&lt;script type=&quot;math/tex&quot;&gt;\alpha&lt;/script&gt; to &lt;script type=&quot;math/tex&quot;&gt;0.5-\epsilon&lt;/script&gt;. I think I’ll leave this as a conjecture.&lt;/p&gt;</content><author><name></name></author><summary type="html">Investigating and studying in MSE, people often come across various problems related to trigonometric series. Some problems tend to be wildly interesting, especially the question that asks rather the sum converges or not. e.g.</summary></entry><entry><title type="html">Proof of Sylow’s First Theorem</title><link href="http://localhost:4000/math/2019/04/19/Proof-of-Sylow's-Theorem.html" rel="alternate" type="text/html" title="Proof of Sylow's First Theorem" /><published>2019-04-19T01:21:23+09:00</published><updated>2019-04-19T01:21:23+09:00</updated><id>http://localhost:4000/math/2019/04/19/Proof%20of%20Sylow's%20Theorem</id><content type="html" xml:base="http://localhost:4000/math/2019/04/19/Proof-of-Sylow's-Theorem.html">&lt;p&gt;The first thing we learn in number theory is (I actually don’t remember
+that well, as it was something like 5 years ago) is probably multiples
+and divisors. From that one naturally arise the question
+of diophantine equations and &lt;script type=&quot;math/tex&quot;&gt;(\text{mod})&lt;/script&gt; arithmetic. One of the thing
+that I remember quite clearly is the fact that one can always think
+of number &lt;script type=&quot;math/tex&quot;&gt;u\in\mathbb{Z}/nm\mathbb{Z}&lt;/script&gt;, given &lt;script type=&quot;math/tex&quot;&gt;gcd(m,n)=1&lt;/script&gt;, &lt;script type=&quot;math/tex&quot;&gt;u_{1}\in\mathbb{Z}/n\mathbb{Z}&lt;/script&gt;,&lt;/p&gt;
+
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;u_{2}\in\mathbb{Z}/m\mathbb{Z}&lt;/script&gt; that satisfy&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;u_{1}=u(\text{mod} n),u_{2}=u(\text{mod} m)&lt;/script&gt;
+
+&lt;p&gt;This really seems intuitive, but indeed the similar feeling arise
+when we study ‘‘Sylow’s Theorem’’. We will post two different proof
+of the theorem in this post and the next. The context is based on the textbook
+by &lt;strong&gt;Victor P Snaith&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Sylow’s Theorem:&lt;/p&gt;
+
+&lt;p&gt;Let &lt;script type=&quot;math/tex&quot;&gt;G&lt;/script&gt; be a finite group with order&lt;script type=&quot;math/tex&quot;&gt;p^{k}m&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;gcd(p,m)=1&lt;/script&gt;.
+Then subgroup &lt;script type=&quot;math/tex&quot;&gt;H&lt;/script&gt; of &lt;script type=&quot;math/tex&quot;&gt;G&lt;/script&gt; exists that &lt;script type=&quot;math/tex&quot;&gt;|H|=p^{k}&lt;/script&gt;.&lt;/p&gt;
+
+&lt;p&gt;Before we go for the proof, one must know the following concepts.
+If you don’t know them, go ahead and study them on wikipedia. It
+is nice enough.&lt;/p&gt;
+
+&lt;h3 id=&quot;conjugacy-class-of-a&quot;&gt;&lt;strong&gt;Conjugacy class of &lt;script type=&quot;math/tex&quot;&gt;a&lt;/script&gt;&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;C_{a}=\{\text{all }z\in G\text{ | }z=bab^{-1}\text{for some }b\in G\}&lt;/script&gt;
+
+&lt;p&gt;Conjugacy class of a is not always a group. Also, they are disjoint
+or equal if &lt;script type=&quot;math/tex&quot;&gt;a&lt;/script&gt; is different and therefore &lt;script type=&quot;math/tex&quot;&gt;G&lt;/script&gt; is disjoint union
+of the distinct &lt;script type=&quot;math/tex&quot;&gt;C_{a}&lt;/script&gt;s. Their cardinality is known in the following
+way.&lt;/p&gt;
+
+&lt;h3 id=&quot;centralizer-of-a&quot;&gt;&lt;strong&gt;Centralizer of &lt;script type=&quot;math/tex&quot;&gt;a&lt;/script&gt;&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;Z_{a}=\{\text{all }z\in G\text{ | }za=az\}&lt;/script&gt;
+
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;Z_{a}&lt;/script&gt; is normally a subgroup of &lt;script type=&quot;math/tex&quot;&gt;G&lt;/script&gt;, therefore &lt;script type=&quot;math/tex&quot;&gt;[G:Z_{a}]&lt;/script&gt; is
+well defined. Indeed, &lt;script type=&quot;math/tex&quot;&gt;|C_{a}|=[G:Z_{a}|&lt;/script&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;center-of-a-group&quot;&gt;&lt;strong&gt;Center of a Group.&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;Z(G)=\{\text{all }z\in G\text{ | }zb=bz\text{ for all }b\in G\}&lt;/script&gt;
+
+&lt;h3 id=&quot;first-isomorphism-theorem&quot;&gt;&lt;strong&gt;First Isomorphism Theorem.&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;Let &lt;script type=&quot;math/tex&quot;&gt;\phi:G_{1}\rightarrow G_{2}&lt;/script&gt;be a homomorphism. Then &lt;script type=&quot;math/tex&quot;&gt;\ker(\phi)&lt;/script&gt;
+is a normal subgroup of &lt;script type=&quot;math/tex&quot;&gt;G_{1}&lt;/script&gt;and there is an isomorphism of the
+form&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\Phi:G_{1}/\ker(\phi)\longrightarrow^{\cong}\text{im}(\phi)&lt;/script&gt;
+
+&lt;p&gt;For all &lt;script type=&quot;math/tex&quot;&gt;a\in G&lt;/script&gt; that do not lie in &lt;script type=&quot;math/tex&quot;&gt;Z(G)&lt;/script&gt;, denote them &lt;script type=&quot;math/tex&quot;&gt;a_{1},\cdots,a_{v}.&lt;/script&gt;
+One can see that those that lie on &lt;script type=&quot;math/tex&quot;&gt;Z(G)&lt;/script&gt; have conjugacy class with
+element only on themselves, thus &lt;script type=&quot;math/tex&quot;&gt;|C_{a}|=1&lt;/script&gt;. This means&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;|G|=|Z(G)|+\sum_{j=1}^{v}[G:Z_{a_{j}}]&lt;/script&gt;
+
+&lt;p&gt;Now inductively, one can assume that the theorem holds for all group
+with order smaller than &lt;script type=&quot;math/tex&quot;&gt;|G|&lt;/script&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;case-1&quot;&gt;Case 1.&lt;/h2&gt;
+
+&lt;p&gt;If there are some element &lt;script type=&quot;math/tex&quot;&gt;a_{j}&lt;/script&gt; that &lt;script type=&quot;math/tex&quot;&gt;gcd(p,[G:Z_{a_{j}}])=1&lt;/script&gt;,
+then &lt;script type=&quot;math/tex&quot;&gt;v_{p}(|Z_{a_{j}}|)=k&lt;/script&gt;.&lt;/p&gt;
+
+&lt;p&gt;Clearly &lt;script type=&quot;math/tex&quot;&gt;Z_{a_{j}}\neq G&lt;/script&gt; therefore &lt;script type=&quot;math/tex&quot;&gt;% &lt;![CDATA[
+|Z_{a_{j}}|&lt;|G| %]]&gt;&lt;/script&gt; , and theorem
+holds.&lt;/p&gt;
+
+&lt;h2 id=&quot;case-2&quot;&gt;Case 2.&lt;/h2&gt;
+
+&lt;p&gt;We are left with the case when all &lt;script type=&quot;math/tex&quot;&gt;[G:Z_{a_{j}}]&lt;/script&gt; is multiple of
+&lt;script type=&quot;math/tex&quot;&gt;p&lt;/script&gt; for all &lt;script type=&quot;math/tex&quot;&gt;j&lt;/script&gt;s. This gives &lt;script type=&quot;math/tex&quot;&gt;p|\text{ }|Z(G)|&lt;/script&gt;. Given that
+&lt;script type=&quot;math/tex&quot;&gt;Z(G)&lt;/script&gt; is finite abelian, one can use Cauchy’s theorem to find element
+&lt;script type=&quot;math/tex&quot;&gt;y\in Z(G)&lt;/script&gt; with order &lt;script type=&quot;math/tex&quot;&gt;p&lt;/script&gt;.&lt;/p&gt;
+
+&lt;p&gt;Let &lt;script type=&quot;math/tex&quot;&gt;N&lt;/script&gt; be the cyclic group generated by &lt;script type=&quot;math/tex&quot;&gt;y&lt;/script&gt;, one can see that &lt;script type=&quot;math/tex&quot;&gt;N\lhd G&lt;/script&gt;,
+thus &lt;script type=&quot;math/tex&quot;&gt;|G/N|=|G|/p&lt;/script&gt;. By induction, &lt;script type=&quot;math/tex&quot;&gt;G/N&lt;/script&gt; has a subgroup &lt;script type=&quot;math/tex&quot;&gt;J&lt;/script&gt; that
+has order divisible by &lt;script type=&quot;math/tex&quot;&gt;p^{k-1}.&lt;/script&gt; Consider the homomorphism&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\pi:G\rightarrow G/N,\pi(a)=Na&lt;/script&gt;
+
+&lt;p&gt;and also&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;U=\{z\in G\text{ | }\pi(z)\in J\}&lt;/script&gt;
+
+&lt;p&gt;Notice that &lt;script type=&quot;math/tex&quot;&gt;U&lt;/script&gt; is a subgroup of &lt;script type=&quot;math/tex&quot;&gt;G&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;N&lt;/script&gt; is the kernel of &lt;script type=&quot;math/tex&quot;&gt;\pi:U\rightarrow J&lt;/script&gt;.
+This is because if there is an element &lt;script type=&quot;math/tex&quot;&gt;r\notin N&lt;/script&gt; that is &lt;script type=&quot;math/tex&quot;&gt;\pi(r)=N&lt;/script&gt;,
+this means &lt;script type=&quot;math/tex&quot;&gt;r=y^{n}&lt;/script&gt; for some &lt;script type=&quot;math/tex&quot;&gt;n\in\mathbb{Z}&lt;/script&gt;, which is again in
+&lt;script type=&quot;math/tex&quot;&gt;N&lt;/script&gt;. By the first isomorphism theorem, there is an isomorphism &lt;script type=&quot;math/tex&quot;&gt;U/N\cong J&lt;/script&gt;. This means that&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;|U|=|N||U/N|=|N||J|=p\cdot p^{k-1}=p^{k}&lt;/script&gt;
+
+&lt;p&gt;which is the result we want. The induction starts with &lt;script type=&quot;math/tex&quot;&gt;G=\{e\}&lt;/script&gt;,
+which is trivial.&lt;/p&gt;</content><author><name></name></author><summary type="html">The first thing we learn in number theory is (I actually don’t remember that well, as it was something like 5 years ago) is probably multiples and divisors. From that one naturally arise the question of diophantine equations and arithmetic. One of the thing that I remember quite clearly is the fact that one can always think of number , given , ,</summary></entry><entry><title type="html">Vibration of a Circular Membrane Part 2: Solving the Wave Equation</title><link href="http://localhost:4000/math/2019/04/18/Vibrations-of-a-Circular-Membrane-Part-2.html" rel="alternate" type="text/html" title="Vibration of a Circular Membrane Part 2: Solving the Wave Equation" /><published>2019-04-18T01:21:23+09:00</published><updated>2019-04-18T01:21:23+09:00</updated><id>http://localhost:4000/math/2019/04/18/Vibrations%20of%20a%20Circular%20Membrane%20Part%202</id><content type="html" xml:base="http://localhost:4000/math/2019/04/18/Vibrations-of-a-Circular-Membrane-Part-2.html">&lt;p&gt;Last time we ended with the Laplacian of polar coordinates, namely&lt;/p&gt;
 
 &lt;script type=&quot;math/tex; mode=display&quot;&gt;\Delta u(x,y)=\nabla^{2}u=\frac{\partial^{2}u}{\partial x^{2}}+\frac{\partial^{2}u}{\partial y^{2}}=\frac{\partial^{2}u}{\partial r^{2}}+\frac{1}{r}\frac{\partial u}{\partial r}+\frac{1}{r^{2}}\frac{\partial^{2}u}{\partial\theta^{2}}&lt;/script&gt;
 

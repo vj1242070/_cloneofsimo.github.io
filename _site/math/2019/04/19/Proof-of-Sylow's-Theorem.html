@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.0 -->
+<title>Proof of Sylow’s First Theorem | Simo Ryu’s Blog</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="Proof of Sylow’s First Theorem" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The first thing we learn in number theory is (I actually don’t remember that well, as it was something like 5 years ago) is probably multiples and divisors. From that one naturally arise the question of diophantine equations and arithmetic. One of the thing that I remember quite clearly is the fact that one can always think of number , given , ," />
+<meta property="og:description" content="The first thing we learn in number theory is (I actually don’t remember that well, as it was something like 5 years ago) is probably multiples and divisors. From that one naturally arise the question of diophantine equations and arithmetic. One of the thing that I remember quite clearly is the fact that one can always think of number , given , ," />
+<link rel="canonical" href="http://localhost:4000/math/2019/04/19/Proof-of-Sylow's-Theorem.html" />
+<meta property="og:url" content="http://localhost:4000/math/2019/04/19/Proof-of-Sylow's-Theorem.html" />
+<meta property="og:site_name" content="Simo Ryu’s Blog" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-04-19T01:21:23+09:00" />
+<script type="application/ld+json">
+{"url":"http://localhost:4000/math/2019/04/19/Proof-of-Sylow's-Theorem.html","headline":"Proof of Sylow’s First Theorem","dateModified":"2019-04-19T01:21:23+09:00","datePublished":"2019-04-19T01:21:23+09:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/math/2019/04/19/Proof-of-Sylow's-Theorem.html"},"description":"The first thing we learn in number theory is (I actually don’t remember that well, as it was something like 5 years ago) is probably multiples and divisors. From that one naturally arise the question of diophantine equations and arithmetic. One of the thing that I remember quite clearly is the fact that one can always think of number , given , ,","@type":"BlogPosting","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Simo Ryu's Blog" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Simo Ryu&#39;s Blog</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Proof of Sylow&#39;s First Theorem</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2019-04-19T01:21:23+09:00" itemprop="datePublished">Apr 19, 2019
+      </time></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p>The first thing we learn in number theory is (I actually don’t remember
+that well, as it was something like 5 years ago) is probably multiples
+and divisors. From that one naturally arise the question
+of diophantine equations and <script type="math/tex">(\text{mod})</script> arithmetic. One of the thing
+that I remember quite clearly is the fact that one can always think
+of number <script type="math/tex">u\in\mathbb{Z}/nm\mathbb{Z}</script>, given <script type="math/tex">gcd(m,n)=1</script>, <script type="math/tex">u_{1}\in\mathbb{Z}/n\mathbb{Z}</script>,</p>
+
+<p><script type="math/tex">u_{2}\in\mathbb{Z}/m\mathbb{Z}</script> that satisfy</p>
+
+<script type="math/tex; mode=display">u_{1}=u(\text{mod} n),u_{2}=u(\text{mod} m)</script>
+
+<p>This really seems intuitive, but indeed the similar feeling arise
+when we study ‘‘Sylow’s Theorem’’. We will post two different proof
+of the theorem in this post and the next. The context is based on the textbook
+by <strong>Victor P Snaith</strong></p>
+
+<p>Sylow’s Theorem:</p>
+
+<p>Let <script type="math/tex">G</script> be a finite group with order<script type="math/tex">p^{k}m</script> and <script type="math/tex">gcd(p,m)=1</script>.
+Then subgroup <script type="math/tex">H</script> of <script type="math/tex">G</script> exists that <script type="math/tex">|H|=p^{k}</script>.</p>
+
+<p>Before we go for the proof, one must know the following concepts.
+If you don’t know them, go ahead and study them on wikipedia. It
+is nice enough.</p>
+
+<h3 id="conjugacy-class-of-a"><strong>Conjugacy class of <script type="math/tex">a</script></strong></h3>
+
+<script type="math/tex; mode=display">C_{a}=\{\text{all }z\in G\text{ | }z=bab^{-1}\text{for some }b\in G\}</script>
+
+<p>Conjugacy class of a is not always a group. Also, they are disjoint
+or equal if <script type="math/tex">a</script> is different and therefore <script type="math/tex">G</script> is disjoint union
+of the distinct <script type="math/tex">C_{a}</script>s. Their cardinality is known in the following
+way.</p>
+
+<h3 id="centralizer-of-a"><strong>Centralizer of <script type="math/tex">a</script></strong></h3>
+
+<script type="math/tex; mode=display">Z_{a}=\{\text{all }z\in G\text{ | }za=az\}</script>
+
+<p><script type="math/tex">Z_{a}</script> is normally a subgroup of <script type="math/tex">G</script>, therefore <script type="math/tex">[G:Z_{a}]</script> is
+well defined. Indeed, <script type="math/tex">|C_{a}|=[G:Z_{a}|</script>.</p>
+
+<h3 id="center-of-a-group"><strong>Center of a Group.</strong></h3>
+
+<script type="math/tex; mode=display">Z(G)=\{\text{all }z\in G\text{ | }zb=bz\text{ for all }b\in G\}</script>
+
+<h3 id="first-isomorphism-theorem"><strong>First Isomorphism Theorem.</strong></h3>
+
+<p>Let <script type="math/tex">\phi:G_{1}\rightarrow G_{2}</script>be a homomorphism. Then <script type="math/tex">\ker(\phi)</script>
+is a normal subgroup of <script type="math/tex">G_{1}</script>and there is an isomorphism of the
+form</p>
+
+<script type="math/tex; mode=display">\Phi:G_{1}/\ker(\phi)\longrightarrow^{\cong}\text{im}(\phi)</script>
+
+<p>For all <script type="math/tex">a\in G</script> that do not lie in <script type="math/tex">Z(G)</script>, denote them <script type="math/tex">a_{1},\cdots,a_{v}.</script>
+One can see that those that lie on <script type="math/tex">Z(G)</script> have conjugacy class with
+element only on themselves, thus <script type="math/tex">|C_{a}|=1</script>. This means</p>
+
+<script type="math/tex; mode=display">|G|=|Z(G)|+\sum_{j=1}^{v}[G:Z_{a_{j}}]</script>
+
+<p>Now inductively, one can assume that the theorem holds for all group
+with order smaller than <script type="math/tex">|G|</script>.</p>
+
+<h2 id="case-1">Case 1.</h2>
+
+<p>If there are some element <script type="math/tex">a_{j}</script> that <script type="math/tex">gcd(p,[G:Z_{a_{j}}])=1</script>,
+then <script type="math/tex">v_{p}(|Z_{a_{j}}|)=k</script>.</p>
+
+<p>Clearly <script type="math/tex">Z_{a_{j}}\neq G</script> therefore <script type="math/tex">% <![CDATA[
+|Z_{a_{j}}|<|G| %]]></script> , and theorem
+holds.</p>
+
+<h2 id="case-2">Case 2.</h2>
+
+<p>We are left with the case when all <script type="math/tex">[G:Z_{a_{j}}]</script> is multiple of
+<script type="math/tex">p</script> for all <script type="math/tex">j</script>s. This gives <script type="math/tex">p|\text{ }|Z(G)|</script>. Given that
+<script type="math/tex">Z(G)</script> is finite abelian, one can use Cauchy’s theorem to find element
+<script type="math/tex">y\in Z(G)</script> with order <script type="math/tex">p</script>.</p>
+
+<p>Let <script type="math/tex">N</script> be the cyclic group generated by <script type="math/tex">y</script>, one can see that <script type="math/tex">N\lhd G</script>,
+thus <script type="math/tex">|G/N|=|G|/p</script>. By induction, <script type="math/tex">G/N</script> has a subgroup <script type="math/tex">J</script> that
+has order divisible by <script type="math/tex">p^{k-1}.</script> Consider the homomorphism</p>
+
+<script type="math/tex; mode=display">\pi:G\rightarrow G/N,\pi(a)=Na</script>
+
+<p>and also</p>
+
+<script type="math/tex; mode=display">U=\{z\in G\text{ | }\pi(z)\in J\}</script>
+
+<p>Notice that <script type="math/tex">U</script> is a subgroup of <script type="math/tex">G</script> and <script type="math/tex">N</script> is the kernel of <script type="math/tex">\pi:U\rightarrow J</script>.
+This is because if there is an element <script type="math/tex">r\notin N</script> that is <script type="math/tex">\pi(r)=N</script>,
+this means <script type="math/tex">r=y^{n}</script> for some <script type="math/tex">n\in\mathbb{Z}</script>, which is again in
+<script type="math/tex">N</script>. By the first isomorphism theorem, there is an isomorphism <script type="math/tex">U/N\cong J</script>. This means that</p>
+
+<script type="math/tex; mode=display">|U|=|N||U/N|=|N||J|=p\cdot p^{k-1}=p^{k}</script>
+
+<p>which is the result we want. The induction starts with <script type="math/tex">G=\{e\}</script>,
+which is trivial.</p>
+
+  </div><a class="u-url" href="/math/2019/04/19/Proof-of-Sylow's-Theorem.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Simo Ryu&#39;s Blog</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Simo Ryu&#39;s Blog</li><li><a class="u-email" href="mailto:cloneofsimo@gmail.com">cloneofsimo@gmail.com</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>Simo Ryu&#39;s Blog. Korea University, Dept of CYDF Seoul Science High School</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
