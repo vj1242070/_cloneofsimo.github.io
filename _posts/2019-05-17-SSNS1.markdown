@@ -1,0 +1,90 @@
+---
+layout: post
+title:  "Strange Thing with a Nice solution_01"
+date:   2019-05-17 01:21:23 +0900
+categories: math
+---
+
+This Sunday I was asked to evaluate the following integral, by some
+random guy at the internet. Given $$r>0$$ and $$n\in\mathbb{N}$$, evaluate
+
+$$
+F(n)=\int_{0}^{2\pi}e^{r\cos t}\cos(r\sin t)\cos ntdt
+$$
+
+Which is extremely strange, given that $$r\sin t$$ is within the cosine.
+Also the fact that we are evaluating with term $$e^{r\cos t}$$multiplied
+makes it even stranger.
+
+As mathematics is as it is, strange things added together usually makes
+less strange things. Indeed, the value of the above definite integral
+is $$\pi r^{n}/n!$$. In this post
+
+we study why. First, we let $$f(t)=e^{r\cos t}\cos(r\sin t)$$, then,
+
+$$
+\frac{1}{\pi}\int_{0}^{2\pi}f(t)\cos ntdt
+$$
+
+is clearly the Fourier coefficients of the function $$f$$, because
+period of $$f$$ is $$2\pi$$. Therefore we have
+
+$$
+f(x)=\sum_{n=1}^{\infty}\frac{1}{\pi}F(n)\cos nx+C
+$$
+
+(1) Now we look at the function with Taylor series perspective. we
+define the function $$g:\mathbb{R}\rightarrow\mathbb{C}$$ as
+
+$$
+g(x)=e^{re^{ix}}
+$$
+
+. Real part of $$g$$ is actually $$f$$! one can substitute $$e^{ix}=u$$
+to have
+
+$$
+g(x)=e^{ru}=\sum_{n=0}^{\infty}\frac{r^{n}}{n!}u^{n}=1+\sum_{n=1}^{\infty}\frac{r^{n}}{n!}e^{nix}=1+\sum_{n=1}^{\infty}\frac{r^{n}}{n!}(\cos nx+i\sin nx)
+$$
+
+Again, the real part of $$g$$ is $$f$$, therefore
+
+$$
+f(x)=1+\sum_{n=1}^{\infty}\frac{r^{n}}{n!}\cos nx
+$$
+
+Comparing it with (1), we finally get
+
+$$
+F(n)=\frac{\pi r^{n}}{n!}
+$$
+
+By Riemann-Lebesgue theorem, we expect that the above integral would
+go to 0 as $$n$$ goes to infinity. The result is consistent with the
+theorem, which is a good sign.
+
+Also one can immediately get from the fact that $$C=1$$,
+$$
+\int_{0}^{2\pi}e^{r\cos t}\cos(r\sin t)dt=2\pi
+$$
+
+Taking $$r=1$$ and substitution, we have
+
+$$
+\int_{0}^{1}\frac{e^{x}\cos\sqrt{1-x^{2}}}{\sqrt{1-x^{2}}}dx=\pi
+$$
+
+This itself is really strange, and fairly nontrivial fact. I really
+just cannot find another way to integrate this function.
+
+Also, using another substitution, one can get
+
+$$
+\int_{0}^{1}\frac{\cos x\cosh\sqrt{1-x^{2}}}{\sqrt{1-x^{2}}}dx=\frac{\pi}{2}
+$$
+
+Just for fun, note that similar integral is;
+
+$$
+\int_{0}^{1}\frac{\cos x}{\sqrt{1-x^{2}}}dx=\frac{\pi J_{0}(1)}{2}
+$$

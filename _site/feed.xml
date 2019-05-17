@@ -1,4 +1,64 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-05-05T21:09:56+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Simo Ryu’s Blog</title><subtitle>Simo Ryu's Blog. Korea University, Dept of CYDF Seoul Science High School</subtitle><entry><title type="html">Trigonometric, Harmonic Series</title><link href="http://localhost:4000/math/2019/05/05/Trigonometric,-Harmonic-series/html" rel="alternate" type="text/html" title="Trigonometric, Harmonic Series " /><published>2019-05-05T01:21:23+09:00</published><updated>2019-05-05T01:21:23+09:00</updated><id>http://localhost:4000/math/2019/05/05/Trigonometric,-Harmonic-series/Trigonometric,%20Harmonic%20series.</id><content type="html" xml:base="http://localhost:4000/math/2019/05/05/Trigonometric,-Harmonic-series/html">&lt;p&gt;Investigating and studying in MSE, people often come across various
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-05-17T14:59:19+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Simo Ryu’s Blog</title><subtitle>Simo Ryu's Blog. Korea University, Dept of CYDF Seoul Science High School</subtitle><entry><title type="html">Strange Thing with a Nice solution_01</title><link href="http://localhost:4000/math/2019/05/17/SSNS1.html" rel="alternate" type="text/html" title="Strange Thing with a Nice solution_01" /><published>2019-05-17T01:21:23+09:00</published><updated>2019-05-17T01:21:23+09:00</updated><id>http://localhost:4000/math/2019/05/17/SSNS1</id><content type="html" xml:base="http://localhost:4000/math/2019/05/17/SSNS1.html">&lt;p&gt;This Sunday I was asked to evaluate the following integral, by some
+random guy at the internet. Given &lt;script type=&quot;math/tex&quot;&gt;r&gt;0&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;n\in\mathbb{N}&lt;/script&gt;, evaluate&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;F(n)=\int_{0}^{2\pi}e^{r\cos t}\cos(r\sin t)\cos ntdt&lt;/script&gt;
+
+&lt;p&gt;Which is extremely strange, given that &lt;script type=&quot;math/tex&quot;&gt;r\sin t&lt;/script&gt; is within the cosine.
+Also the fact that we are evaluating with term &lt;script type=&quot;math/tex&quot;&gt;e^{r\cos t}&lt;/script&gt;multiplied
+makes it even stranger.&lt;/p&gt;
+
+&lt;p&gt;As mathematics is as it is, strange things added together usually makes
+less strange things. Indeed, the value of the above definite integral
+is &lt;script type=&quot;math/tex&quot;&gt;\pi r^{n}/n!&lt;/script&gt;. In this post&lt;/p&gt;
+
+&lt;p&gt;we study why. First, we let &lt;script type=&quot;math/tex&quot;&gt;f(t)=e^{r\cos t}\cos(r\sin t)&lt;/script&gt;, then,&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\frac{1}{\pi}\int_{0}^{2\pi}f(t)\cos ntdt&lt;/script&gt;
+
+&lt;p&gt;is clearly the Fourier coefficients of the function &lt;script type=&quot;math/tex&quot;&gt;f&lt;/script&gt;, because
+period of &lt;script type=&quot;math/tex&quot;&gt;f&lt;/script&gt; is &lt;script type=&quot;math/tex&quot;&gt;2\pi&lt;/script&gt;. Therefore we have&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;f(x)=\sum_{n=1}^{\infty}\frac{1}{\pi}F(n)\cos nx+C&lt;/script&gt;
+
+&lt;p&gt;(1) Now we look at the function with Taylor series perspective. we
+define the function &lt;script type=&quot;math/tex&quot;&gt;g:\mathbb{R}\rightarrow\mathbb{C}&lt;/script&gt; as&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;g(x)=e^{re^{ix}}&lt;/script&gt;
+
+&lt;p&gt;. Real part of &lt;script type=&quot;math/tex&quot;&gt;g&lt;/script&gt; is actually &lt;script type=&quot;math/tex&quot;&gt;f&lt;/script&gt;! one can substitute &lt;script type=&quot;math/tex&quot;&gt;e^{ix}=u&lt;/script&gt;
+to have&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;g(x)=e^{ru}=\sum_{n=0}^{\infty}\frac{r^{n}}{n!}u^{n}=1+\sum_{n=1}^{\infty}\frac{r^{n}}{n!}e^{nix}=1+\sum_{n=1}^{\infty}\frac{r^{n}}{n!}(\cos nx+i\sin nx)&lt;/script&gt;
+
+&lt;p&gt;Again, the real part of &lt;script type=&quot;math/tex&quot;&gt;g&lt;/script&gt; is &lt;script type=&quot;math/tex&quot;&gt;f&lt;/script&gt;, therefore&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;f(x)=1+\sum_{n=1}^{\infty}\frac{r^{n}}{n!}\cos nx&lt;/script&gt;
+
+&lt;p&gt;Comparing it with (1), we finally get&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;F(n)=\frac{\pi r^{n}}{n!}&lt;/script&gt;
+
+&lt;p&gt;By Riemann-Lebesgue theorem, we expect that the above integral would
+go to 0 as &lt;script type=&quot;math/tex&quot;&gt;n&lt;/script&gt; goes to infinity. The result is consistent with the
+theorem, which is a good sign.&lt;/p&gt;
+
+&lt;p&gt;Also one can immediately get from the fact that &lt;script type=&quot;math/tex&quot;&gt;C=1&lt;/script&gt;,
+&lt;script type=&quot;math/tex&quot;&gt;\int_{0}^{2\pi}e^{r\cos t}\cos(r\sin t)dt=2\pi&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;Taking &lt;script type=&quot;math/tex&quot;&gt;r=1&lt;/script&gt; and substitution, we have&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\int_{0}^{1}\frac{e^{x}\cos\sqrt{1-x^{2}}}{\sqrt{1-x^{2}}}dx=\pi&lt;/script&gt;
+
+&lt;p&gt;This itself is really strange, and fairly nontrivial fact. I really
+just cannot find another way to integrate this function.&lt;/p&gt;
+
+&lt;p&gt;Also, using another substitution, one can get&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\int_{0}^{1}\frac{\cos x\cosh\sqrt{1-x^{2}}}{\sqrt{1-x^{2}}}dx=\frac{\pi}{2}&lt;/script&gt;
+
+&lt;p&gt;Just for fun, note that similar integral is;&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\int_{0}^{1}\frac{\cos x}{\sqrt{1-x^{2}}}dx=\frac{\pi J_{0}(1)}{2}&lt;/script&gt;</content><author><name></name></author><summary type="html">This Sunday I was asked to evaluate the following integral, by some random guy at the internet. Given and , evaluate</summary></entry><entry><title type="html">Trigonometric, Harmonic Series</title><link href="http://localhost:4000/math/2019/05/05/Trigonometric,-Harmonic-series/html" rel="alternate" type="text/html" title="Trigonometric, Harmonic Series " /><published>2019-05-05T01:21:23+09:00</published><updated>2019-05-05T01:21:23+09:00</updated><id>http://localhost:4000/math/2019/05/05/Trigonometric,-Harmonic-series/Trigonometric,%20Harmonic%20series.</id><content type="html" xml:base="http://localhost:4000/math/2019/05/05/Trigonometric,-Harmonic-series/html">&lt;p&gt;Investigating and studying in MSE, people often come across various
 problems related to trigonometric series. Some problems tend to be
 wildly interesting, especially the question that asks rather the sum
 converges or not. e.g.

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.0 -->
+<title>Strange Thing with a Nice solution_01 | Simo Ryu’s Blog</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="Strange Thing with a Nice solution_01" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="This Sunday I was asked to evaluate the following integral, by some random guy at the internet. Given and , evaluate" />
+<meta property="og:description" content="This Sunday I was asked to evaluate the following integral, by some random guy at the internet. Given and , evaluate" />
+<link rel="canonical" href="http://localhost:4000/math/2019/05/17/SSNS1.html" />
+<meta property="og:url" content="http://localhost:4000/math/2019/05/17/SSNS1.html" />
+<meta property="og:site_name" content="Simo Ryu’s Blog" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-05-17T01:21:23+09:00" />
+<script type="application/ld+json">
+{"url":"http://localhost:4000/math/2019/05/17/SSNS1.html","headline":"Strange Thing with a Nice solution_01","dateModified":"2019-05-17T01:21:23+09:00","datePublished":"2019-05-17T01:21:23+09:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/math/2019/05/17/SSNS1.html"},"description":"This Sunday I was asked to evaluate the following integral, by some random guy at the internet. Given and , evaluate","@type":"BlogPosting","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Simo Ryu's Blog" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Simo Ryu&#39;s Blog</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Strange Thing with a Nice solution_01</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2019-05-17T01:21:23+09:00" itemprop="datePublished">May 17, 2019
+      </time></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p>This Sunday I was asked to evaluate the following integral, by some
+random guy at the internet. Given <script type="math/tex">r>0</script> and <script type="math/tex">n\in\mathbb{N}</script>, evaluate</p>
+
+<script type="math/tex; mode=display">F(n)=\int_{0}^{2\pi}e^{r\cos t}\cos(r\sin t)\cos ntdt</script>
+
+<p>Which is extremely strange, given that <script type="math/tex">r\sin t</script> is within the cosine.
+Also the fact that we are evaluating with term <script type="math/tex">e^{r\cos t}</script>multiplied
+makes it even stranger.</p>
+
+<p>As mathematics is as it is, strange things added together usually makes
+less strange things. Indeed, the value of the above definite integral
+is <script type="math/tex">\pi r^{n}/n!</script>. In this post</p>
+
+<p>we study why. First, we let <script type="math/tex">f(t)=e^{r\cos t}\cos(r\sin t)</script>, then,</p>
+
+<script type="math/tex; mode=display">\frac{1}{\pi}\int_{0}^{2\pi}f(t)\cos ntdt</script>
+
+<p>is clearly the Fourier coefficients of the function <script type="math/tex">f</script>, because
+period of <script type="math/tex">f</script> is <script type="math/tex">2\pi</script>. Therefore we have</p>
+
+<script type="math/tex; mode=display">f(x)=\sum_{n=1}^{\infty}\frac{1}{\pi}F(n)\cos nx+C</script>
+
+<p>(1) Now we look at the function with Taylor series perspective. we
+define the function <script type="math/tex">g:\mathbb{R}\rightarrow\mathbb{C}</script> as</p>
+
+<script type="math/tex; mode=display">g(x)=e^{re^{ix}}</script>
+
+<p>. Real part of <script type="math/tex">g</script> is actually <script type="math/tex">f</script>! one can substitute <script type="math/tex">e^{ix}=u</script>
+to have</p>
+
+<script type="math/tex; mode=display">g(x)=e^{ru}=\sum_{n=0}^{\infty}\frac{r^{n}}{n!}u^{n}=1+\sum_{n=1}^{\infty}\frac{r^{n}}{n!}e^{nix}=1+\sum_{n=1}^{\infty}\frac{r^{n}}{n!}(\cos nx+i\sin nx)</script>
+
+<p>Again, the real part of <script type="math/tex">g</script> is <script type="math/tex">f</script>, therefore</p>
+
+<script type="math/tex; mode=display">f(x)=1+\sum_{n=1}^{\infty}\frac{r^{n}}{n!}\cos nx</script>
+
+<p>Comparing it with (1), we finally get</p>
+
+<script type="math/tex; mode=display">F(n)=\frac{\pi r^{n}}{n!}</script>
+
+<p>By Riemann-Lebesgue theorem, we expect that the above integral would
+go to 0 as <script type="math/tex">n</script> goes to infinity. The result is consistent with the
+theorem, which is a good sign.</p>
+
+<p>Also one can immediately get from the fact that <script type="math/tex">C=1</script>,
+<script type="math/tex">\int_{0}^{2\pi}e^{r\cos t}\cos(r\sin t)dt=2\pi</script></p>
+
+<p>Taking <script type="math/tex">r=1</script> and substitution, we have</p>
+
+<script type="math/tex; mode=display">\int_{0}^{1}\frac{e^{x}\cos\sqrt{1-x^{2}}}{\sqrt{1-x^{2}}}dx=\pi</script>
+
+<p>This itself is really strange, and fairly nontrivial fact. I really
+just cannot find another way to integrate this function.</p>
+
+<p>Also, using another substitution, one can get</p>
+
+<script type="math/tex; mode=display">\int_{0}^{1}\frac{\cos x\cosh\sqrt{1-x^{2}}}{\sqrt{1-x^{2}}}dx=\frac{\pi}{2}</script>
+
+<p>Just for fun, note that similar integral is;</p>
+
+<script type="math/tex; mode=display">\int_{0}^{1}\frac{\cos x}{\sqrt{1-x^{2}}}dx=\frac{\pi J_{0}(1)}{2}</script>
+
+  </div><a class="u-url" href="/math/2019/05/17/SSNS1.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Simo Ryu&#39;s Blog</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Simo Ryu&#39;s Blog</li><li><a class="u-email" href="mailto:cloneofsimo@gmail.com">cloneofsimo@gmail.com</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>Simo Ryu&#39;s Blog. Korea University, Dept of CYDF Seoul Science High School</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
