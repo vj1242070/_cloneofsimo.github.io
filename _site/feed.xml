@@ -1,4 +1,61 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-05-17T14:59:19+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Simo Ryu’s Blog</title><subtitle>Simo Ryu's Blog. Korea University, Dept of CYDF Seoul Science High School</subtitle><entry><title type="html">Strange Thing with a Nice solution_01</title><link href="http://localhost:4000/math/2019/05/17/SSNS1.html" rel="alternate" type="text/html" title="Strange Thing with a Nice solution_01" /><published>2019-05-17T01:21:23+09:00</published><updated>2019-05-17T01:21:23+09:00</updated><id>http://localhost:4000/math/2019/05/17/SSNS1</id><content type="html" xml:base="http://localhost:4000/math/2019/05/17/SSNS1.html">&lt;p&gt;This Sunday I was asked to evaluate the following integral, by some
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-06-02T20:29:50+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Simo Ryu’s Blog</title><subtitle>Simo Ryu's Blog. Korea University, Dept of CYDF Seoul Science High School</subtitle><entry><title type="html">Prime counting function related series</title><link href="http://localhost:4000/math/2019/06/02/Prime-counting-function-related-series.html" rel="alternate" type="text/html" title="Prime counting function related series" /><published>2019-06-02T01:21:23+09:00</published><updated>2019-06-02T01:21:23+09:00</updated><id>http://localhost:4000/math/2019/06/02/Prime%20counting%20function%20related%20series</id><content type="html" xml:base="http://localhost:4000/math/2019/06/02/Prime-counting-function-related-series.html">&lt;p&gt;This post we will study around the integral expression of some series.
+Using prime number theorem and ratio test, one can see that&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\sum_{n=1}^{\infty}\frac{\pi(n)}{n^{3}}&lt;/script&gt;
+
+&lt;p&gt;is convergent.&lt;/p&gt;
+
+&lt;p&gt;Finding it’s value, is a difficult problem. In this post we prove
+the following identity.&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\sum_{n=1}^{\infty}\frac{\pi(n)}{n^{3}}=\frac{1}{2}\int_{0}^{1}\log^{2}(x)\frac{P(x)}{x(1-x)}dx&lt;/script&gt;
+
+&lt;p&gt;Where &lt;script type=&quot;math/tex&quot;&gt;P(x)&lt;/script&gt; is Z-transform of prime indicator function (well, not
+really, we are only summing the positive part. i.e, &lt;script type=&quot;math/tex&quot;&gt;P(x)=\sum_{n=1}^{\infty}\chi(n)x^{n},&lt;/script&gt;where
+&lt;script type=&quot;math/tex&quot;&gt;\chi(n)&lt;/script&gt; is prime indicator function)&lt;/p&gt;
+
+&lt;p&gt;Notice that this is really not special because it is prime. Rather,
+any arithematic function would satisfy. Indeed we have&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\zeta(3)=\int_{0}^{1}\frac{\log^{2}(x)}{1-x}dx&lt;/script&gt;
+
+&lt;p&gt;One way would be just substituting with &lt;script type=&quot;math/tex&quot;&gt;x=e^{-t}&lt;/script&gt; and using geometric
+sum. In general, the following equation holds. Let &lt;script type=&quot;math/tex&quot;&gt;F(z)=\sum_{n\geq1}a_{n}z^{n}&lt;/script&gt;,
+&lt;script type=&quot;math/tex&quot;&gt;A(n)=\sum_{m\leq n}a_{m}&lt;/script&gt;&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\sum_{n=1}^{\infty}\frac{A(n)}{n^{s}}=\frac{(-1)^{s-1}}{(s-1)!}\int_{0}^{1}\log^{s-1}(x)\frac{F(x)}{x(1-x)}dx&lt;/script&gt;
+
+&lt;p&gt;The above equation is equivalent to the following:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\sum_{n=1}^{\infty}a_{n}(\zeta(s)-\sum_{m=1}^{n-1}\frac{1}{m^{s}})=\frac{(-1)^{s-1}}{(s-1)!}\int_{0}^{1}\sum_{n=1}^{\infty}a_{n}\frac{\log^{s-1}(x)x^{n-1}}{1-x}dx&lt;/script&gt;
+
+&lt;p&gt;Now thinking about independence of &lt;script type=&quot;math/tex&quot;&gt;a_{i}&lt;/script&gt;s, one can guess that proving
+the following is enough.&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\zeta(s)-\sum_{m=1}^{n-1}\frac{1}{m^{s}}=\frac{(-1)^{s-1}}{(s-1)!}\int_{0}^{1}\frac{\log^{s-1}(x)}{1-x}x^{n-1}dx&lt;/script&gt;
+
+&lt;p&gt;On the right hand side, substitute &lt;script type=&quot;math/tex&quot;&gt;x=e^{-t}.&lt;/script&gt;&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\int_{\infty}^{0}(-t)^{s-1}e^{-nt}(1+e^{-t}+e^{-2t}+\cdots)dt&lt;/script&gt;
+
+&lt;p&gt;Let’s have a look at the integral&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\int_{0}^{\infty}t^{s-1}e^{-mt}dt&lt;/script&gt;
+
+&lt;p&gt;This is just gamma function, up to constant multiplication. Take &lt;script type=&quot;math/tex&quot;&gt;mt=r&lt;/script&gt;&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\int_{0}^{\infty}r^{s-1}e^{-r}dr=m^{s}\int_{0}^{\infty}t^{s-1}e^{-mt}dt&lt;/script&gt;
+
+&lt;p&gt;We then have by definition of gamma function &lt;script type=&quot;math/tex&quot;&gt;\Gamma(s)=m^{s}\int_{0}^{\infty}t^{s-1}e^{-mt}dt&lt;/script&gt;.
+Therefore overall we have
+&lt;script type=&quot;math/tex&quot;&gt;\frac{(-1)^{s-1}}{(s-1)!}\int_{0}^{1}\frac{\log^{s-1}(x)}{1-x}x^{n-1}dx=\frac{(-1)^{s-1}}{(s-1)!}\sum_{m=n}^{\infty}\int_{0}^{\infty}(-t)^{s-1}e^{-mt}dt=\frac{\Gamma(s)}{(s-1)!}\sum_{m=n}^{\infty}\frac{1}{m^{s}}&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;It is well known property that &lt;script type=&quot;math/tex&quot;&gt;\Gamma(s)=(s-1)!&lt;/script&gt; for integer &lt;script type=&quot;math/tex&quot;&gt;s&lt;/script&gt;.
+Therefore we have what we wanted.&lt;/p&gt;
+
+&lt;p&gt;Fun problem as an exercise&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\int_{0}^{\infty}\frac{\log^{n}x}{(1-x)^{m}}dx&lt;/script&gt;</content><author><name></name></author><summary type="html">This post we will study around the integral expression of some series. Using prime number theorem and ratio test, one can see that</summary></entry><entry><title type="html">Strange Thing with a Nice solution_01</title><link href="http://localhost:4000/math/2019/05/17/SSNS1.html" rel="alternate" type="text/html" title="Strange Thing with a Nice solution_01" /><published>2019-05-17T01:21:23+09:00</published><updated>2019-05-17T01:21:23+09:00</updated><id>http://localhost:4000/math/2019/05/17/SSNS1</id><content type="html" xml:base="http://localhost:4000/math/2019/05/17/SSNS1.html">&lt;p&gt;This Sunday I was asked to evaluate the following integral, by some
 random guy at the internet. Given &lt;script type=&quot;math/tex&quot;&gt;r&gt;0&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;n\in\mathbb{N}&lt;/script&gt;, evaluate&lt;/p&gt;
 
 &lt;script type=&quot;math/tex; mode=display&quot;&gt;F(n)=\int_{0}^{2\pi}e^{r\cos t}\cos(r\sin t)\cos ntdt&lt;/script&gt;
