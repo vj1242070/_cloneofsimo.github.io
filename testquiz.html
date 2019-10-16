@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device=width, initial-scale = 1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/testcss/main.css">
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <img src="assets/images/brand.svg" alt="main brand" class = "logo">
+      </header>
+
+      <section>
+        <img src="assets/images/mainWelcoming.svg" alt="welcoming graphic" class = "welcoming">
+
+      </section>
+      <div class="introtext">
+        <p> 서울시립과학관에서 함께하는</p>
+        <p> 재미있는 온라인 퍼즐게임 </p>
+      </div>
+    </div>
+
+    <div class="starting-container">
+      <div class="container">
+          <ul>
+            <li>
+              <a href="#" id="button">
+              <img src="assets/images/harmony.PNG" alt="migungEnterance">
+              </a>
+              <img src="assets/images/life.PNG" alt="migungEnterance">
+              <img src="assets/images/circulation.PNG" alt="migungEnterance">
+              <img src="assets/images/network.PNG" alt="migungEnterance">
+            </li>
+          </ul>
+          <p>즐거운 하루 되세용~</p>
+      </div>
+
+    </div>
+
+    <div class="container">
+      <h3>이어한다면 키워드가...?</h3>
+      <input type="text" id="myInput" placeholder="키워드가...?">
+      <p class = "cta" onclick="continuefrom(this)">이어하기!</p>
+
+    </div>
+
+    <footer>
+      <div class="footer-container">
+        <div class="container">
+          <a href="#">
+            <img src="assets/images/sshs.svg" class = "logo" alt="logo">
+          </a>
+          <p class = "adress">Powered by Jekyll, lunr and developed by Simo Ryu</p>
+
+        </div>
+
+      </div>
+
+    </footer>
+
+
+
+  </body>
+</html>
+
+
+<!--Modal Section -->
+<div class="bg-modal">
+  <div class="modal-content">
+    <div class="close">+</div>
+    <p class="quiz1_1">이 물질은 어쩌구 저쩌구... quiz 1_1 contents.</p>
+    <form class="ret1">
+       <br>
+      <input type="text" name="quiz11" value="답은?"><br>
+      <input type = "submit" value = "확인하기!"
+    </form>
+    <img src="" alt="">
+  </div>
+</div>
+
+<script>
+  document.getElementById('button').addEventListener('click',
+  function(){
+    document.querySelector('.bg-modal').style.display = 'flex';
+    document.body.style.position = 'fixed';
+    const scrollY = document.documentElement.style.getPropertyValue('--scroll-y');
+
+    document.body.style.top = `-${scrollY}`;
+  });
+
+  document.querySelector('.close').addEventListener("click", function() {
+  	document.querySelector('.bg-modal').style.display = "none";
+    const scrollY = document.body.style.top;
+    document.body.style.position = 'relative';
+    document.body.style.top = '0';
+    window.scrollTo(0, parseInt(scrollY || '0') * -1)
+  });
+  function continuefrom() {
+    input = document.getElementById('myInput');
+    st = input.value;
+    window.location.href = "http://simoryu.com/" + st
+    alert(st);
+  }
+  window.addEventListener('scroll', () => {
+  document.documentElement.style.setProperty('--scroll-y', `${window.scrollY}px`);
+});
+
+  // const scrollY = document.body.style.top;
+  // document.body.style.position = '';
+  // document.body.style.top = '';
+  // window.scrollTo(0, parseInt(scrollY || '0') * -1);
+
+</script>
