@@ -27,7 +27,7 @@
       <div class="container">
           <ul>
             <li>
-              <a href="#" id="button">
+              <a href="#" id="button1">
               <img src="assets/images/harmony.PNG" alt="migungEnterance">
               </a>
               <img src="assets/images/life.PNG" alt="migungEnterance">
@@ -69,21 +69,47 @@
 
 <!--Modal Section -->
 <div class="bg-modal">
-  <div class="modal-content">
-    <div class="close">+</div>
-    <p class="quiz1_1">이 물질은 어쩌구 저쩌구... quiz 1_1 contents.</p>
+  <div class="close">+</div>
+  <div class="modal-content" id="1_1">
+
+    <p class="quiz1_1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <form class="ret">
+       <br>
+      <input type="text" value="답은?(hi임)" id="quiz1_1"><br>
+      <input type = "submit" value = "확인하기!" onclick="nextstatefrom('1_1')">
+    </form>
+    <div class="wrong" id = "wrong!">
+      틀렸습니다!
+    </div>
+    <img src="" alt="" id="quiz1_1">
+  </div>
+
+
+  <div class="modal-content" id ="1_2">
+
+    <p class="quiz1_1">작동 물질 어쩌구 저쩌구... quiz 1_2 contents.</p>
     <form class="ret1">
        <br>
-      <input type="text" name="quiz11" value="답은?"><br>
-      <input type = "submit" value = "확인하기!"
+      <input type="text" value="답은?" id="quiz1_1"><br>
+      <input type = "submit" value = "확인하기!" onclick="nextstatefrom(1_1)">
     </form>
-    <img src="" alt="">
+    <img src="" alt="" id="quiz1_2">
   </div>
 </div>
 
+
+
+
+
+
+
+
+
+
 <script>
-  document.getElementById('button').addEventListener('click',
+  document.getElementById('button1').addEventListener('click',
   function(){
+    document.getElementById('1_1').style.display = 'inline';
     document.querySelector('.bg-modal').style.display = 'flex';
     document.body.style.position = 'fixed';
     const scrollY = document.documentElement.style.getPropertyValue('--scroll-y');
@@ -108,6 +134,22 @@
   document.documentElement.style.setProperty('--scroll-y', `${window.scrollY}px`);
 });
 
+
+
+  function nextstatefrom(state){
+    r = 'quiz'+state
+    input = document.getElementById(r);
+    st = input.value
+    if(st == "hi"){
+      document.getElementById('wrong!').style.display = 'none'
+      document.getElementById('1_1').style.display = 'none';
+      document.getElementById('1_2').style.display = 'inline';
+    }
+    else{
+      document.getElementById('wrong!').style.display = 'inline'
+
+    }
+  }
   // const scrollY = document.body.style.top;
   // document.body.style.position = '';
   // document.body.style.top = '';
