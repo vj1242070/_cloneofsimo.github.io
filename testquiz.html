@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -24,18 +25,46 @@
     </div>
 
     <div class="starting-container">
+
       <div class="container">
+        <h1> Challenge 1</h1>
           <ul>
             <li>
               <a href="#" id="button1">
-              <img src="assets/images/harmony.PNG" alt="migungEnterance">
+              <img src="assets/images/1.svg" alt="migungEnterance">
               </a>
-              <img src="assets/images/life.PNG" alt="migungEnterance">
-              <img src="assets/images/circulation.PNG" alt="migungEnterance">
-              <img src="assets/images/network.PNG" alt="migungEnterance">
+              <a href="#" id="button2">
+              <img src="assets/images/2.svg" alt="migungEnterance">
+              </a>
+              <a href="#" id= "button3">
+              <img src="assets/images/3.svg" alt="migungEnterance">
+              </a>
+              <a href="#" id= "button4">
+              <img src="assets/images/4.svg" alt="migungEnterance">
+              </a>
             </li>
           </ul>
-          <p>즐거운 하루 되세용~</p>
+
+      </div>
+
+      <div class="container">
+        <h1> Challenge 2</h1>
+          <ul>
+            <li>
+              <a href="#" id="button5">
+              <img src="assets/images/5.svg" alt="migungEnterance">
+              </a>
+              <a href="#" id="button6">
+              <img src="assets/images/6.svg" alt="migungEnterance">
+              </a>
+              <a href="#" id= "button7">
+              <img src="assets/images/7.svg" alt="migungEnterance">
+              </a>
+              <a href="#" id= "button8">
+              <img src="assets/images/8.svg" alt="migungEnterance">
+              </a>
+            </li>
+          </ul>
       </div>
 
     </div>
@@ -68,62 +97,1634 @@
 
 
 <!--Modal Section -->
-<div class="bg-modal">
-  <div class="close">+</div>
-  <div class="modal-content" id="1_1">
 
-    <p class="quiz1_1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+<div class="bg-modal" id = "quiz1">
+  <div class="close" id = "close1">+</div>
+
+
+  <div class="modal-content" id="1_1">
+    <p class="quiz">이 원소는 황산과 결합하여, 낮은 독성과 높은 밀도를 가지는 액체가 된다. 그 물질은 이런 이유로 사람이 섭취하여 X 레이 조영 이 물 역할을 한다.</p>
+    <script>
+    function popuphint(x) {
+      var popup = document.getElementById(x);
+      popup.classList.toggle("show");
+    }
+    function nextstatefrom11(){
+      input = document.getElementById('quiz1_1');
+      st = input.value
+      if(st == "Ba"){
+        document.getElementById('1_1').style.display = 'none';
+        document.getElementById('1_2').style.display = 'inline';
+        document.getElementById('drag1_1').style.display = 'inline';
+      }
+      else{
+        document.getElementById('wrong11!').style.display = 'inline';
+      }
+    }
+    </script>
     <form class="ret">
        <br>
-      <input type="text" value="답은?(hi임)" id="quiz1_1"><br>
-      <input type = "submit" value = "확인하기!" onclick="nextstatefrom('1_1')">
+      <input type="text" placeholder="이 원소는? (원소기호로)" id="quiz1_1"><br>
+      <input type = "submit" value = "확인하기!" onclick="nextstatefrom11()">
     </form>
-    <div class="wrong" id = "wrong!">
+    <div class="wrong" id = "wrong11!">
       틀렸습니다!
     </div>
-    <img src="" alt="" id="quiz1_1">
+    <div class="popup" onclick="popuphint('mypopup1_1')">힌트!
+      <span class="popuptext" id="mypopup1_1">
+        <li>
+          <div class="">
+            1층 주기율표 사물함에서 56번 사물함에 표기된 원소의 원소기호는?
+          </div>
+        </li>
+      </span>
+    </div>
   </div>
 
 
-  <div class="modal-content" id ="1_2">
-
-    <p class="quiz1_1">작동 물질 어쩌구 저쩌구... quiz 1_2 contents.</p>
-    <form class="ret1">
+  <div class="modal-content" id="1_2">
+    <p class="quiz">이 원소는 1987년 휴스턴 대학교에서 개발된 초전도체에 쓰인 원소 중 가장 희귀하다.</p>
+    <script>
+    function popuphint(x) {
+      var popup = document.getElementById(x);
+      popup.classList.toggle("show");
+    }
+    function nextstatefrom12(){
+      input = document.getElementById('quiz1_2');
+      st = input.value
+      if(st == "Y"){
+        document.getElementById('1_2').style.display = 'none';
+        document.getElementById('1_3').style.display = 'inline';
+        document.getElementById('drag1_2').style.display = 'inline';
+      }
+      else{
+        document.getElementById('wrong12!').style.display = 'inline';
+      }
+    }
+    </script>
+    <form class="ret">
        <br>
-      <input type="text" value="답은?" id="quiz1_1"><br>
-      <input type = "submit" value = "확인하기!" onclick="nextstatefrom(1_1)">
+      <input type="text" placeholder="이 원소는? (원소기호로)" id="quiz1_2"><br>
+      <input type = "submit" value = "확인하기!" onclick="nextstatefrom12()">
     </form>
-    <img src="" alt="" id="quiz1_2">
+    <div class="wrong" id = "wrong12!">
+      틀렸습니다!
+    </div>
+    <div class="popup" onclick="popuphint('mypopup1_2')">힌트!
+      <span class="popuptext" id="mypopup1_2">
+        <li>
+          <div class="">
+            원자번호가 39인 원소의 원소기호는?
+          </div>
+
+        </li>
+      </span>
+    </div>
   </div>
+
+
+  <div class="modal-content" id="1_3">
+    <p class="quiz">이 원소는 중성자를 잘 흡수하는 성질이 있다. 고로 원자로에서 감속제로 이용된다.</p>
+    <script>
+    function popuphint(x) {
+      var popup = document.getElementById(x);
+      popup.classList.toggle("show");
+    }
+    function nextstatefrom13(){
+      input = document.getElementById('quiz1_3');
+      st = input.value
+      if(st == "B"){
+        document.getElementById('1_3').style.display = 'none';
+        document.getElementById('1_4').style.display = 'inline';
+        document.getElementById('drag1_3').style.display = 'inline';
+      }
+      else{
+        document.getElementById('wrong13!').style.display = 'inline';
+      }
+    }
+    </script>
+    <form class="ret">
+       <br>
+      <input type="text" placeholder="이 원소는? (원소기호로)" id="quiz1_3"><br>
+      <input type = "submit" value = "확인하기!" onclick="nextstatefrom13()">
+    </form>
+    <div class="wrong" id = "wrong13!">
+      틀렸습니다!
+    </div>
+    <div class="popup" onclick="popuphint('mypopup1_3')">힌트!
+      <span class="popuptext" id="mypopup1_3">
+        <li>
+          <div class="">
+            B전시실의 ‘원소의 규칙성을 알아보면?’ 전시물에서 아래의 그림이 그려져 있는 큐브의 원소기호는?
+          </div>
+          <div class="">
+            <img src="assets/images/1_3.JPG" alt="">
+          </div>
+        </li>
+      </span>
+    </div>
+  </div>
+
+
+
+  <div class="modal-content" id = "1_4">
+  <div class="list">
+  <div class = "quizblocks" id = "Ba" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+  <div class = "quizblocks" id = "B" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+  <div class = "quizblocks" id = "Y" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+    </div>
+    <div class="">
+      <img src="assets/images/clear.svg" alt="" id = "clear1">
+    </div>
+  </div>
+
+  <div class="quizpanel">
+  <div draggable="true" ondragstart= "drag(event)" id="drag1_1" class = "drags">Ba</div>
+  <div draggable="true" ondragstart= "drag(event)" id="drag1_2" class = "drags">Y</div>
+  <div draggable="true" ondragstart= "drag(event)" id="drag1_3" class = "drags">B</div>
+
+  </div>
+
+  <script>
+    function allowDrop(ev) {
+      ev.preventDefault();
+    }
+
+    function drag(ev) {
+      ev.dataTransfer.setData("text", ev.target.id);
+    }
+    var check1 = 0;
+    function drop(ev) {
+      ev.preventDefault();
+      var data = ev.dataTransfer.getData("text");
+      if (ev.target.id == document.getElementById(data).textContent){
+        ev.target.appendChild(document.getElementById(data));
+        console.log("hi")
+        check1 += 1;
+      }
+      if(check1 == 3){
+         document.getElementById("clear1").style.display = 'inline-block';
+         check1 = 0
+      }
+    }
+
+      document.getElementById('close1').addEventListener("click", function() {
+        document.getElementById('quiz1').style.display = 'none';
+        const scrollY = document.body.style.top;
+        document.body.style.position = 'relative';
+        document.body.style.top = '0';
+        window.scrollTo(0, parseInt(scrollY || '0') * -1)
+      });
+  </script>
+
+
+</div>
+<div class="bg-modal" id = "quiz2">
+  <div class="close" id = "close2">+</div>
+
+
+  <div class="modal-content" id="2_1">
+    <p class="quiz">이 원소는 금속으로, 철과 함께 지구의 내핵을 이루는 원소이다.</p>
+    <script>
+    function popuphint(x) {
+      var popup = document.getElementById(x);
+      popup.classList.toggle("show");
+    }
+    function nextstatefrom21(){
+      input = document.getElementById('quiz2_1');
+      st = input.value
+      if(st == "Ni"){
+        document.getElementById('2_1').style.display = 'none';
+        document.getElementById('2_2').style.display = 'inline';
+        document.getElementById('drag2_1').style.display = 'inline';
+      }
+      else{
+        document.getElementById('wrong21!').style.display = 'inline';
+      }
+    }
+    </script>
+    <form class="ret">
+       <br>
+      <input type="text" placeholder="이 원소는? (원소기호로)" id="quiz2_1"><br>
+      <input type = "submit" value = "확인하기!" onclick="nextstatefrom21()">
+    </form>
+    <div class="wrong" id = "wrong21!">
+      틀렸습니다!
+    </div>
+    <div class="popup" onclick="popuphint('mypopup2_1')">힌트!
+      <span class="popuptext" id="mypopup2_1">
+        <li>
+          <div class="">
+            O전시실의  ‘철의 다양한 변신’ 패널의 “□강(Fe+□)□이 첨가된 합금은 연성이 뛰어나고 구부려도 부러지지 않는다.”에서 □에 들어갈 원소의 원소기호는?
+          </div>
+
+        </li>
+      </span>
+    </div>
+  </div>
+
+
+  <div class="modal-content" id="2_2">
+    <p class="quiz">이 원소는 현재 원자력 발전소에 연료로서 쓰인다.</p>
+    <script>
+    function popuphint(x) {
+      var popup = document.getElementById(x);
+      popup.classList.toggle("show");
+    }
+    function nextstatefrom22(){
+      input = document.getElementById('quiz2_2');
+      st = input.value
+      if(st == "U"){
+        document.getElementById('2_2').style.display = 'none';
+        document.getElementById('2_3').style.display = 'inline';
+        document.getElementById('drag2_2').style.display = 'inline';
+      }
+      else{
+        document.getElementById('wrong22!').style.display = 'inline';
+      }
+    }
+    </script>
+    <form class="ret">
+       <br>
+      <input type="text" placeholder="이 원소는? (원소기호로)" id="quiz2_2"><br>
+      <input type = "submit" value = "확인하기!" onclick="nextstatefrom22()">
+    </form>
+    <div class="wrong" id = "wrong22!">
+      틀렸습니다!
+    </div>
+    <div class="popup" onclick="popuphint('mypopup2_2')">힌트!
+      <span class="popuptext" id="mypopup2_2">
+        <li>
+          <div class="">
+            B전시실의 ‘원소의 규칙성을 알아보면?’ 전시물에서 아래의 그림이 그려져 있는 큐브의 원소기호는?
+          </div>
+          <div class="">
+            <img src="assets/images/2_2.JPG" alt="">
+          </div>
+        </li>
+      </span>
+    </div>
+  </div>
+
+
+  <div class="modal-content" id="2_3">
+    <p class="quiz">흑연과 다이아몬드의 공통점은?</p>
+    <script>
+    function popuphint(x) {
+      var popup = document.getElementById(x);
+      popup.classList.toggle("show");
+    }
+    function nextstatefrom23(){
+      input = document.getElementById('quiz2_3');
+      st = input.value
+      if(st == "C"){
+        document.getElementById('2_3').style.display = 'none';
+        document.getElementById('2_4').style.display = 'inline';
+        document.getElementById('drag2_3').style.display = 'inline';
+      }
+      else{
+        document.getElementById('wrong23!').style.display = 'inline';
+      }
+    }
+    </script>
+    <form class="ret">
+       <br>
+      <input type="text" placeholder="이 원소는? (원소기호로)" id="quiz2_3"><br>
+      <input type = "submit" value = "확인하기!" onclick="nextstatefrom23()">
+    </form>
+    <div class="wrong" id = "wrong23!">
+      틀렸습니다!
+    </div>
+    <div class="popup" onclick="popuphint('mypopup2_3')">힌트!
+      <span class="popuptext" id="mypopup2_3">
+        <li>
+          <div class="">
+            O전시실의 ‘탄소의 여러 모습, 탄소 동소체’ 패널의 “겉으로 봐도 큰 차이가 나는 흑연과 다이아몬드는 같은 원자인 □로 이루어져있다.”에서 □에 들어갈 원소의 원소기호는?
+          </div>
+
+        </li>
+      </span>
+    </div>
+  </div>
+
+
+  <div class="modal-content" id="2_4">
+    <p class="quiz">우리가 노출되어 있는 방사선중 50% 이상은 이 원소가 만든 자연방사선이다.</p>
+    <script>
+    function popuphint(x) {
+      var popup = document.getElementById(x);
+      popup.classList.toggle("show");
+    }
+    function nextstatefrom24(){
+      input = document.getElementById('quiz2_4');
+      st = input.value
+      if(st == "Rn"){
+        document.getElementById('2_4').style.display = 'none';
+        document.getElementById('2_5').style.display = 'inline';
+        document.getElementById('drag2_4').style.display = 'inline';
+      }
+      else{
+        document.getElementById('wrong24!').style.display = 'inline';
+      }
+    }
+    </script>
+    <form class="ret">
+       <br>
+      <input type="text" placeholder="이 원소는? (원소기호로)" id="quiz2_4"><br>
+      <input type = "submit" value = "확인하기!" onclick="nextstatefrom24()">
+    </form>
+    <div class="wrong" id = "wrong24!">
+      틀렸습니다!
+    </div>
+    <div class="popup" onclick="popuphint('mypopup2_4')">힌트!
+      <span class="popuptext" id="mypopup2_4">
+        <li>
+          <div class="">
+            1층 주기율표 사물함을 바라보았을 때 가장 오른쪽 열, 위에서 여섯 번째 줄의 원소의 원소기호는?
+          </div>
+
+        </li>
+      </span>
+    </div>
+  </div>
+
+
+  <div class="modal-content" id="2_5">
+    <p class="quiz">광합성 과정에서 생성물은 이 물질 2개가 결합한 것과 물, 그리고 포도당이다.</p>
+    <script>
+    function popuphint(x) {
+      var popup = document.getElementById(x);
+      popup.classList.toggle("show");
+    }
+    function nextstatefrom25(){
+      input = document.getElementById('quiz2_5');
+      st = input.value
+      if(st == "O"){
+        document.getElementById('2_5').style.display = 'none';
+        document.getElementById('2_6').style.display = 'inline';
+        document.getElementById('drag2_5').style.display = 'inline';
+      }
+      else{
+        document.getElementById('wrong25!').style.display = 'inline';
+      }
+    }
+    </script>
+    <form class="ret">
+       <br>
+      <input type="text" placeholder="이 원소는? (원소기호로)" id="quiz2_5"><br>
+      <input type = "submit" value = "확인하기!" onclick="nextstatefrom25()">
+    </form>
+    <div class="wrong" id = "wrong25!">
+      틀렸습니다!
+    </div>
+    <div class="popup" onclick="popuphint('mypopup2_5')">힌트!
+      <span class="popuptext" id="mypopup2_5">
+        <li>
+          <div class="">
+            G전시실의 ‘강물이 먹는 물로 정화되는 과정은?’ 전시물 터치화면의 고도정수처리시설-오존 접촉지 단계에서 “□원자는 반응성이 매우 커서 세균의 세포막이나 세포벽을 산화시켜 세균을 죽게 합니다.”의 □에 들어갈 원소의 원소기호는?
+          </div>
+
+        </li>
+      </span>
+    </div>
+  </div>
+
+
+
+  <div class="modal-content" id = "2_6">
+  <div class="list">
+  <div class = "quizblocks" id = "U" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+  <div class = "quizblocks" id = "Ni" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+  <div class = "quizblocks" id = "C" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+  <div class = "quizblocks" id = "O" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+  <div class = "quizblocks" id = "Rn" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+    </div>
+    <div class="">
+      <img src="assets/images/clear.svg" alt="" class = "clear" id = "clear2">
+    </div>
+  </div>
+
+  <div class="quizpanel">
+  <div draggable="true" ondragstart= "drag(event)" id="drag2_1" class = "drags">Ni</div>
+  <div draggable="true" ondragstart= "drag(event)" id="drag2_2" class = "drags">U</div>
+  <div draggable="true" ondragstart= "drag(event)" id="drag2_3" class = "drags">C</div>
+  <div draggable="true" ondragstart= "drag(event)" id="drag2_4" class = "drags">Rn</div>
+  <div draggable="true" ondragstart= "drag(event)" id="drag2_5" class = "drags">O</div>
+
+  </div>
+
+  <script>
+    function allowDrop(ev) {
+      ev.preventDefault();
+    }
+
+    function drag(ev) {
+      ev.dataTransfer.setData("text", ev.target.id);
+    }
+    var check = 0;
+    function drop(ev) {
+      ev.preventDefault();
+      var data = ev.dataTransfer.getData("text");
+      if (ev.target.id == document.getElementById(data).textContent){
+        ev.target.appendChild(document.getElementById(data));
+        check += 1;
+      }
+      if(check == 5){
+         document.getElementById("clear2").style.display = 'inline-block'
+         check = 0
+      }
+    }
+
+      document.getElementById('close2').addEventListener("click", function() {
+        document.getElementById('quiz2').style.display = 'none';
+        const scrollY = document.body.style.top;
+        document.body.style.position = 'relative';
+        document.body.style.top = '0';
+        window.scrollTo(0, parseInt(scrollY || '0') * -1)
+      });
+  </script>
+
+
+</div>
+<div class="bg-modal" id = "quiz3">
+  <div class="close" id = "close3">+</div>
+
+
+  <div class="modal-content" id="3_1">
+    <p class="quiz">이 원소는 식물이 많이 있고, 우리 몸에 나트륨과 함께 균형을 이룬다.</p>
+    <script>
+    function popuphint(x) {
+      var popup = document.getElementById(x);
+      popup.classList.toggle("show");
+    }
+    function nextstatefrom31(){
+      input = document.getElementById('quiz3_1');
+      st = input.value
+      if(st == "K"){
+        document.getElementById('3_1').style.display = 'none';
+        document.getElementById('3_2').style.display = 'inline';
+        document.getElementById('drag3_1').style.display = 'inline';
+      }
+      else{
+        document.getElementById('wrong31!').style.display = 'inline';
+      }
+    }
+    </script>
+    <form class="ret">
+       <br>
+      <input type="text" placeholder="이 원소는? (원소기호로)" id="quiz3_1"><br>
+      <input type = "submit" value = "확인하기!" onclick="nextstatefrom31()">
+    </form>
+    <div class="wrong" id = "wrong31!">
+      틀렸습니다!
+    </div>
+    <div class="popup" onclick="popuphint('mypopup3_1')">힌트!
+      <span class="popuptext" id="mypopup3_1">
+        <li>
+          <div class="">
+            B전시실의 ‘전류의 단위, 암페어’ 패널의 “Au < Pt < Ag < Hg < Cu < H < Pb < Sn < Ni <Fe < Zn < Al < Mg < Na < Ca < □”에서 □에 들어갈 원소는?
+          </div>
+
+        </li>
+      </span>
+    </div>
+  </div>
+
+
+  <div class="modal-content" id="3_2">
+    <p class="quiz">이 원소 3개가 결합하면, 성층권에 있는 물질이 된다. 이 물질은 자외선 차단의 역할을 맡는다.</p>
+    <script>
+    function popuphint(x) {
+      var popup = document.getElementById(x);
+      popup.classList.toggle("show");
+    }
+    function nextstatefrom32(){
+      input = document.getElementById('quiz3_2');
+      st = input.value
+      if(st == "O"){
+        document.getElementById('3_2').style.display = 'none';
+        document.getElementById('3_3').style.display = 'inline';
+        document.getElementById('drag3_2').style.display = 'inline';
+      }
+      else{
+        document.getElementById('wrong32!').style.display = 'inline';
+      }
+    }
+    </script>
+    <form class="ret">
+       <br>
+      <input type="text" placeholder="이 원소는? (원소기호로)" id="quiz3_2"><br>
+      <input type = "submit" value = "확인하기!" onclick="nextstatefrom32()">
+    </form>
+    <div class="wrong" id = "wrong32!">
+      틀렸습니다!
+    </div>
+    <div class="popup" onclick="popuphint('mypopup3_2')">힌트!
+      <span class="popuptext" id="mypopup3_2">
+        <li>
+          <div class="">
+            G전시실의 ‘강물이 먹는 물로 정화되는 과정은?’ 전시물 터치화면의 고도정수처리시설-오존 접촉지 단계에서 “□원자는 반응성이 매우 커서 세균의 세포막이나 세포벽을 산화시켜 세균을 죽게 합니다.”의 □에 들어갈 원소의 원소기호는?
+          </div>
+
+        </li>
+      </span>
+    </div>
+  </div>
+
+
+  <div class="modal-content" id="3_3">
+    <p class="quiz">이 원소가 들어간 광석은 역사적으로 뛰어난 청색재료로 사용됐다.</p>
+    <script>
+    function popuphint(x) {
+      var popup = document.getElementById(x);
+      popup.classList.toggle("show");
+    }
+    function nextstatefrom33(){
+      input = document.getElementById('quiz3_3');
+      st = input.value
+      if(st == "Co"){
+        document.getElementById('3_3').style.display = 'none';
+        document.getElementById('3_4').style.display = 'inline';
+        document.getElementById('drag3_3').style.display = 'inline';
+      }
+      else{
+        document.getElementById('wrong33!').style.display = 'inline';
+      }
+    }
+    </script>
+    <form class="ret">
+       <br>
+      <input type="text" placeholder="이 원소는? (원소기호로)" id="quiz3_3"><br>
+      <input type = "submit" value = "확인하기!" onclick="nextstatefrom33()">
+    </form>
+    <div class="wrong" id = "wrong33!">
+      틀렸습니다!
+    </div>
+    <div class="popup" onclick="popuphint('mypopup3_3')">힌트!
+      <span class="popuptext" id="mypopup3_3">
+        <li>
+          <div class="">
+            O전시실의 ‘철의 다양한 변신’ 패널의 “철-□(Fe+□) □가 첨가되면 자기적 성질이 좋아진다.”에서 □에 들어갈 원소의 원소기호는?
+          </div>
+
+        </li>
+      </span>
+    </div>
+  </div>
+
+
+
+  <div class="modal-content" id = "3_4">
+  <div class="list">
+  <div class = "quizblocks" id = "Co" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+  <div class = "quizblocks" id = "O" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+  <div class = "quizblocks" id = "K" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+    </div>
+    <div class="">
+      <img src="assets/images/clear.svg" alt="" class = "clear" id = "clear3">
+    </div>
+  </div>
+
+  <div class="quizpanel">
+  <div draggable="true" ondragstart= "drag(event)" id="drag3_1" class = "drags">K</div>
+  <div draggable="true" ondragstart= "drag(event)" id="drag3_2" class = "drags">O</div>
+  <div draggable="true" ondragstart= "drag(event)" id="drag3_3" class = "drags">Co</div>
+
+  </div>
+
+  <script>
+    function allowDrop(ev) {
+      ev.preventDefault();
+    }
+
+    function drag(ev) {
+      ev.dataTransfer.setData("text", ev.target.id);
+    }
+    var check = 0;
+    function drop(ev) {
+      ev.preventDefault();
+      var data = ev.dataTransfer.getData("text");
+      if (ev.target.id == document.getElementById(data).textContent){
+        ev.target.appendChild(document.getElementById(data));
+        check += 1;
+      }
+      if(check == 3){
+         document.getElementById("clear3").style.display = 'inline-block'
+         check = 0
+      }
+    }
+
+      document.getElementById('close3').addEventListener("click", function() {
+        document.getElementById('quiz3').style.display = 'none';
+        const scrollY = document.body.style.top;
+        document.body.style.position = 'relative';
+        document.body.style.top = '0';
+        window.scrollTo(0, parseInt(scrollY || '0') * -1)
+      });
+  </script>
+
+
+</div>
+<div class="bg-modal" id = "quiz4">
+  <div class="close" id = "close4">+</div>
+
+
+  <div class="modal-content" id="4_1">
+    <p class="quiz">이 원소는 실온에서 금속으로서, 진공관에 남아있는 기체들을 제거하는 역할로 사용되기도 한다.</p>
+    <script>
+    function popuphint(x) {
+      var popup = document.getElementById(x);
+      popup.classList.toggle("show");
+    }
+    function nextstatefrom41(){
+      input = document.getElementById('quiz4_1');
+      st = input.value
+      if(st == "Ba"){
+        document.getElementById('4_1').style.display = 'none';
+        document.getElementById('4_2').style.display = 'inline';
+        document.getElementById('drag4_1').style.display = 'inline';
+      }
+      else{
+        document.getElementById('wrong41!').style.display = 'inline';
+      }
+    }
+    </script>
+    <form class="ret">
+       <br>
+      <input type="text" placeholder="이 원소는? (원소기호로)" id="quiz4_1"><br>
+      <input type = "submit" value = "확인하기!" onclick="nextstatefrom41()">
+    </form>
+    <div class="wrong" id = "wrong41!">
+      틀렸습니다!
+    </div>
+    <div class="popup" onclick="popuphint('mypopup4_1')">힌트!
+      <span class="popuptext" id="mypopup4_1">
+        <li>
+          <div class="">
+            1층 주기율표 사물함에서 56번 사물함에 표기된 원소의 원소기호는?
+          </div>
+
+        </li>
+      </span>
+    </div>
+  </div>
+
+
+  <div class="modal-content" id="4_2">
+    <p class="quiz">이 원소는 대기의 대부분을 차지한다.</p>
+    <script>
+    function popuphint(x) {
+      var popup = document.getElementById(x);
+      popup.classList.toggle("show");
+    }
+    function nextstatefrom42(){
+      input = document.getElementById('quiz4_2');
+      st = input.value
+      if(st == "N"){
+        document.getElementById('4_2').style.display = 'none';
+        document.getElementById('4_3').style.display = 'inline';
+        document.getElementById('drag4_2').style.display = 'inline';
+      }
+      else{
+        document.getElementById('wrong42!').style.display = 'inline';
+      }
+    }
+    </script>
+    <form class="ret">
+       <br>
+      <input type="text" placeholder="이 원소는? (원소기호로)" id="quiz4_2"><br>
+      <input type = "submit" value = "확인하기!" onclick="nextstatefrom42()">
+    </form>
+    <div class="wrong" id = "wrong42!">
+      틀렸습니다!
+    </div>
+    <div class="popup" onclick="popuphint('mypopup4_2')">힌트!
+      <span class="popuptext" id="mypopup4_2">
+        <li>
+          <div class="">
+            R전시실의 ‘쓰레기는 썩어서 무엇을 남기나?’ 전시물 가스 분석기 “기타가스 □(□2), 황화수소(H2S)”에서 □에 들어갈 원소의 원소기호는?
+          </div>
+
+        </li>
+      </span>
+    </div>
+  </div>
+
+
+  <div class="modal-content" id="4_3">
+    <p class="quiz">비타민 B12 (시아노코발라민) 의 핵심 원소이다. 금속이기도 하다.</p>
+    <script>
+    function popuphint(x) {
+      var popup = document.getElementById(x);
+      popup.classList.toggle("show");
+    }
+    function nextstatefrom43(){
+      input = document.getElementById('quiz4_3');
+      st = input.value
+      if(st == "Co"){
+        document.getElementById('4_3').style.display = 'none';
+        document.getElementById('4_4').style.display = 'inline';
+        document.getElementById('drag4_3').style.display = 'inline';
+      }
+      else{
+        document.getElementById('wrong43!').style.display = 'inline';
+      }
+    }
+    </script>
+    <form class="ret">
+       <br>
+      <input type="text" placeholder="이 원소는? (원소기호로)" id="quiz4_3"><br>
+      <input type = "submit" value = "확인하기!" onclick="nextstatefrom43()">
+    </form>
+    <div class="wrong" id = "wrong43!">
+      틀렸습니다!
+    </div>
+    <div class="popup" onclick="popuphint('mypopup4_3')">힌트!
+      <span class="popuptext" id="mypopup4_3">
+        <li>
+          <div class="">
+            O전시실의 ‘철의 다양한 변신’ 패널의 “철-□(Fe+□) □가 첨가되면 자기적 성질이 좋아진다.”에서 □에 들어갈 원소의 원소기호는?
+          </div>
+
+        </li>
+      </span>
+    </div>
+  </div>
+
+
+
+  <div class="modal-content" id = "4_4">
+  <div class="list">
+  <div class = "quizblocks" id = "Ba" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+  <div class = "quizblocks" id = "Co" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+  <div class = "quizblocks" id = "N" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+    </div>
+    <div class="">
+      <img src="assets/images/clear.svg" alt="" class = "clear" id = "clear4">
+    </div>
+  </div>
+
+  <div class="quizpanel">
+  <div draggable="true" ondragstart= "drag(event)" id="drag4_1" class = "drags">Ba</div>
+  <div draggable="true" ondragstart= "drag(event)" id="drag4_2" class = "drags">N</div>
+  <div draggable="true" ondragstart= "drag(event)" id="drag4_3" class = "drags">Co</div>
+
+  </div>
+
+  <script>
+    function allowDrop(ev) {
+      ev.preventDefault();
+    }
+
+    function drag(ev) {
+      ev.dataTransfer.setData("text", ev.target.id);
+    }
+    var check = 0;
+    function drop(ev) {
+      ev.preventDefault();
+      var data = ev.dataTransfer.getData("text");
+      if (ev.target.id == document.getElementById(data).textContent){
+        ev.target.appendChild(document.getElementById(data));
+        check += 1;
+      }
+      if(check == 3){
+         document.getElementById("clear4").style.display = 'inline-block'
+         check = 0
+      }
+    }
+
+      document.getElementById('close4').addEventListener("click", function() {
+        document.getElementById('quiz4').style.display = 'none';
+        const scrollY = document.body.style.top;
+        document.body.style.position = 'relative';
+        document.body.style.top = '0';
+        window.scrollTo(0, parseInt(scrollY || '0') * -1)
+      });
+  </script>
+
+
+</div>
+<div class="bg-modal" id = "quiz5">
+  <div class="close" id = "close5">+</div>
+
+
+  <div class="modal-content" id="5_1">
+    <p class="quiz">이 원소는 지질학에서 반감기가 매우 긴 점을 이용해, 연대 분석을 할 때 사용된다.</p>
+    <script>
+    function popuphint(x) {
+      var popup = document.getElementById(x);
+      popup.classList.toggle("show");
+    }
+    function nextstatefrom51(){
+      input = document.getElementById('quiz5_1');
+      st = input.value
+      if(st == "U"){
+        document.getElementById('5_1').style.display = 'none';
+        document.getElementById('5_2').style.display = 'inline';
+        document.getElementById('drag5_1').style.display = 'inline';
+      }
+      else{
+        document.getElementById('wrong51!').style.display = 'inline';
+      }
+    }
+    </script>
+    <form class="ret">
+       <br>
+      <input type="text" placeholder="이 원소는? (원소기호로)" id="quiz5_1"><br>
+      <input type = "submit" value = "확인하기!" onclick="nextstatefrom51()">
+    </form>
+    <div class="wrong" id = "wrong51!">
+      틀렸습니다!
+    </div>
+    <div class="popup" onclick="popuphint('mypopup5_1')">힌트!
+      <span class="popuptext" id="mypopup5_1">
+        <li>
+          <div class="">
+            O전시실의 ‘원소의 규칙성을 알아보면?’ 전시물에서 아래의 그림이 그려져 있는 큐브의 원소기호는?
+          </div>
+          <div class="">
+            <img src="assets/images/5_1.JPG" alt="">
+          </div>
+        </li>
+      </span>
+    </div>
+  </div>
+
+
+  <div class="modal-content" id="5_2">
+    <p class="quiz">이 금속은 구리와 합금시켜 동전으로 이용된다. 특히, 미국의 5 센트 동전의 이름도 그것으로부터 유래했다.</p>
+    <script>
+    function popuphint(x) {
+      var popup = document.getElementById(x);
+      popup.classList.toggle("show");
+    }
+    function nextstatefrom52(){
+      input = document.getElementById('quiz5_2');
+      st = input.value
+      if(st == "Ni"){
+        document.getElementById('5_2').style.display = 'none';
+        document.getElementById('5_3').style.display = 'inline';
+        document.getElementById('drag5_2').style.display = 'inline';
+      }
+      else{
+        document.getElementById('wrong52!').style.display = 'inline';
+      }
+    }
+    </script>
+    <form class="ret">
+       <br>
+      <input type="text" placeholder="이 원소는? (원소기호로)" id="quiz5_2"><br>
+      <input type = "submit" value = "확인하기!" onclick="nextstatefrom52()">
+    </form>
+    <div class="wrong" id = "wrong52!">
+      틀렸습니다!
+    </div>
+    <div class="popup" onclick="popuphint('mypopup5_2')">힌트!
+      <span class="popuptext" id="mypopup5_2">
+        <li>
+          <div class="">
+            O전시실의 ‘철의 다양한 변신’ 패널의 “□강(Fe+□)□이 첨가된 합금은 연성이 뛰어나고 구부려도 부러지지 않는다.”에서 □에 들어갈 원소의 원소기호는?
+          </div>
+
+        </li>
+      </span>
+    </div>
+  </div>
+
+
+  <div class="modal-content" id="5_3">
+    <p class="quiz">이 원소는 산소 2개와 결합하여 광섬유에 핵심적으로 사용된다.</p>
+    <script>
+    function popuphint(x) {
+      var popup = document.getElementById(x);
+      popup.classList.toggle("show");
+    }
+    function nextstatefrom53(){
+      input = document.getElementById('quiz5_3');
+      st = input.value
+      if(st == "Ge"){
+        document.getElementById('5_3').style.display = 'none';
+        document.getElementById('5_4').style.display = 'inline';
+        document.getElementById('drag5_3').style.display = 'inline';
+      }
+      else{
+        document.getElementById('wrong53!').style.display = 'inline';
+      }
+    }
+    </script>
+    <form class="ret">
+       <br>
+      <input type="text" placeholder="이 원소는? (원소기호로)" id="quiz5_3"><br>
+      <input type = "submit" value = "확인하기!" onclick="nextstatefrom53()">
+    </form>
+    <div class="wrong" id = "wrong53!">
+      틀렸습니다!
+    </div>
+    <div class="popup" onclick="popuphint('mypopup5_3')">힌트!
+      <span class="popuptext" id="mypopup5_3">
+        <li>
+          <div class="">
+            O전시실의 ‘원소의 규칙성을 알아보면?’ 전시물에서 아래의 그림이 그려져 있는 큐브의 원소기호는?
+          </div>
+          <div class="">
+            <img src="assets/images/5_3.JPG" alt="">
+          </div>
+        </li>
+      </span>
+    </div>
+  </div>
+
+
+  <div class="modal-content" id="5_4">
+    <p class="quiz">이 원소는 수소, 산소와 결합하여 액체 화합물로 많이 쓰이는데, 이 화합물은 베터리, 의약품, 비료의 생산에 쓰인다.</p>
+    <script>
+    function popuphint(x) {
+      var popup = document.getElementById(x);
+      popup.classList.toggle("show");
+    }
+    function nextstatefrom54(){
+      input = document.getElementById('quiz5_4');
+      st = input.value
+      if(st == "S"){
+        document.getElementById('5_4').style.display = 'none';
+        document.getElementById('5_5').style.display = 'inline';
+        document.getElementById('drag5_4').style.display = 'inline';
+      }
+      else{
+        document.getElementById('wrong54!').style.display = 'inline';
+      }
+    }
+    </script>
+    <form class="ret">
+       <br>
+      <input type="text" placeholder="이 원소는? (원소기호로)" id="quiz5_4"><br>
+      <input type = "submit" value = "확인하기!" onclick="nextstatefrom54()">
+    </form>
+    <div class="wrong" id = "wrong54!">
+      틀렸습니다!
+    </div>
+    <div class="popup" onclick="popuphint('mypopup5_4')">힌트!
+      <span class="popuptext" id="mypopup5_4">
+        <li>
+          <div class="">
+            주기율표 16족 3주기에 위치하는 원소기호는?
+          </div>
+
+        </li>
+      </span>
+    </div>
+  </div>
+
+
+
+  <div class="modal-content" id = "5_5">
+  <div class="list">
+  <div class = "quizblocks" id = "Ge" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+  <div class = "quizblocks" id = "Ni" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+  <div class = "quizblocks" id = "U" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+  <div class = "quizblocks" id = "S" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+    </div>
+    <div class="">
+      <img src="assets/images/clear.svg" alt="" class = "clear" id = "clear5">
+    </div>
+  </div>
+
+  <div class="quizpanel">
+  <div draggable="true" ondragstart= "drag(event)" id="drag5_1" class = "drags">U</div>
+  <div draggable="true" ondragstart= "drag(event)" id="drag5_2" class = "drags">Ni</div>
+  <div draggable="true" ondragstart= "drag(event)" id="drag5_3" class = "drags">Ge</div>
+  <div draggable="true" ondragstart= "drag(event)" id="drag5_4" class = "drags">S</div>
+
+  </div>
+
+  <script>
+    function allowDrop(ev) {
+      ev.preventDefault();
+    }
+
+    function drag(ev) {
+      ev.dataTransfer.setData("text", ev.target.id);
+    }
+    var check = 0;
+    function drop(ev) {
+      ev.preventDefault();
+      var data = ev.dataTransfer.getData("text");
+      if (ev.target.id == document.getElementById(data).textContent){
+        ev.target.appendChild(document.getElementById(data));
+        check += 1;
+      }
+      if(check == 4){
+         document.getElementById("clear5").style.display = 'inline-block'
+         check = 0
+      }
+    }
+
+      document.getElementById('close5').addEventListener("click", function() {
+        document.getElementById('quiz5').style.display = 'none';
+        const scrollY = document.body.style.top;
+        document.body.style.position = 'relative';
+        document.body.style.top = '0';
+        window.scrollTo(0, parseInt(scrollY || '0') * -1)
+      });
+  </script>
+
+
+</div>
+<div class="bg-modal" id = "quiz6">
+  <div class="close" id = "close6">+</div>
+
+
+  <div class="modal-content" id="6_1">
+    <p class="quiz">이 원소는 천연 방사성 원소로, 지구상에서 가장 풍부하다.</p>
+    <script>
+    function popuphint(x) {
+      var popup = document.getElementById(x);
+      popup.classList.toggle("show");
+    }
+    function nextstatefrom61(){
+      input = document.getElementById('quiz6_1');
+      st = input.value
+      if(st == "Th"){
+        document.getElementById('6_1').style.display = 'none';
+        document.getElementById('6_2').style.display = 'inline';
+        document.getElementById('drag6_1').style.display = 'inline';
+      }
+      else{
+        document.getElementById('wrong61!').style.display = 'inline';
+      }
+    }
+    </script>
+    <form class="ret">
+       <br>
+      <input type="text" placeholder="이 원소는? (원소기호로)" id="quiz6_1"><br>
+      <input type = "submit" value = "확인하기!" onclick="nextstatefrom61()">
+    </form>
+    <div class="wrong" id = "wrong61!">
+      틀렸습니다!
+    </div>
+    <div class="popup" onclick="popuphint('mypopup6_1')">힌트!
+      <span class="popuptext" id="mypopup6_1">
+        <li>
+          <div class="">
+            원자번호가 90인 원소의 원소기호는?
+          </div>
+
+        </li>
+      </span>
+    </div>
+  </div>
+
+
+  <div class="modal-content" id="6_2">
+    <p class="quiz">소금은 염화나트륨이다. 저염소금은, 염화나트륨 대신 염화"이 원소"가 들어가 있다.</p>
+    <script>
+    function popuphint(x) {
+      var popup = document.getElementById(x);
+      popup.classList.toggle("show");
+    }
+    function nextstatefrom62(){
+      input = document.getElementById('quiz6_2');
+      st = input.value
+      if(st == "K"){
+        document.getElementById('6_2').style.display = 'none';
+        document.getElementById('6_3').style.display = 'inline';
+        document.getElementById('drag6_2').style.display = 'inline';
+      }
+      else{
+        document.getElementById('wrong62!').style.display = 'inline';
+      }
+    }
+    </script>
+    <form class="ret">
+       <br>
+      <input type="text" placeholder="이 원소는? (원소기호로)" id="quiz6_2"><br>
+      <input type = "submit" value = "확인하기!" onclick="nextstatefrom62()">
+    </form>
+    <div class="wrong" id = "wrong62!">
+      틀렸습니다!
+    </div>
+    <div class="popup" onclick="popuphint('mypopup6_2')">힌트!
+      <span class="popuptext" id="mypopup6_2">
+        <li>
+          <div class="">
+            B전시실의 ‘전류의 단위, 암페어’ 패널의 “Au < Pt < Ag < Hg < Cu < H < Pb < Sn < Ni <Fe < Zn < Al < Mg < Na < Ca < □”에서 □에 들어갈 원소는?
+          </div>
+
+        </li>
+      </span>
+    </div>
+  </div>
+
+
+  <div class="modal-content" id="6_3">
+    <p class="quiz">금속 고체로, 이 원소의 산화물은 LCD 에 주로 사용된다.</p>
+    <script>
+    function popuphint(x) {
+      var popup = document.getElementById(x);
+      popup.classList.toggle("show");
+    }
+    function nextstatefrom63(){
+      input = document.getElementById('quiz6_3');
+      st = input.value
+      if(st == "In"){
+        document.getElementById('6_3').style.display = 'none';
+        document.getElementById('6_4').style.display = 'inline';
+        document.getElementById('drag6_3').style.display = 'inline';
+      }
+      else{
+        document.getElementById('wrong63!').style.display = 'inline';
+      }
+    }
+    </script>
+    <form class="ret">
+       <br>
+      <input type="text" placeholder="이 원소는? (원소기호로)" id="quiz6_3"><br>
+      <input type = "submit" value = "확인하기!" onclick="nextstatefrom63()">
+    </form>
+    <div class="wrong" id = "wrong63!">
+      틀렸습니다!
+    </div>
+    <div class="popup" onclick="popuphint('mypopup6_3')">힌트!
+      <span class="popuptext" id="mypopup6_3">
+        <li>
+          <div class="">
+            5주기 13족 원소의 원소기호는?
+          </div>
+
+        </li>
+      </span>
+    </div>
+  </div>
+
+
+
+  <div class="modal-content" id = "6_4">
+  <div class="list">
+  <div class = "quizblocks" id = "Th" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+  <div class = "quizblocks" id = "In" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+  <div class = "quizblocks" id = "K" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+    </div>
+    <div class="">
+      <img src="assets/images/clear.svg" alt="" class = "clear" id = "clear6">
+    </div>
+  </div>
+
+  <div class="quizpanel">
+  <div draggable="true" ondragstart= "drag(event)" id="drag6_1" class = "drags">Th</div>
+  <div draggable="true" ondragstart= "drag(event)" id="drag6_2" class = "drags">K</div>
+  <div draggable="true" ondragstart= "drag(event)" id="drag6_3" class = "drags">In</div>
+
+  </div>
+
+  <script>
+    function allowDrop(ev) {
+      ev.preventDefault();
+    }
+
+    function drag(ev) {
+      ev.dataTransfer.setData("text", ev.target.id);
+    }
+    var check = 0;
+    function drop(ev) {
+      ev.preventDefault();
+      var data = ev.dataTransfer.getData("text");
+      if (ev.target.id == document.getElementById(data).textContent){
+        ev.target.appendChild(document.getElementById(data));
+        check += 1;
+      }
+      if(check == 3){
+         document.getElementById("clear6").style.display = 'inline-block'
+         check = 0
+      }
+    }
+
+      document.getElementById('close6').addEventListener("click", function() {
+        document.getElementById('quiz6').style.display = 'none';
+        const scrollY = document.body.style.top;
+        document.body.style.position = 'relative';
+        document.body.style.top = '0';
+        window.scrollTo(0, parseInt(scrollY || '0') * -1)
+      });
+  </script>
+
+
+</div>
+<div class="bg-modal" id = "quiz7">
+  <div class="close" id = "close7">+</div>
+
+
+  <div class="modal-content" id="7_1">
+    <p class="quiz">인체에서 산소를 운반하는 헤모글로빈을 구성하는 금속 원소이다.</p>
+    <script>
+    function popuphint(x) {
+      var popup = document.getElementById(x);
+      popup.classList.toggle("show");
+    }
+    function nextstatefrom71(){
+      input = document.getElementById('quiz7_1');
+      st = input.value
+      if(st == "Fe"){
+        document.getElementById('7_1').style.display = 'none';
+        document.getElementById('7_2').style.display = 'inline';
+        document.getElementById('drag7_1').style.display = 'inline';
+      }
+      else{
+        document.getElementById('wrong71!').style.display = 'inline';
+      }
+    }
+    </script>
+    <form class="ret">
+       <br>
+      <input type="text" placeholder="이 원소는? (원소기호로)" id="quiz7_1"><br>
+      <input type = "submit" value = "확인하기!" onclick="nextstatefrom71()">
+    </form>
+    <div class="wrong" id = "wrong71!">
+      틀렸습니다!
+    </div>
+    <div class="popup" onclick="popuphint('mypopup7_1')">힌트!
+      <span class="popuptext" id="mypopup7_1">
+        <li>
+          <div class="">
+            B전시실의 ‘전류의 단위, 암페어’ 패널의 “Au < Pt < Ag < Hg < Cu < H < Pb < Sn < Ni <□ < Zn < Al < Mg < Na < Ca < K”에서 □에 들어갈 원소는?
+          </div>
+
+        </li>
+      </span>
+    </div>
+  </div>
+
+
+  <div class="modal-content" id="7_2">
+    <p class="quiz"> 이 원소는 현재 대부분의 전지에 사용된다. 가장 가벼운 금속이기도 하다.</p>
+    <script>
+    function popuphint(x) {
+      var popup = document.getElementById(x);
+      popup.classList.toggle("show");
+    }
+    function nextstatefrom72(){
+      input = document.getElementById('quiz7_2');
+      st = input.value
+      if(st == "Li"){
+        document.getElementById('7_2').style.display = 'none';
+        document.getElementById('7_3').style.display = 'inline';
+        document.getElementById('drag7_2').style.display = 'inline';
+      }
+      else{
+        document.getElementById('wrong72!').style.display = 'inline';
+      }
+    }
+    </script>
+    <form class="ret">
+       <br>
+      <input type="text" placeholder="이 원소는? (원소기호로)" id="quiz7_2"><br>
+      <input type = "submit" value = "확인하기!" onclick="nextstatefrom72()">
+    </form>
+    <div class="wrong" id = "wrong72!">
+      틀렸습니다!
+    </div>
+    <div class="popup" onclick="popuphint('mypopup7_2')">힌트!
+      <span class="popuptext" id="mypopup7_2">
+        <li>
+          <div class="">
+            O전시실의 ‘원소의 규칙성을 알아보면?’ 전시물에서 아래의 그림이 그려져 있는 큐브의 원소기호는?
+          </div>
+          <div class="">
+            <img src="assets/images/7_2.JPG" alt="">
+          </div>
+        </li>
+      </span>
+    </div>
+  </div>
+
+
+
+  <div class="modal-content" id = "7_3">
+  <div class="list">
+  <div class = "quizblocks" id = "Li" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+  <div class = "quizblocks" id = "Fe" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+    </div>
+    <div class="">
+      <img src="assets/images/clear.svg" alt="" class = "clear" id = "clear7">
+    </div>
+  </div>
+
+  <div class="quizpanel">
+  <div draggable="true" ondragstart= "drag(event)" id="drag7_1" class = "drags">Fe</div>
+  <div draggable="true" ondragstart= "drag(event)" id="drag7_2" class = "drags">Li</div>
+
+  </div>
+
+  <script>
+    function allowDrop(ev) {
+      ev.preventDefault();
+    }
+
+    function drag(ev) {
+      ev.dataTransfer.setData("text", ev.target.id);
+    }
+    var check = 0;
+    function drop(ev) {
+      ev.preventDefault();
+      var data = ev.dataTransfer.getData("text");
+      if (ev.target.id == document.getElementById(data).textContent){
+        ev.target.appendChild(document.getElementById(data));
+        check += 1;
+      }
+      if(check == 2){
+         document.getElementById("clear7").style.display = 'inline-block'
+         check = 0
+      }
+    }
+
+      document.getElementById('close7').addEventListener("click", function() {
+        document.getElementById('quiz7').style.display = 'none';
+        const scrollY = document.body.style.top;
+        document.body.style.position = 'relative';
+        document.body.style.top = '0';
+        window.scrollTo(0, parseInt(scrollY || '0') * -1)
+      });
+  </script>
+
+
+</div>
+<div class="bg-modal" id = "quiz8">
+  <div class="close" id = "close8">+</div>
+
+
+  <div class="modal-content" id="8_1">
+    <p class="quiz">아미노산은 딘벡질의 기본 구성 단위이다. 이 원소는 아미노산 합성에 있어 필수적인 원소이다.</p>
+    <script>
+    function popuphint(x) {
+      var popup = document.getElementById(x);
+      popup.classList.toggle("show");
+    }
+    function nextstatefrom81(){
+      input = document.getElementById('quiz8_1');
+      st = input.value
+      if(st == "N"){
+        document.getElementById('8_1').style.display = 'none';
+        document.getElementById('8_2').style.display = 'inline';
+        document.getElementById('drag8_1').style.display = 'inline';
+      }
+      else{
+        document.getElementById('wrong81!').style.display = 'inline';
+      }
+    }
+    </script>
+    <form class="ret">
+       <br>
+      <input type="text" placeholder="이 원소는? (원소기호로)" id="quiz8_1"><br>
+      <input type = "submit" value = "확인하기!" onclick="nextstatefrom81()">
+    </form>
+    <div class="wrong" id = "wrong81!">
+      틀렸습니다!
+    </div>
+    <div class="popup" onclick="popuphint('mypopup8_1')">힌트!
+      <span class="popuptext" id="mypopup8_1">
+        <li>
+          <div class="">
+            R전시실의 ‘쓰레기는 썩어서 무엇을 남기나?’ 전시물 가스 분석기 “기타가스 □(□2), 황화수소(H2S)”에서 □에 들어갈 원소의 원소기호는?
+          </div>
+
+        </li>
+      </span>
+    </div>
+  </div>
+
+
+  <div class="modal-content" id="8_2">
+    <p class="quiz">이 원소는 나트륨과 결합하여 치약에 사용된다.</p>
+    <script>
+    function popuphint(x) {
+      var popup = document.getElementById(x);
+      popup.classList.toggle("show");
+    }
+    function nextstatefrom82(){
+      input = document.getElementById('quiz8_2');
+      st = input.value
+      if(st == "F"){
+        document.getElementById('8_2').style.display = 'none';
+        document.getElementById('8_3').style.display = 'inline';
+        document.getElementById('drag8_2').style.display = 'inline';
+      }
+      else{
+        document.getElementById('wrong82!').style.display = 'inline';
+      }
+    }
+    </script>
+    <form class="ret">
+       <br>
+      <input type="text" placeholder="이 원소는? (원소기호로)" id="quiz8_2"><br>
+      <input type = "submit" value = "확인하기!" onclick="nextstatefrom82()">
+    </form>
+    <div class="wrong" id = "wrong82!">
+      틀렸습니다!
+    </div>
+    <div class="popup" onclick="popuphint('mypopup8_2')">힌트!
+      <span class="popuptext" id="mypopup8_2">
+        <li>
+          <div class="">
+            O전시실의 ‘원소의 규칙성을 알아보면?’ 전시물에서 아래의 그림이 그려져 있는 큐브의 원소기호는?
+          </div>
+          <div class="">
+            <img src="assets/images/8_2.JPG" alt="">
+          </div>
+        </li>
+      </span>
+    </div>
+  </div>
+
+
+  <div class="modal-content" id="8_3">
+    <p class="quiz">이 원소가 농축되는 과정에서 생성된 물질은, 물보다 18.7배 무겁기에 선박의 중심을 잡는 역할을 한다.</p>
+    <script>
+    function popuphint(x) {
+      var popup = document.getElementById(x);
+      popup.classList.toggle("show");
+    }
+    function nextstatefrom83(){
+      input = document.getElementById('quiz8_3');
+      st = input.value
+      if(st == "U"){
+        document.getElementById('8_3').style.display = 'none';
+        document.getElementById('8_4').style.display = 'inline';
+        document.getElementById('drag8_3').style.display = 'inline';
+      }
+      else{
+        document.getElementById('wrong83!').style.display = 'inline';
+      }
+    }
+    </script>
+    <form class="ret">
+       <br>
+      <input type="text" placeholder="이 원소는? (원소기호로)" id="quiz8_3"><br>
+      <input type = "submit" value = "확인하기!" onclick="nextstatefrom83()">
+    </form>
+    <div class="wrong" id = "wrong83!">
+      틀렸습니다!
+    </div>
+    <div class="popup" onclick="popuphint('mypopup8_3')">힌트!
+      <span class="popuptext" id="mypopup8_3">
+        <li>
+          <div class="">
+            O전시실의 ‘원소의 규칙성을 알아보면?’ 전시물에서 아래의 그림이 그려져 있는 큐브의 원소기호는?
+          </div>
+          <div class="">
+            <img src="assets/images/8_3.JPG" alt="">
+          </div>
+        </li>
+      </span>
+    </div>
+  </div>
+
+
+
+  <div class="modal-content" id = "8_4">
+  <div class="list">
+  <div class = "quizblocks" id = "F" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+  <div class = "quizblocks" id = "U" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+  <div class = "quizblocks" id = "N" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+    </div>
+    <div class="">
+      <img src="assets/images/clear.svg" alt="" class = "clear" id = "clear8">
+    </div>
+  </div>
+
+  <div class="quizpanel">
+  <div draggable="true" ondragstart= "drag(event)" id="drag8_1" class = "drags">N</div>
+  <div draggable="true" ondragstart= "drag(event)" id="drag8_2" class = "drags">F</div>
+  <div draggable="true" ondragstart= "drag(event)" id="drag8_3" class = "drags">U</div>
+
+  </div>
+
+  <script>
+    function allowDrop(ev) {
+      ev.preventDefault();
+    }
+
+    function drag(ev) {
+      ev.dataTransfer.setData("text", ev.target.id);
+    }
+    var check = 0;
+    function drop(ev) {
+      ev.preventDefault();
+      var data = ev.dataTransfer.getData("text");
+      if (ev.target.id == document.getElementById(data).textContent){
+        ev.target.appendChild(document.getElementById(data));
+        check += 1;
+      }
+      if(check == 3){
+         document.getElementById("clear8").style.display = 'inline-block'
+         check = 0
+      }
+    }
+
+      document.getElementById('close8').addEventListener("click", function() {
+        document.getElementById('quiz8').style.display = 'none';
+        const scrollY = document.body.style.top;
+        document.body.style.position = 'relative';
+        document.body.style.top = '0';
+        window.scrollTo(0, parseInt(scrollY || '0') * -1)
+      });
+  </script>
 </div>
 
+<script src="assets/DragDropTouch.js">
 
-
-
-
-
-
-
-
+</script>
 
 <script>
   document.getElementById('button1').addEventListener('click',
   function(){
     document.getElementById('1_1').style.display = 'inline';
-    document.querySelector('.bg-modal').style.display = 'flex';
+    document.getElementById('quiz1').style.display = 'flex';
     document.body.style.position = 'fixed';
     const scrollY = document.documentElement.style.getPropertyValue('--scroll-y');
 
     document.body.style.top = `-${scrollY}`;
   });
 
-  document.querySelector('.close').addEventListener("click", function() {
-  	document.querySelector('.bg-modal').style.display = "none";
-    const scrollY = document.body.style.top;
-    document.body.style.position = 'relative';
-    document.body.style.top = '0';
-    window.scrollTo(0, parseInt(scrollY || '0') * -1)
+  document.getElementById('button2').addEventListener('click',
+  function(){
+
+    document.getElementById('2_1').style.display = 'inline';
+    document.getElementById('quiz2').style.display = 'flex';
+    document.body.style.position = 'fixed';
+    const scrollY = document.documentElement.style.getPropertyValue('--scroll-y');
+
+    document.body.style.top = `-${scrollY}`;
   });
+  document.getElementById('button3').addEventListener('click',
+  function(){
+
+    document.getElementById('3_1').style.display = 'inline';
+    document.getElementById('quiz3').style.display = 'flex';
+    document.body.style.position = 'fixed';
+    const scrollY = document.documentElement.style.getPropertyValue('--scroll-y');
+
+    document.body.style.top = `-${scrollY}`;
+  });
+  document.getElementById('button4').addEventListener('click',
+  function(){
+
+    document.getElementById('4_1').style.display = 'inline';
+    document.getElementById('quiz4').style.display = 'flex';
+    document.body.style.position = 'fixed';
+    const scrollY = document.documentElement.style.getPropertyValue('--scroll-y');
+
+    document.body.style.top = `-${scrollY}`;
+  });
+  document.getElementById('button5').addEventListener('click',
+  function(){
+
+    document.getElementById('5_1').style.display = 'inline';
+    document.getElementById('quiz5').style.display = 'flex';
+    document.body.style.position = 'fixed';
+    const scrollY = document.documentElement.style.getPropertyValue('--scroll-y');
+
+    document.body.style.top = `-${scrollY}`;
+  });
+  document.getElementById('button6').addEventListener('click',
+  function(){
+
+    document.getElementById('6_1').style.display = 'inline';
+    document.getElementById('quiz6').style.display = 'flex';
+    document.body.style.position = 'fixed';
+    const scrollY = document.documentElement.style.getPropertyValue('--scroll-y');
+
+    document.body.style.top = `-${scrollY}`;
+  });
+  document.getElementById('button7').addEventListener('click',
+  function(){
+
+    document.getElementById('7_1').style.display = 'inline';
+    document.getElementById('quiz7').style.display = 'flex';
+    document.body.style.position = 'fixed';
+    const scrollY = document.documentElement.style.getPropertyValue('--scroll-y');
+
+    document.body.style.top = `-${scrollY}`;
+  });
+  document.getElementById('button8').addEventListener('click',
+  function(){
+
+    document.getElementById('8_1').style.display = 'inline';
+    document.getElementById('quiz8').style.display = 'flex';
+    document.body.style.position = 'fixed';
+    const scrollY = document.documentElement.style.getPropertyValue('--scroll-y');
+
+    document.body.style.top = `-${scrollY}`;
+  });
+
+
   function continuefrom() {
     input = document.getElementById('myInput');
     st = input.value;
@@ -134,14 +1735,15 @@
   document.documentElement.style.setProperty('--scroll-y', `${window.scrollY}px`);
 });
 
-
+  var ans = [["Ba", "Y", "B"], ["Ni","U","C","Rn","O"],["K","O","Co"],["Ba","N","Co"],
+  ["U","Ni","Ge","S"],["Th","K","In"],["Fe","Li"],["N","F","U"]];
 
   function nextstatefrom(state){
     r = 'quiz'+state
     input = document.getElementById(r);
     st = input.value
     if(st == "hi"){
-      document.getElementById('wrong!').style.display = 'none'
+
       document.getElementById('1_1').style.display = 'none';
       document.getElementById('1_2').style.display = 'inline';
     }
