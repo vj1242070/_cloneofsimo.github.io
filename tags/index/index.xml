@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>index on Not everything about Simo Ryu</title>
-    <link>https://example.com/tags/index/</link>
+    <link>https://simoryu.com/tags/index/</link>
     <description>Recent content in index on Not everything about Simo Ryu</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     
-	<atom:link href="https://example.com/tags/index/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://simoryu.com/tags/index/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Posts</title>
-      <link>https://example.com/post/</link>
+      <link>https://simoryu.com/post/</link>
       <pubDate>Sun, 17 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/post/</guid>
+      <guid>https://simoryu.com/post/</guid>
       <description></description>
     </item>
     

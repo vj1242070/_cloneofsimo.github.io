@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>business on Not everything about Simo Ryu</title>
-    <link>https://example.com/categories/business/</link>
+    <link>https://simoryu.com/categories/business/</link>
     <description>Recent content in business on Not everything about Simo Ryu</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sun, 17 May 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://example.com/categories/business/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://simoryu.com/categories/business/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Financial Management - 2</title>
-      <link>https://example.com/post/2020-05-17/</link>
+      <link>https://simoryu.com/post/2020-05-17/</link>
       <pubDate>Sun, 17 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/post/2020-05-17/</guid>
+      <guid>https://simoryu.com/post/2020-05-17/</guid>
       <description>Present Value 💰 Q1: If you receive $ 7 next year, and the prevailing interest rate for investing in any type of project is 40%, what do you value this &amp;quot;$ 7&amp;quot; today?</description>
     </item>
     
     <item>
       <title>Financial Management - 1</title>
-      <link>https://example.com/post/financial_management/</link>
+      <link>https://simoryu.com/post/financial_management/</link>
       <pubDate>Sat, 16 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/post/financial_management/</guid>
+      <guid>https://simoryu.com/post/financial_management/</guid>
       <description>Overview of Financial Management Philosophy: it is more import to know the basics well and be able to apply them to new situations than it is to know everything there is to know.</description>
     </item>
     
