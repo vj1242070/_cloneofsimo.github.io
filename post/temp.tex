@@ -1,0 +1,140 @@
+\section{Present Value}
+
+Q1: If you receive \$ 7 next year, and the prevailing interest rate for investing in any type of project is 40\%, what do you value this "\$ 7" today?
+
+If the value of "\$ 7" was X today, it would mean by spending X on another project it would yield \$ 7 in the future. --> X = 5.
+
+Q2: If you will receive \$ 7 in two years, and the prevailing  interest rate is 40\% /year, what do you value this \$ 7 as of today?
+
+Given cash flow $CF_t$ at time t,, what is the PV formula?
+
+\[
+PV = CF_0 = \frac{CF_t}{(1 + r_{0,t}^2}
+\]
+
+The quantity $1/(1 + r_{0,t})$ is called \textbf{discount factor}
+
+In this context, the discount rate is also often called the opportunity cost of capital, because you should think of it either representing your alternative investment opportunities or your cost of borrowing.
+
+Q3: How does the price of a bond change if the economy wide interest rate changes?
+
+bond = "fixed income" , coupon.
+
+The price of bond decrease as interest rate increase. (given fixed income in future)
+
+Q4: If you receive 7\$ this year and next year, and alternative interest rate is 40\%, what is the value of the project (that two 7\$?)
+
+\[PV = 7/1.4 + 7/1.4^2 = 8.57\]
+
+If this project costs \$ 8, should you ivest? yes.
+
+\textbf{Net PV: 8.57 - 8 = 0.57} therefore invest!
+
+\[
+NPV = CF_0 + \frac{CF_1}{(1 + r_{0,1}} + \frac{CF_2}{(1 + r_{0,2}) + ...} 
+\]
+
+This is called NPV, because $CF_0$ is often negative.
+
+In a perfect world, you should take all positive NPV projects.
+
+Q5: Is a good stock or good firm a good investment? Is a bad stock or bad firm a bad investment? / Are fast - growing firms better investments than slow - growing firms?
+
+The question is not enough! We need to know the price ($P_0 = CF_0$) and the future value! (PV = sum of all $CF_i$)
+
+
+\section{Chapter 3: Perpetuties and Annuities}
+
+In this chapter, we will still assume perfect markets, and we will again assume perfect certainty.
+
+We again assume equal rates of returns in each period.
+
+Simple perpetuity:
+A perpetuity is a financial instrument that pays C dollars per period forever.
+If the interest rate is constant and the first payment from the perpetuity arrives in period 1, then the PV 
+
+\[
+PV = \sum_{1}^{\infty} \frac{C}{(1 + r)^t} = C/r
+\]
+
+Q1 What is the value of a promise to recieve 10\$ forever, beginning next year, forever?
+
+PV = C/r = 10/0.05 = 200 \$
+
+Q2 What is the value of a promise to receive \$10 forever, beginning this year, if the interest rate is 5\% per year?
+
+ans: then we have to add 10\$ to our formula.
+
+\subsection{Growing Perpetuity}
+
+The PV of growing perpetuity can be quickly computed as:
+
+\[
+PV = \sum_{t = 1}^{\infty} \frac{CF_1 (1 + g)^{t - 1}}{(1 + r)^t} = CF_1/(r - g)
+\]
+
+Q3 What is the value of a promise to receive \$ 10 next year, growing by 2\%, forever, if the interest rate is 6\% per year?
+
+\[
+PV = \frac{10}{0.06 - 0.02} = 250
+\]
+
+Q4: What is the value of a firm that just paid \$ 10 this year, by 2\% forever, if the interest rate is 5\% per year?
+
+If it already paid, then : $PV = \frac{c}{r - g} = \frac{10.2}{0.06 - 0.02} = 250.5$
+
+If it is yet to be paid, then: $PV = 250.5 + 10$
+
+\subsection{Inflation}
+A measure of the rate at which the average price level increases
+:
+It reflects the decrease in purchasing power over time
+
+In general, the real rate of return is the nominal rate of return adjusted by the inflation rate (often called the Fisher Effect)
+
+\[
+1 + r = \frac{1 + i}{1 + \pi}
+\]
+
+\[
+r \~ i - \pi
+\]
+
+Common usage of Growing perpetuity Formula
+
+Growing perpetuity shortcuts are commonly used, and in many contexts. The most prominent use occurs in "pro - formas", where growing perpetuities are typically used to guesstimate the present value of the residual firm value after an arbitrary T years in the future. A common long run growth rate is often the inflation rate. The first T years are computed with more detail.
+
+Q5: What should be the share price of a firm that pays dividends of \$ 1 per year, whose dividends have grown by 4 \% every year and will continue to do so forever, if its cost of capital is 12\% per annnum?
+
+Note that cost of capital means the other choice you could've had so that you'll gain 12\% per year. Thus, can think that inflation is about 12\% per year.
+\[
+PV = \frac{D_1}{r-g} = \frac{1}{0.12 - 0.04} = 12.5
+\]
+If it was paid at the end of the year, it would be 13
+
+Q6: What is the cost of captital for a firm that pays a dividend yield of 5\% per annum today, if its dividends are expected to grow at a rate of 3\% per annum forever?
+
+\textbf{Dividend Yield} is simply dividend / price of a firm
+
+\begin{align*}
+    P &= \frac{D}{r - g}\\
+    \frac{P}{D} &= \frac{1}{r - g}\\
+    r &= g + \frac{D}{p} = 3\% + 5\% = 8\%
+\end{align*}
+
+\subsection{Stock valuation with Gordon growth model}
+
+\textbf{PV = growing perpetuity}
+
+Perpetuities are usually incorrect, but they are often used for upper bound.
+
+
+Q7: In 2000, the P/E ratio of the stock market reached about 45. Assume that these corporations will grow roughly at the overall economy's growth rate of 5\% per year, what should investors have reasonably expected in terms of a likely future rate of return implied by the stock market's level?
+
+\begin{align*}
+    P/E &= 45, g = 5\% \\
+    P &= \frac{E}{r - g}\\
+    \frac{P}{E} &= \frac{1}{r-g}\\
+    r &= g + \frac{E}{P}\\
+    &= 5\% + 1/45 = 7.8\% 
+\end{align*}
