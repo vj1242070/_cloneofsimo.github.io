@@ -74,7 +74,7 @@
         
         <div class="info">
           <i class="fa fa-sun-o"></i><span class="date">Tue, May 19, 2020</span>
-          <i class="fa fa-clock-o"></i><span class="reading-time">4-minute read</span>
+          <i class="fa fa-clock-o"></i><span class="reading-time">5-minute read</span>
         </div>
         
         </div>
@@ -134,8 +134,20 @@ Also called annualized rate or return.</p>
 <p><code>$! \begin{aligned} P_0 &amp;= 806,070\\ PV &amp;= \frac{100,000}{r-3} \Big(1 - \frac{(1+3\%)^{15}}{(1+r)^{15}}\Big)\\ r &amp;= 11.76 \% \end{aligned} $!</code></p>
 <p>Q6: In 2016 google had P/E ratio of 27. If the cost of capital was 8%, what was the market&rsquo;s expected growth rate?</p>
 <p><code>$! \begin{aligned} P &amp;= \frac{E}{r - g} \\ 27 &amp;= \frac{1}{8 - g} \\ g &amp;= 4.2\% \end{aligned} $!</code></p>
+<p>Q7: If the dealer said that you can have 12 month car loans with 9%, and they asked you to pay them $10900/12 = $908.33 per month, would they be correct?</p>
+<blockquote>
+<p>No! If you are paying cash earlier than 1 year (that is, every month), you are actually paying them more than you have to!</p>
+</blockquote>
+<blockquote>
+<p>To be clear, if you were to pay &ldquo;at the interest rate of 9% per year&rdquo;, you would have to pay C such that:</p>
+</blockquote>
+<p><code>$! \$ 10,000 = \frac{C}{1 + r_m} + \frac{C}{(1+r_m)^2} + \ldots + \frac{C}{(1+r_m)^{12}}    $!</code></p>
+<blockquote>
+<p>where $$r_m$$ would be 0.721%, as <code>$$ (1 + r_m)^{12} = 1 + 9\% $$</code></p>
+</blockquote>
+<p>But if you were to pay &ldquo;at the interest rate of 9% per year&rdquo;,</p>
 <p>What is the actual interest rate on the car dealer&rsquo;s proposed deal loan?</p>
-<p><code>$! \$ 10,000 = \frac{908}{1 + r_m} + \frac{908}{(1+r_m)^2} + \ldots + \frac{1}{(1+r_m)^{12}} $!</code></p>
+<p><code>$! \$ 10,000 = \frac{908}{1 + r_m} + \frac{908}{(1+r_m)^2} + \ldots + \frac{908}{(1+r_m)^{12}}   \\ \\ r = 17.5 \% $!</code></p>
 
     </div>
     <div class="post-footer">
