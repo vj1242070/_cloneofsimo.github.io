@@ -108,7 +108,7 @@ Financial assets have claims over real assets</p>
 <p>We use a narrow and specific definition of value. The magnitude of
 present and future net monetary benefits as a consequence of the
 allocation decisions</p>
-<p>$!!(intrinsic)Value = \frac{E(CF_1}{1 + E(r)} + \frac{E(CF_2)}{(1 + E(r))^2} + &hellip;$!!</p>
+<p>$!(intrinsic)Value = \frac{E(CF_1}{1 + E(r)} + \frac{E(CF_2)}{(1 + E(r))^2} + &hellip;$!</p>
 <p>Finance cannot estimate philosophical or moral value.</p>
 <p>Valuation is forward looking.</p>
 <ul>
@@ -180,7 +180,7 @@ the firm&rsquo;s claimants.</p>
 suppliers who sold product on credit, or governments who demand taxes.</p>
 <p><strong>Corporate Accounting Identities</strong> By definition, the sum of the value
 of all claims is the value of the firm.</p>
-<p>$!!Firm = Debt + Other liabilites + Equity  = All Future Payouts$!!</p>
+<p>$!Firm = Debt + Other liabilites + Equity  = All Future Payouts$!</p>
 <p>If you own all claims, you own the firm!</p>
 <p>Firm value = value of all claims.</p>
 <p>IF YOU OWN THE PROJECT, you own all net earnings of the project.</p>
@@ -219,7 +219,7 @@ will you have at the end of the year?</p>
 </ol>
 <p>Why do we have this assumption?</p>
 <p>Wrong logic in the simplest world, that must be wrong in the real world
-too!!</p>
+too!</p>
 <p>In this chapter, we go further and also assume that there is no
 <strong>UNCERTAINTY</strong>, and assume equal rate of return.</p>
 <p>C, CF = cash amount</p>
@@ -233,7 +233,7 @@ interest rate.</p>
 <p>When we say &quot;return&quot;, we usually mean &quot;rate of return&quot;</p>
 <p>rate of return = $$r = \frac{CF_1 - CF_0}{CF_0} = \frac{CF_1}{CF_0} - 1$$</p>
 <p>When there are dividends (or coupon or rent) paid at the end of the
-period, we have: $!!r = \frac{CF_1 + D_1 - CF_0}{CF_0}$!!</p>
+period, we have: $!r = \frac{CF_1 + D_1 - CF_0}{CF_0}$!</p>
 <p>The dividend yield is $$D_1 / CF_0$$</p>
 <p>If the rate of return is positive, can the percent price change be
 negative?</p>
@@ -245,7 +245,7 @@ Capital Gain) is negative, because:</p>
 <p>$$ppc = \frac{95 - 100}{100} = -0.05$$</p>
 <p>Q2: If you invest $ 5 and will receive $ 8 in 10 years, what is yout
 holding rate of return?</p>
-<p>$!!\frac{8 - 5}{5}$!!</p>
+<p>$!\frac{8 - 5}{5}$!</p>
 <p>Q3: Can a rate of return be negative?</p>
 <p>Obviously, yes.</p>
 <p>Q4: Can an interest rate be negative?</p>
@@ -269,22 +269,22 @@ will you have?</p>
 <p>$ 5 ( 1 + 2.5) = $ 17.50</p>
 <p>Q9: What is the formula for the FV (Future value) of money? How does it
 relate to the rate of return formula?</p>
-<p>$!!C_1 = C_0 ( 1 + r)$!! $!!FV = PV ( 1 + r)$!!</p>
-<p>$!!\frac{FV}{PV} - 1 = r$!!</p>
+<p>$!C_1 = C_0 ( 1 + r)$! $!FV = PV ( 1 + r)$!</p>
+<p>$!\frac{FV}{PV} - 1 = r$!</p>
 <p>If you have $ and you earn a rate of return of 20% in the first year
 and a rate of return of 20% the following year, how much money will you
 have?</p>
-<p><code>$!! \$ 5\xrightarrow{} \$ 5  ( 1 + 0.2 ) \xrightarrow{}  \$ 5 ( 1 + 0.2)^2 $!!</code></p>
+<p><code>$! \$ 5\xrightarrow{} \$ 5  ( 1 + 0.2 ) \xrightarrow{}  \$ 5 ( 1 + 0.2)^2 $!</code></p>
 <p><strong>This is called &quot;Compound interest rate&quot;</strong></p>
 <p>Q10: If your first year rate of return in 20%, and next year is 50%, is
 your rate of return 70%?</p>
 <p>&ndash;&gt; no! it is (1 + 0.2)(1 + 0.5) - 1 = 0.8 !</p>
 <p>Q11: What is the compounding formula to get $$r_{0,x}$$?</p>
-<p>$!!1 + r_{0,x} = (1 + r_1)(1 + r_2) \dots (1 + r_x)$!!</p>
+<p>$!1 + r_{0,x} = (1 + r_1)(1 + r_2) \dots (1 + r_x)$!</p>
 <p>For small $$x$$, we have the following approximation:</p>
-<p>$!!(1 + x)^n ~ 1 + nx$!!</p>
+<p>$!(1 + x)^n ~ 1 + nx$!</p>
 <p>Q12: If the annual interest rate is 14%, what is the daily rate?</p>
-<p>$!! (1 + r)^{365} = 1.14$!! $!!r = 0.14/365 = 0.0359%$!!</p>
+<p>$! (1 + r)^{365} = 1.14$! $!r = 0.14/365 = 0.0359%$!</p>
 <p>Q13: Is compounding more like &quot;adding&quot; or &quot;averaging&quot;? its more like
 adding.</p>
 <p>Warning : Convention and Jargon</p>
@@ -336,12 +336,8 @@ Yield(rate)</strong>.</p>
     document.addEventListener("DOMContentLoaded", function() {
         renderMathInElement(document.body, {
             delimiters:[
-
             {left: "$$", right: "$$", display: false},
-            
-            {left: "$!!", right: "$!!", display: true},
-            {left: "\[", right: "\]", display: true},
-
+            {left: "$!", right: "$!", display: true},
             ]
             ,
             ignoredTags:

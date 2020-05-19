@@ -6,10 +6,19 @@
     <description>Recent content in business on Not everything about Simo Ryu</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 18 May 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 19 May 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://simoryu.com/categories/business/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Financial Management : Stock and Bond valuation 2</title>
+      <link>https://simoryu.com/post/20200519_1/</link>
+      <pubDate>Tue, 19 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://simoryu.com/post/20200519_1/</guid>
+      <description>Annuities AN annuity is a financial instrument that pays $$CF$$ dollars for $$T$$ years.</description>
+    </item>
     
     <item>
       <title>E - Commerce (1) : Overview and EIS</title>
@@ -39,7 +48,7 @@
     </item>
     
     <item>
-      <title>Financial Management - 2: new</title>
+      <title>Financial Management: Stock and Bond valuation 1</title>
       <link>https://simoryu.com/post/2020-05-17/</link>
       <pubDate>Sun, 17 May 2020 00:00:00 +0000</pubDate>
       
