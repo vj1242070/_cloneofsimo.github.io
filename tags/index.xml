@@ -6,10 +6,37 @@
     <description>Recent content in Tags on Not everything about Simo Ryu</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 19 May 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 20 May 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://simoryu.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>logistics</title>
+      <link>https://simoryu.com/tags/logistics/</link>
+      <pubDate>Wed, 20 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://simoryu.com/tags/logistics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>management-information-system</title>
+      <link>https://simoryu.com/tags/management-information-system/</link>
+      <pubDate>Wed, 20 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://simoryu.com/tags/management-information-system/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>money</title>
+      <link>https://simoryu.com/tags/money/</link>
+      <pubDate>Wed, 20 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://simoryu.com/tags/money/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>database</title>
@@ -26,33 +53,6 @@
       <pubDate>Tue, 19 May 2020 00:00:00 +0000</pubDate>
       
       <guid>https://simoryu.com/tags/financial-management/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>money</title>
-      <link>https://simoryu.com/tags/money/</link>
-      <pubDate>Tue, 19 May 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://simoryu.com/tags/money/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>logistics</title>
-      <link>https://simoryu.com/tags/logistics/</link>
-      <pubDate>Mon, 18 May 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://simoryu.com/tags/logistics/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>management-information-system</title>
-      <link>https://simoryu.com/tags/management-information-system/</link>
-      <pubDate>Mon, 18 May 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://simoryu.com/tags/management-information-system/</guid>
       <description></description>
     </item>
     

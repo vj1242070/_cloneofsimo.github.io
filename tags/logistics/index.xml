@@ -6,10 +6,19 @@
     <description>Recent content in logistics on Not everything about Simo Ryu</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 18 May 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 20 May 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://simoryu.com/tags/logistics/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Supply Contracts 2</title>
+      <link>https://simoryu.com/post/20200520_1/</link>
+      <pubDate>Wed, 20 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://simoryu.com/post/20200520_1/</guid>
+      <description>More on the Revenue sharing Contract By increasing the $$C_s = 125 - 80$$, by taking $80 down to $60, (so manufacturer will make less profit per item,but more item) retailers can increase the revenue.</description>
+    </item>
     
     <item>
       <title>Supply Contracts</title>
