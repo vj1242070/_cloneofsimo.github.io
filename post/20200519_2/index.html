@@ -74,7 +74,7 @@
         
         <div class="info">
           <i class="fa fa-sun-o"></i><span class="date">Tue, May 19, 2020</span>
-          <i class="fa fa-clock-o"></i><span class="reading-time">1-minute read</span>
+          <i class="fa fa-clock-o"></i><span class="reading-time">3-minute read</span>
         </div>
         
         </div>
@@ -105,6 +105,121 @@ Data sources often store only current data, not historical data. Data warehouse 
 </li>
 </ol>
 <h3 id="multidimensional-data-and-warehouse-schemas">Multidimensional Data and Warehouse Schemas</h3>
+<h1 id="physical-storage">Physical storage</h1>
+<ol>
+<li>primary storage : fastest media but volatile</li>
+<li>Secondary storage : next level in hierarchy, non - volatile, moderately fast. (usb, ssd, &hellip;)</li>
+<li>tertiary storage : slowest</li>
+</ol>
+<h3 id="1-primary-storage">1. Primary Storage</h3>
+<ul>
+<li>Cache</li>
+<li>Main memory
+: fast access (but too small, and volatile)</li>
+</ul>
+<h3 id="2-secondary-storage">2. Secondary Storage*</h3>
+<ul>
+<li>Magnetic disk:</li>
+</ul>
+<ul>
+<li>direct access. very large. sdd, hdd.</li>
+</ul>
+<h3 id="tertiary-storage">Tertiary Storage</h3>
+<p>Optical storage, tape. very high capacity.</p>
+<h2 id="disk-controller">Disk controller</h2>
+<h2 id="performace-rate">Performace rate:</h2>
+<ul>
+<li>Data - transfer rate
+<ul>
+<li>rate that controller can handle is also important</li>
+</ul>
+</li>
+<li>Mean time to failure (MTTF)</li>
+</ul>
+<h2 id="optimization-of-disk---block-access">Optimization of Disk - Block access</h2>
+<p>Block - a contiguous sequence of sectors from a single track:</p>
+<ul>
+<li>data is transferred between disk and main memory in Blocks</li>
+</ul>
+<dl>
+<dt>RAID Level 5:</dt>
+<dt>partitions data and parity among N + 1 disks, rather than storing data in N disks and parity in 1 disk</dt>
+<dd>
+<p>compared to level 1, lower storage overhead but higher time overhead for writes.</p>
+</dd>
+</dl>
+<h1 id="data-storage-structure">Data storage structure</h1>
+<h2 id="file-organization">File organization</h2>
+<p>the database is stored as collection files:</p>
+<ul>
+<li>File is sequence of records,</li>
+<li>Record is sequence of fields,</li>
+<li>It is units of blocks.</li>
+</ul>
+<h4 id="how-to-represent-records-in-a-file-structure-">How to represent records in a file structure :</h4>
+<ul>
+<li>Fixed length records</li>
+<li>Variable length records. (multiple record types are stored in a file)</li>
+</ul>
+<h4 id="free-lists">Free lists:</h4>
+<p>Store the address of the first deleted record in the file header. Rest is normal &ldquo;list&rdquo; data structure.</p>
+<h4 id="variable-length-records">variable length Records.</h4>
+<ul>
+<li>Issues:
+<ul>
+<li>How to represent a single record in a way that attributes can be extracted easily?</li>
+</ul>
+</li>
+</ul>
+<h4 id="organization-of-records-in-files">Organization of Records in files</h4>
+<p>Free space map: array with 1 entry per block, records fraction of blocks that is free. If the block is too many, can make second - level free space map.</p>
+<h4 id="sequential-file-organization">Sequential File Organization.</h4>
+<p>The records in the file are ordred by search - key.</p>
+<h4 id="data-dictionary">Data dictionary.</h4>
+<ul>
+<li>also called <em>system catalog</em> stores metadata.</li>
+</ul>
+<h4 id="column-oriented-storage">Column oriented storage</h4>
+<ul>
+<li>also known as columnar representation.
+Benefits:
+reduced IO if only some attributes are accessed.
+improved compression.
+Some databases support both representation.</li>
+</ul>
+<h1 id="relational-database-design">Relational Database design</h1>
+<h2 id="bcnf">BCNF</h2>
+<p>A relational schema R is in <strong>BCNF</strong> with respect to a set F of FDs if for all functional dependencies in F+ of the form
+$! a \rarr b \in F^+$! 
+at least one of the following holds:</p>
+<ul>
+<li>$$ a \rarr b $$ is trivial</li>
+<li>$$a$$ is superkey for R</li>
+</ul>
+<p>For example, if in_dept(ID, name, dept_name, building, ..) is scema, dept_name -&gt; building, budget.
+But, dept_name is NOT superkey of R (in_dept)
+Therefore is not BCNF.</p>
+<p>BCNF is lossless, but, it isn&rsquo;t <strong>dependency preserving</strong>.</p>
+<p>a -&gt; b, a,b -&gt; c
+R1 = a,b, R2 = a,c</p>
+<p>But, no a,b -&gt; c is implied here.</p>
+<p><strong>Example of BCNF</strong></p>
+<p><img src="/img/20200519_2_2020-05-21-12-00-33.png" alt=""></p>
+<h2 id="third-normal-form">Third Normal Form</h2>
+<p><strong>lossless, dependency preserving, but redundancy problem</strong></p>
+<p>A relational schema R is in third normal form (3NF) if for all:</p>
+<p>$! a \rarr b \in F^+ $!
+at least one follows:</p>
+<ul>
+<li>$$ a \rarr b $$ is trivial</li>
+<li>$$a$$ is superkey</li>
+<li>Each attribute A in $$b - a$$ is contained in a candidate key for R</li>
+</ul>
+<p><strong>Example</strong>:</p>
+<p>R = {J, K, L}</p>
+<p>F = {JK -&gt; L, L -&gt; K}</p>
+<p>One can see that R is in 3NF. But, there is redundancy in this schema. Since L, K can be repetitive, but has to be listed fully in R.</p>
+<h2 id="denormalization-for-performance">Denormalization for Performance</h2>
 
     </div>
     <div class="post-footer">
