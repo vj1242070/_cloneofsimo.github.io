@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <title> Simo Ryu | Financial Management: Stock and Bond valuation 1 </title>
+    <meta charset="utf-8"><meta name="generator" content="Hugo 0.70.0" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="https://simoryu.com/css/style.css" type="text/css">
+    
+    <link rel="stylesheet" href="https://simoryu.com/hi" type="text/css">
+    
+    <link rel="shortcut icon" href="https://simoryu.com/favicons/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://simoryu.com/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://simoryu.com/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://simoryu.com/favicons/favicon-16x16.png">
+
+    <link rel="canonical" href="https://simoryu.com/post/20200517_1/">
+</head><body><div class="sidebar animated fadeInDown">
+    <div class="logo-title">
+      <div class="title">
+        <img src="https://simoryu.com/images/pro2.jpg" alt="profile picture" style="width:127px;border-radius: 50%;">
+        <h3 title=""><a href="/">My name is Simo Ryu</a></h3>
+        <div class="description">
+          <p></p>
+        </div>
+      </div>
+    </div>
+    <ul class="social-links">
+        
+        <a href="https://de.linkedin.com/" rel="me" >
+          <i class="fa fa-linkedin" aria-hidden="true" title="Linkedin"></i>
+        </a>
+        
+        <a href="https://github.com/lxndrblz/anatole/" rel="me" >
+          <i class="fa fa-github" aria-hidden="true" title="GitHub"></i>
+        </a>
+        
+        <a href="https://www.instagram.com/simo.ryu" rel="me" >
+          <i class="fa fa-instagram" aria-hidden="true" title="instagram"></i>
+        </a>
+        
+        <a href="cloneofsimo@gmail.com" rel="me" >
+          <i class="fa fa-envelope" aria-hidden="true" title="e-mail"></i>
+        </a>
+        
+    </ul>
+    <div class="footer">
+        <div class="by_farbox">&copy; Simo Ryu 2020 </div>
+      </div>
+    </div>
+</div><div class="main">
+            <div class="page-top animated fadeInDown">
+    <div class="nav">
+        
+        
+        <li><a  href="/" title="">Home</a></li>
+
+        
+        <li><a  href="/post/" title="">Posts</a></li>
+
+        
+        <li><a  href="/about/" title="About">About</a></li>
+
+        
+    </div>
+</div>
+            <div class="autopagerize_page_element">
+                <div class="content">
+<div class="post animated fadeInDown">
+    <div class="post-content">
+
+      <div class="post-title">
+        <h3>Financial Management: Stock and Bond valuation 1
+        </h3>
+        
+        <div class="info">
+          <i class="fa fa-sun-o"></i><span class="date">Sun, May 17, 2020</span>
+          <i class="fa fa-clock-o"></i><span class="reading-time">5-minute read</span>
+        </div>
+        
+        </div>
+
+    <h1 id="present-value-">Present Value 💰</h1>
+<p>Q1: If you receive $ 7 next year, and the prevailing interest rate for
+investing in any type of project is 40%, what do you value this &quot;$ 7&quot;
+today?</p>
+<p>If the value of &quot;$ 7&quot; was X today, it would mean by spending X on
+another project it would yield $ 7 in the future. <code>$$\to$$</code> X = 5.</p>
+<p>Q2: If you will receive $ 7 in two years, and the prevailing interest
+rate is 40% /year, what do you value this $ 7 as of today?</p>
+<p>Given cash flow $$CF_t$$ at time t,, what is the PV formula?</p>
+<p>$!PV = CF_0 = \frac{CF_t}{(1 + r_{0,t}^2)}$!</p>
+<p>The quantity $$1/(1 + r_{0,t})$$ is called **discount factor**</p>
+<p>In this context, the discount rate is also often called the opportunity
+cost of capital, because you should think of it either representing your
+alternative investment opportunities or your cost of borrowing.</p>
+<p>Q3: How does the price of a bond change if the economy wide interest
+rate changes?</p>
+<p>bond = &quot;fixed income&quot; , coupon.</p>
+<p>The price of bond decrease as interest rate increase. (given fixed
+income in future)</p>
+<p>Q4: If you receive 7$ this year and next year, and alternative interest
+rate is 40%, what is the value of the project (that two 7$?)</p>
+<p>$!PV = 7/1.4 + 7/1.4^2 = 8.57$!</p>
+<p>If this project costs $ 8, should you ivest? yes.</p>
+<p><strong>Net PV: 8.57 - 8 = 0.57</strong> therefore invest!</p>
+<p>$!NPV = CF_0 + \frac{CF_1}{(1 + r_{0,1}} + \frac{CF_2}{(1 + r_{0,2})} + &hellip;$!</p>
+<p>This is called NPV, because $$CF_0$$ is often negative.</p>
+<p>In a perfect world, you should take all positive NPV projects.</p>
+<p>Q5: Is a good stock or good firm a good investment? Is a bad stock or
+bad firm a bad investment? / Are fast - growing firms better investments
+than slow - growing firms?</p>
+<p>The question is not enough! We need to know the price ($$P_0 = CF_0$$) and
+the future value! (PV = sum of all $$CF_i$$)</p>
+<h1 id="perpetuties-and-annuities">Perpetuties and Annuities</h1>
+<p>In this chapter, we will still assume perfect markets, and we will again
+assume perfect certainty.</p>
+<p>We again assume equal rates of returns in each period.</p>
+<p>Simple perpetuity: A perpetuity is a financial instrument that pays C
+dollars per period forever. If the interest rate is constant and the
+first payment from the perpetuity arrives in period 1, then the PV</p>
+<p>$!PV = \sum_{1}^{\infty} \frac{C}{(1 + r)^t} = C/r$!</p>
+<p>Q1 What is the value of a promise to recieve 10$ forever, beginning
+next year, forever?</p>
+<p>PV = C/r = 10/0.05 = 200 $</p>
+<p>Q2 What is the value of a promise to receive $10 forever, beginning
+this year, if the interest rate is 5% per year?</p>
+<p>ans: then we have to add 10$ to our formula.</p>
+<h2 id="growing-perpetuity">Growing Perpetuity</h2>
+<p>The PV of growing perpetuity can be quickly computed as:</p>
+<p>$!PV = \sum_{t = 1}^{\infty} \frac{CF_1 (1 + g)^{t - 1}}{(1 + r)^t} = CF_1/(r - g)$!</p>
+<p>Q3 What is the value of a promise to receive $ 10 next year, growing by
+2%, forever, if the interest rate is 6% per year?</p>
+<p>$!PV = \frac{10}{0.06 - 0.02} = 250$!</p>
+<p><strong>Q4: What is the value of a firm that just paid $ 10 this year, by 2%
+forever, if the interest rate is 5% per year?</strong></p>
+<p>If it already paid, then :
+$$PV = \frac{c}{r - g} = \frac{10.2}{0.06 - 0.02} = 250.5$$</p>
+<p>If it is yet to be paid, then: $$PV = 250.5 + 10$$</p>
+<h2 id="inflation">Inflation</h2>
+<p>A measure of the rate at which the average price level increases : It
+reflects the decrease in purchasing power over time</p>
+<p>In general, the real rate of return is the nominal rate of return
+adjusted by the inflation rate (often called the Fisher Effect)</p>
+<p>$!1 + r = \frac{1 + i}{1 + \pi}$!</p>
+<p>$!r = i - \pi$!</p>
+<p>Common usage of Growing perpetuity Formula</p>
+<p>Growing perpetuity shortcuts are commonly used, and in many contexts.
+The most prominent use occurs in &quot;pro - formas&quot;, where growing
+perpetuities are typically used to guesstimate the present value of the
+residual firm value after an arbitrary T years in the future. A common
+long run growth rate is often the inflation rate. The first T years are
+computed with more detail.</p>
+<p><strong>Q5: What should be the share price of a firm that pays dividends of $ 1
+per year, whose dividends have grown by 4 % every year and will continue
+to do so forever, if its cost of capital is 12% per annnum?</strong></p>
+<p>Note that cost of capital means the other choice you could&rsquo;ve had so
+that you&rsquo;ll gain 12% per year. Thus, can think that inflation is about
+12% per year. $!PV = \frac{D_1}{r-g} = \frac{1}{0.12 - 0.04} = 12.5$! If
+it was paid at the end of the year, it would be 13</p>
+<p><strong>Q6: What is the cost of captital for a firm that pays a dividend yield
+of 5% per annum today, if its dividends are expected to grow at a rate
+of 3% per annum forever?</strong></p>
+<p><strong>Dividend Yield</strong> is simply dividend / price of a firm</p>
+<p><code>$!\begin{aligned} P &amp;= \frac{D}{r - g}\\ \frac{P}{D} &amp;= \frac{1}{r - g}\\ r &amp;= g + \frac{D}{p} = 3\% + 5\% = 8\%\end{aligned}$!</code></p>
+<h2 id="stock-valuation-with-gordon-growth-model">Stock valuation with Gordon growth model</h2>
+<p><strong>PV = growing perpetuity</strong></p>
+<p>Perpetuities are usually incorrect, but they are often used for upper
+bound.</p>
+<p>Q7: In 2000, the P/E ratio of the stock market reached about 45. Assume
+that these corporations will grow roughly at the overall economy&rsquo;s
+growth rate of 5% per year, what should investors have reasonably
+expected in terms of a likely future rate of return implied by the stock
+market&rsquo;s level?</p>
+<p><code>$!\begin{aligned} P/E &amp;= 45, g = 5\% \\ P &amp;= \frac{E}{r - g}\\ \frac{P}{E} &amp;= \frac{1}{r-g}\\ r &amp;= g + \frac{E}{P}\\ &amp;= 5\% + 1/45 = 7.8\% \end{aligned} $!</code></p>
+
+    </div>
+    <div class="post-footer">
+      <div class="info">
+        
+<span class="separator"><a class="category" href="/categories/study/">study</a><a class="category" href="/categories/business/">business</a></span>
+
+        
+    <span class="separator"><a class="tag" href="/tags/financial-management/">financial management</a><a class="tag" href="/tags/money/">money</a></span>
+
+      </div>
+    </div>
+
+    
+           
+    
+</div>
+
+
+                </div>
+            </div>
+        </div>
+</body>
+<script type="text/javascript" src="https://simoryu.com/js/jquery.min.js"></script>
+<script type="text/javascript" src="https://simoryu.com/js/jquery-migrate.min.js"></script>
+<script type="text/javascript" src="https://simoryu.com/js/jquery-appear.min.js"></script><script type="text/javascript" src="https://simoryu.com/js/medium-zoom.min.js"></script>
+<script>
+	mediumZoom(document.querySelectorAll('div.post-content img'), {
+        background: '#fff'
+    });
+</script>
+<link rel="stylesheet" href="https://simoryu.com/css/medium-zoom.css" type="text/css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+            delimiters:[
+            {left: "$$", right: "$$", display: false},
+            {left: "$!", right: "$!", display: true},
+            ]
+            ,
+            ignoredTags:
+            ["script", "noscript", "style", "textarea", "pre"]
+    
+        });
+    });
+</script>
+</html></body>
+
+</html>

@@ -6,10 +6,28 @@
     <description>Recent content in Tags on Not everything about Simo Ryu</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 20 May 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 22 May 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://simoryu.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>financial management</title>
+      <link>https://simoryu.com/tags/financial-management/</link>
+      <pubDate>Fri, 22 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://simoryu.com/tags/financial-management/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>money</title>
+      <link>https://simoryu.com/tags/money/</link>
+      <pubDate>Fri, 22 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://simoryu.com/tags/money/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>logistics</title>
@@ -30,29 +48,11 @@
     </item>
     
     <item>
-      <title>money</title>
-      <link>https://simoryu.com/tags/money/</link>
-      <pubDate>Wed, 20 May 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://simoryu.com/tags/money/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>database</title>
       <link>https://simoryu.com/tags/database/</link>
       <pubDate>Tue, 19 May 2020 00:00:00 +0000</pubDate>
       
       <guid>https://simoryu.com/tags/database/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>financial management</title>
-      <link>https://simoryu.com/tags/financial-management/</link>
-      <pubDate>Tue, 19 May 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://simoryu.com/tags/financial-management/</guid>
       <description></description>
     </item>
     
