@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <title> Simo Ryu | Financial Management - Time Varying Returns </title>
+    <meta charset="utf-8"><meta name="generator" content="Hugo 0.70.0" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="https://simoryu.com/css/style.css" type="text/css">
+    
+    <link rel="stylesheet" href="https://simoryu.com/hi" type="text/css">
+    
+    <link rel="shortcut icon" href="https://simoryu.com/favicons/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://simoryu.com/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://simoryu.com/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://simoryu.com/favicons/favicon-16x16.png">
+
+    <link rel="canonical" href="https://simoryu.com/post/20200525_1/">
+</head><body><div class="sidebar animated fadeInDown">
+    <div class="logo-title">
+      <div class="title">
+        <img src="https://simoryu.com/images/pro2.jpg" alt="profile picture" style="width:127px;border-radius: 50%;">
+        <h3 title=""><a href="/">My name is Simo Ryu</a></h3>
+        <div class="description">
+          <p></p>
+        </div>
+      </div>
+    </div>
+    <ul class="social-links">
+        
+        <a href="https://de.linkedin.com/" rel="me" >
+          <i class="fa fa-linkedin" aria-hidden="true" title="Linkedin"></i>
+        </a>
+        
+        <a href="https://github.com/lxndrblz/anatole/" rel="me" >
+          <i class="fa fa-github" aria-hidden="true" title="GitHub"></i>
+        </a>
+        
+        <a href="https://www.instagram.com/simo.ryu" rel="me" >
+          <i class="fa fa-instagram" aria-hidden="true" title="instagram"></i>
+        </a>
+        
+        <a href="cloneofsimo@gmail.com" rel="me" >
+          <i class="fa fa-envelope" aria-hidden="true" title="e-mail"></i>
+        </a>
+        
+    </ul>
+    <div class="footer">
+        <div class="by_farbox">&copy; Simo Ryu 2020 </div>
+      </div>
+    </div>
+</div><div class="main">
+            <div class="page-top animated fadeInDown">
+    <div class="nav">
+        
+        
+        <li><a  href="/" title="">Home</a></li>
+
+        
+        <li><a  href="/post/" title="">Posts</a></li>
+
+        
+        <li><a  href="/about/" title="About">About</a></li>
+
+        
+    </div>
+</div>
+            <div class="autopagerize_page_element">
+                <div class="content">
+<div class="post animated fadeInDown">
+    <div class="post-content">
+
+      <div class="post-title">
+        <h3>Financial Management - Time Varying Returns
+        </h3>
+        
+        <div class="info">
+          <i class="fa fa-sun-o"></i><span class="date">Mon, May 25, 2020</span>
+          <i class="fa fa-clock-o"></i><span class="reading-time">4-minute read</span>
+        </div>
+        
+        </div>
+
+    <h1 id="time---varying-rates-of-returns">Time - Varying Rates of Returns</h1>
+<p>The only difference is that $$1 + r_0 \neq (1 + r)^t $$
+<code>$! NPV = C_0 + \frac{C_1}{(1 + r_{0,1})} + \frac{C_2}{(1 + r_{0,2})} + \frac{C_3}{(1 + r_{0,3})} + \cdots $!</code></p>
+<p>Here, we have :
+<code>$! 1 + r_{0,2} = (1 + r_{0,1})(1 + r_{1,2}) $!</code>
+etc etc&hellip;</p>
+<h3 id="why-do-we-have-time-varying-rates-of-returns">Why do we have time varying Rates of returns?</h3>
+<blockquote>
+<p>In the real world, obviously interest rate differ through time.
+Long term bonds usually offer different annual interest rate than short - term bills.
+Will return to this later.</p>
+</blockquote>
+<p>Q1 : If the 1 - year interest in year 1 is 5%, and the 1 - year interest in year 2 is 3%, what is the annualized interest rate?</p>
+<p><code>$! \begin{aligned} r_{0,1} &amp;= 0.05\\ r_{1,2} &amp;= 0.03 \\ 1 + r_{0,2} &amp;= 1.05 \times 1.03 \\ r_{0,2} &amp;= .0815 \\ \text{annualized : } r_{\bar{2}} &amp;= \sqrt{1 + r_{0,2}} - 1 \\ &amp;= about 4\% \end{aligned}$!</code></p>
+<h4 id="geometric-average-annualized-interest-rate">Geometric average (annualized interest rate:)</h4>
+<p>is geometric average of interest rates. $$ \rarr $$ equivalent to saying that &ldquo;with that interest rate, you will same interest rate as calculated otherwise&rdquo;</p>
+<p>Arithmetic average is always greater than annualized interest rate. Also, almost all interest rates are quoted in annualized terms.</p>
+<h4 id="so-why-do-we-have-different-interest-rate-inflation">So why do we have different interest rate? Inflation:</h4>
+<ul>
+<li>Real and Nominal rate : A real dollar always has the same purchasing power.</li>
+<li>In real world, most contracts are in nominal terms.</li>
+</ul>
+<p>Q2 : If you have $100, and you will have $10 next year, and you can purchase 50 bread today, and bread will be 4%% more expensive next year:
+your purchasing power only increases by 5.77 %, not 10%.</p>
+<h4 id="the-inflation-adjustment-formula">The inflation adjustment formula:</h4>
+<p><code>$! (1 + 0.0577) * (1 + 0.04) = 1 + 0.10 $!</code></p>
+<p><strong>Never mix nominal cash flows with real rates</strong></p>
+<p>Q3 : If a project will return $110 in nominal, and cost of capital is 10%, PV is?
+<code>$! PV = \frac{110}{1 + 0.1} = \$ 100  $!</code></p>
+<p>Q4 : If the inflation rate is 4%, and a project will return $110 in nominal cash next year, then what is the purchasing power of this future $110 in today&rsquo;s dollars?</p>
+<p><code>$! \frac{\$ 110}{1 + 0.04} = 105.77 $!</code></p>
+<p>Q5.1 : (amalgam of Q3, Q4) If the inflation rate is 4%, and the cost of capital is 10%, real cost of capital:</p>
+<p><code>$!\begin{aligned} ( 1 + real) ( 1 + \pi) &amp;= (1 + nominal)\\ (1 + r)(1 + 0.04) &amp;= (1 + 0.1)\\ r &amp;= 5.77 \% \end{aligned} $!</code></p>
+<p>Q5.2 : What is the project&rsquo;s real dollar value discounted by the real cost of capital? Why?</p>
+<p><code>$! PV = \frac{105.77}{1.0577} = \$ 100 $!</code></p>
+<h4 id="the-yield-curve-and-us-treasuries">The Yield Curve and US Treasuries:</h4>
+<ul>
+<li>US Treasuries are the most important financial security.</li>
+<li>Annual trading is $100 ~ $150 trillion.</li>
+<li>Market is almost perfect.
+<ul>
+<li>Low transaction costs</li>
+<li>Few opinion differences</li>
+<li>Deep market (many buyers and sellers)</li>
+</ul>
+</li>
+<li>Almost no uncertainty about repayments</li>
+</ul>
+<h4 id="yield-curve">Yield Curve:</h4>
+<p><img src="/img/20200525_1_2020-05-28-17-19-49.png" alt=""></p>
+<p>The longer the borrowing period, the greater the annualized rate of return(usually, not always)</p>
+<p>The yield cure is fundamental tool of finance. It always graphs annualized rates. It measures differences in the costs of capital for risk - free projects with different horizons.</p>
+<ul>
+<li>Spot interest rate : Interest rate that starts today : $$r_{0,1}$$</li>
+<li>Forward rate : Interest rate in the future $$r_{1,2}$$</li>
+</ul>
+<p><strong>More notation</strong></p>
+<ul>
+<li>We denote annualized interest rate as $$r_{\overline{15}}$$ (for case of 15 years). This is different from $$r_{0,15}$$, as the later is 15 - year non - annualized interest rate</li>
+</ul>
+<h4 id="so-why-do-we-have-upward---sloping-yield-curve">So why do we have upward - sloping yield curve?</h4>
+<p>A. Higher future inflation?
+B. Higher future interest rate?
+C. Risk Compensation?</p>
+<ul>
+<li>Risk premium : Need greater return for longer term flows.</li>
+</ul>
+<p><strong>This is also why we have to think of time - variant rate of return.</strong></p>
+<p>When we are considering NPV, we have to think of something like upward - sloping discount rate.</p>
+<ul>
+<li>This also means that the fact that longer term projects have to offer higher rates of return not only because of higher risk, but also because of preference. US treasury bond has almost no risk, but has upper sloping rates of return.</li>
+<li>Of course, long - term projects are also riskier.</li>
+</ul>
+
+    </div>
+    <div class="post-footer">
+      <div class="info">
+        
+<span class="separator"><a class="category" href="/categories/study/">study</a><a class="category" href="/categories/business/">business</a></span>
+
+        
+    <span class="separator"><a class="tag" href="/tags/financial-management/">financial management</a></span>
+
+      </div>
+    </div>
+
+    
+           
+    
+</div>
+
+
+                </div>
+            </div>
+        </div>
+</body>
+<script type="text/javascript" src="https://simoryu.com/js/jquery.min.js"></script>
+<script type="text/javascript" src="https://simoryu.com/js/jquery-migrate.min.js"></script>
+<script type="text/javascript" src="https://simoryu.com/js/jquery-appear.min.js"></script><script type="text/javascript" src="https://simoryu.com/js/medium-zoom.min.js"></script>
+<script>
+	mediumZoom(document.querySelectorAll('div.post-content img'), {
+        background: '#fff'
+    });
+</script>
+<link rel="stylesheet" href="https://simoryu.com/css/medium-zoom.css" type="text/css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+            delimiters:[
+            {left: "$$", right: "$$", display: false},
+            {left: "$!", right: "$!", display: true},
+            ]
+            ,
+            ignoredTags:
+            ["script", "noscript", "style", "textarea", "pre"]
+    
+        });
+    });
+</script>
+</html></body>
+
+</html>

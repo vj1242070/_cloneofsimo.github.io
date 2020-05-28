@@ -6,10 +6,19 @@
     <description>Recent content in study on Not everything about Simo Ryu</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 22 May 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 25 May 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://simoryu.com/categories/study/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Financial Management - Time Varying Returns</title>
+      <link>https://simoryu.com/post/20200525_1/</link>
+      <pubDate>Mon, 25 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://simoryu.com/post/20200525_1/</guid>
+      <description>Time - Varying Rates of Returns The only difference is that $$1 + r_0 \neq (1 + r)^t $$ $!</description>
+    </item>
     
     <item>
       <title>Financial Management - Capital budgeting Rule</title>
