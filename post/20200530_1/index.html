@@ -73,7 +73,7 @@
         
         <div class="info">
           <i class="fa fa-sun-o"></i><span class="date">Sat, May 30, 2020</span>
-          <i class="fa fa-clock-o"></i><span class="reading-time">1-minute read</span>
+          <i class="fa fa-clock-o"></i><span class="reading-time">4-minute read</span>
         </div>
         
         </div>
@@ -92,6 +92,88 @@
 <ul>
 <li>When expected value of the variable is 0, it is considered to be fair bet.</li>
 </ul>
+<p>Extrapolation works reasonably well for short - term standard deviation, but almost always poorly on mean.</p>
+<h4 id="wealth-effect">Wealth effect</h4>
+<p>If someone offered you bet of $1000 if head, -$1000 if tail, I would have to pay you some money (premium) for you to play. This is because people are &ldquo;risk - aversive&rdquo;.</p>
+<p>One of the main feature of the financial market is that $1000 is spread to 1000 people, so that they become risk - neutral. $1, -$1 bet is risk - neutral comparative to $1000, -$1000 bet.</p>
+<h4 id="default-credit-risk">Default (&ldquo;credit&rdquo;) Risk</h4>
+<p>Most loans have credit risk, in that the borrower can default.
+If the probability of borrower failing to pay you is high, default risk is also high.</p>
+<p>Q1: Can the US government default?
+Do Treasury securities have any default risk?</p>
+<blockquote>
+<p>No. US government has &ldquo;Zero&rdquo; default risk. US $ acts as &ldquo;key currency&rdquo;</p>
+</blockquote>
+<p>Q2: If you were to land me $200 for return of $210 next year, with 1% of default, what is the expected rate of return?</p>
+<p><code>$! \begin{aligned} 1\% : \$ 50 &amp; \rarr \$ 0.5 \\ 99\% : \$ 250 &amp; \rarr \$ 207.9 \\ \$ 208.4 &amp; \rarr 4.2\% \end{aligned} $!</code></p>
+<p>Q3: Would you prefer to make this loan or 5% government bond?</p>
+<p>Obviously, you would take government bond because they have no default risk. 
+Therefore, <strong>Promised rate of return</strong> Must be greater than 5% in order to be equally priced.
+In this case, it has to be 5.81%. (as there are 1% of default)</p>
+<p><strong>Promised rate of return</strong> is also called <strong>Quoted interest rate</strong> and they are <strong>NOT</strong> expected rate of return.</p>
+<p>However, considering default risk will not be enough as there are also other risks and considerations such as :</p>
+<ul>
+<li>liquidity risk,</li>
+<li>risk - premia</li>
+<li>imperfect - market - risk</li>
+</ul>
+<h4 id="important-generalization-of-premium-decomposition">Important Generalization of Premium Decomposition</h4>
+<p>In a risk - neutral world,</p>
+<p>Quoted Interest rate $$\geq$$ Expected Interest rate</p>
+<p>Quoted Interest rate = Time Premium + Default Premium</p>
+<p>(Time premium = risk - free govnt bond&rsquo;s yield)</p>
+<p>Expected Interest rate = Time Premium</p>
+<h4 id="how-do-we-calculate-default-risk">How do we calculate default risk?</h4>
+<p>Large corporation have credit ratings, too, ranging from AAA to F</p>
+<blockquote>
+<p>Typical AAA firm has ~0% probability of default over 10 years
+B firm has 20% probability of one non - payment over 5 years
+C firm has 50% probability of one non - payment over 6 ~ 8 years</p>
+</blockquote>
+<p>Most of the yield spread (corporate bonds yield - (risk - free yield(treasury bond))) is due to chance of default.</p>
+<h4 id="cds-credit-default-swaps">CDS: Credit default swaps</h4>
+<p>You can buy insurance against default, called credit swaps.
+This market is over - the - counter. Sellers are often hedge funds who want to speculate on default. Buyers are often mutual funds or pension funds who want to reduce their risk exposure.</p>
+<table>
+<thead>
+<tr>
+<th align="center">Next year&rsquo;s payoffs</th>
+<th align="center">Probability</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">$100</td>
+<td align="center">90% (sunshine)</td>
+</tr>
+<tr>
+<td align="center">$50</td>
+<td align="center">10% (Hurricane)</td>
+</tr>
+</tbody>
+</table>
+<p>The expected rate of return on 1 year Treasuries is 5%</p>
+<p>Q4 : What is the appropriate price for this project?</p>
+<p><code>$! PV = \frac{E(payoff)}{1 + E(R)} = \frac{\$ 95}{1.05} = \$ 90.48 $!</code></p>
+<p>What is the rate of return on the project in the good sate?</p>
+<p>Good : $100 $$\rarr$$ 100/90.48 - 1 = 10.52 %</p>
+<p>In the Bad state: - 44.74 %</p>
+<p>What is the expected rate of return on the project? 5%</p>
+<h4 id="levered-equity-stock--risk---free-bond">Levered Equity (stock) + Risk - free Bond</h4>
+<p>You can finance the project in one of two ways:</p>
+<ul>
+<li>Buy the whole thing with your saving</li>
+<li>Buy it with a mortgage and a smaller sum from your savings account. Then you just own the residual equity called &ldquo;Levered Equity&rdquo;</li>
+</ul>
+<p>In this case, assume that 50 was a loan(= bond). This meaning that $50 will be promised as a return.</p>
+<p>What should be the price of this loan and leveled equity? Bond would be 50/1.05 because market is perfect.</p>
+<p>Expected payoff is $95, therefore levered equity will be $45/1.05.</p>
+<p>You can see that if you promise $50 as bond, you finance 48%. In a good case, you get $50 (out of $42.86 you invested) In a bad case, you get nothing, making -100% lost.</p>
+<p>Full project ownership is less riskier than levered Equity, and more riskier than Bond ownership.</p>
+<h4 id="limited-liability">Limited Liability</h4>
+<p>You are only responsible for what you invested, no more.
+It made it possible for owners to hand control to specialists and not worry for their entire holdings.</p>
+<p>What if bond owner lands more than $50? then the risk of the bond holding becomes non - zero.</p>
 
     </div>
     <div class="post-footer">
