@@ -17,7 +17,16 @@
       <pubDate>Sun, 11 Feb 2018 00:00:00 +0000</pubDate>
       
       <guid>https://simoryu.com/about/</guid>
-      <description>Written in Go, Hugo is an open source static site generator available under the Apache Licence 2.</description>
+      <description>Everything here is just about me, and what I study, and what I do.</description>
+    </item>
+    
+    <item>
+      <title>After reading Morgan Dwyer&#39;s Commentary on Post - Pandemic Weapon system Cybersecurity</title>
+      <link>https://simoryu.com/post/20200605_1/</link>
+      <pubDate>Fri, 05 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://simoryu.com/post/20200605_1/</guid>
+      <description>This was submitted as part of the task in Korea University</description>
     </item>
     
     <item>
@@ -136,15 +145,6 @@
       
       <guid>https://simoryu.com/post/20190504_1/</guid>
       <description>❔ Investigating and studying in MSE, people often come across various problems related to trigonometric series.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://simoryu.com/post/output/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://simoryu.com/post/output/</guid>
-      <description></description>
     </item>
     
     <item>
