@@ -6,10 +6,19 @@
     <description>Recent content in business on Not everything about Simo Ryu</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 30 May 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 12 Jun 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://simoryu.com/categories/business/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Financial Management - Relation Between Risk and Return</title>
+      <link>https://simoryu.com/post/20200612_2/</link>
+      <pubDate>Fri, 12 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://simoryu.com/post/20200612_2/</guid>
+      <description>Risk and Return What is investment risk? Investment risk is exposure to the chance of earning less than expected.</description>
+    </item>
     
     <item>
       <title>Financial Management - Uncertainty and Risk</title>
