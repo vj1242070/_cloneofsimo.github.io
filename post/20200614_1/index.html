@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en"><head>
-    <title> Simo Ryu | cs </title>
+    <title> Simo Ryu | System Programming - UNIX summary </title>
     <meta charset="utf-8"><meta name="generator" content="Hugo 0.70.0" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
     <meta name="description" content="Not exactly anything special...">
     <link rel="stylesheet" href="https://simoryu.com/css/style.css" type="text/css">
@@ -12,7 +12,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="https://simoryu.com/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="https://simoryu.com/favicons/favicon-16x16.png">
 
-    <link rel="canonical" href="https://simoryu.com/categories/cs/">
+    <link rel="canonical" href="https://simoryu.com/post/20200614_1/">
 </head><body><div class="sidebar animated fadeInDown">
     <div class="logo-title">
       <div class="title">
@@ -64,30 +64,60 @@
 </div>
             <div class="autopagerize_page_element">
                 <div class="content">
-<div class="archive animated fadeInDown">
-   
-    <ul class="list-with-title">
+<div class="post animated fadeInDown">
+    <div class="post-content">
+
+      <div class="post-title">
+        <h3>System Programming - UNIX summary
+        </h3>
+        
+        <div class="info">
+          <i class="fa fa-sun-o"></i><span class="date">Sun, Jun 14, 2020</span>
+          <i class="fa fa-clock-o"></i><span class="reading-time">1-minute read</span>
+        </div>
+        
+        </div>
+
+    <h3 id="shell">Shell:</h3>
+<p>명령어와 프로그램 실행할 수 있는 인터페이스: 커널 &amp; 사용자 간의 다리 역할</p>
+<h3 id="unix-architecture">Unix architecture:</h3>
+<ol>
+<li>Hardware</li>
+<li>Kernel</li>
+<li>System Call</li>
+<li>Commands, Utilities, applications: using library routines or system calls:</li>
+</ol>
+<ul>
+<li>
+<p><strong>System Call</strong>:
+유닉스 시스템이 제공하는 서비스를 이용해 프로그램을 작성할 수 있도록 제공되는 프로그래밍 인터페이스</p>
+</li>
+<li>
+<p><strong>Library</strong>
+미리 컴파일된 함수들을 묶어서 제공하는 특수한 형태의 파일</p>
+</li>
+</ul>
+<h4 id="운영체제의-역할">운영체제의 역할</h4>
+<p>종류가 비슷한 디바이스는 같은 인터페이스 (드라이버) 로 조작,</p>
+<p>CPU 커널 모드와 사용자 모드를 제공하며, 커널 모드에서만 디바이스에 접근할 수 있게 함</p>
+
+    </div>
+    <div class="post-footer">
+      <div class="info">
+        
+<span class="separator"><a class="category" href="/categories/study/">study</a><a class="category" href="/categories/cs/">cs</a></span>
+
+        
+    <span class="separator"><a class="tag" href="/tags/system-programming/">system programming</a></span>
+
+      </div>
+    </div>
+
+    
            
-      <div class="listing-title">2020</div>
-      
-      <ul class="listing">
-        <div class="listing-item">
-            <div class="listing-post"><a href="https://simoryu.com/post/20200614_1/" title="System Programming - UNIX summary">System Programming - UNIX summary</a>
-              <div class="post-time"><span class="date">Jun 14</span></div>
-            </div>
-          </div>
-    </ul>
     
-      <ul class="listing">
-        <div class="listing-item">
-            <div class="listing-post"><a href="https://simoryu.com/post/20200519_2/" title="Database second test _ summary">Database second test _ summary</a>
-              <div class="post-time"><span class="date">May 19</span></div>
-            </div>
-          </div>
-    </ul>
-    
-    
-  </div>
+</div>
+
 
                 </div>
             </div>

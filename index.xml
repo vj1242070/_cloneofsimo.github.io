@@ -21,6 +21,15 @@
     </item>
     
     <item>
+      <title>System Programming - UNIX summary</title>
+      <link>https://simoryu.com/post/20200614_1/</link>
+      <pubDate>Sun, 14 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://simoryu.com/post/20200614_1/</guid>
+      <description>Shell: 명령어와 프로그램 실행할 수 있는 인터페이스: 커널 &amp;amp; 사용자 간의 다리 역할</description>
+    </item>
+    
+    <item>
       <title>10주차: 탈린 매뉴얼 요약과 분석</title>
       <link>https://simoryu.com/post/20200612_1/</link>
       <pubDate>Fri, 12 Jun 2020 00:00:00 +0000</pubDate>
