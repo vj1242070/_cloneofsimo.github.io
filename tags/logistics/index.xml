@@ -6,10 +6,21 @@
     <description>Recent content in logistics on Not everything about Simo Ryu</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 20 May 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 10 Jun 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://simoryu.com/tags/logistics/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>logistics - summary</title>
+      <link>https://simoryu.com/post/scmsummary/</link>
+      <pubDate>Wed, 10 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://simoryu.com/post/scmsummary/</guid>
+      <description>Value of information.
+Inventory Management, Risk Pooling.
+Supply Chain Integration</description>
+    </item>
     
     <item>
       <title>Supply Contracts 2</title>

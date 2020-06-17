@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>business on Not everything about Simo Ryu</title>
+    <link>https://simoryu.com/tags/business/</link>
+    <description>Recent content in business on Not everything about Simo Ryu</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 10 Jun 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://simoryu.com/tags/business/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>logistics - summary</title>
+      <link>https://simoryu.com/post/scmsummary/</link>
+      <pubDate>Wed, 10 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://simoryu.com/post/scmsummary/</guid>
+      <description>Value of information.
+Inventory Management, Risk Pooling.
+Supply Chain Integration</description>
+    </item>
+    
+  </channel>
+</rss>
