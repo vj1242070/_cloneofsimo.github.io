@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en"><head>
-    <title> Simo Ryu | Not everything about Simo Ryu </title>
+    <title> Simo Ryu | Mutual information on stocks dataset </title>
     <meta charset="utf-8"><meta name="generator" content="Hugo 0.70.0" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
     <meta name="description" content="Nothing special...">
     <link rel="stylesheet" href="https://simoryu.com/css/style.css" type="text/css">
@@ -12,7 +12,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="https://simoryu.com/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="https://simoryu.com/favicons/favicon-16x16.png">
 
-    <link rel="canonical" href="https://simoryu.com/">
+    <link rel="canonical" href="https://simoryu.com/post/20200711/">
 </head><body><div class="sidebar animated fadeInDown">
     <div class="logo-title">
       <div class="title">
@@ -52,7 +52,7 @@
     <div class="nav">
         
         
-        <li><a class="current" href="/" title="">Home</a></li>
+        <li><a  href="/" title="">Home</a></li>
 
         
         <li><a  href="/post/" title="">Posts</a></li>
@@ -65,119 +65,57 @@
 </div>
             <div class="autopagerize_page_element">
                 <div class="content">
-  
-  
-  <div class="post animated fadeInDown">
-    <div class="post-title">
-      <h3><a href="/post/20190504_1/">Trigonometric - Harmonic series</a>
-      </h3>
-    </div>
-    <div class="post-content"><div class="p_part"><p>❔ Investigating and studying in MSE, people often come across various problems related to trigonometric series.</p></div>
-  
-  <div class="p_part"><p></p></div></div>
-    <div class="post-footer">
-      <div class="meta">
-        <div class="info"><i class="fa fa-sun-o"></i><span class="date">Sat, May 4, 2019</span>
-          <a class="tag" href="/tags/analysis/">analysis</a><a class="tag" href="/tags/math/">math</a>       
+<div class="post animated fadeInDown">
+    <div class="post-content">
+
+      <div class="post-title">
+        <h3>Mutual information on stocks dataset
+        </h3>
+        
+        <div class="info">
+          <i class="fa fa-sun-o"></i><span class="date">Sat, Jul 11, 2020</span>
+          <i class="fa fa-clock-o"></i><span class="reading-time">1-minute read</span>
         </div>
+        
+        </div>
+
+    <p>For stock <em>i</em>, $$R_{i,t}, P_{i,t}$$ is given as **log - return of the day t** and **closing price of day t, given by:
+&lsquo;&lsquo;$!
+R_{i,t} = \ln{\frac{P_{i,t}}{P_{i, t-1}}}
+$!&rsquo;&rsquo;
+F
+or stock i, we set the corresponding log - return interval as $$min R_i, max R_i $$ and formally divide it into k sub - intervals. Frequency is than calculated and approximated into potentially **probability**, and mutual information between quantities are then calculated using under assumption that these quantities are discreate variables.</p>
+<p>Given two different variables, we can calculated <strong>pearson&rsquo;s correlation coefficient</strong>, then under these coefficients, we can define metric function by:
+&lsquo;&lsquo;$!
+d_\rho (X, Y) = \sqrt(2(1 - \rho_{X,Y}))
+$!&rsquo;&rsquo;
+and, given the mutual information between these variables, we can define:</p>
+<p>&lsquo;&lsquo;$!
+d_M(X,Y) = H(X) + H(Y) - 2I(X,Y)
+$!&rsquo;&rsquo;</p>
+<p>This function can well act as a metric, thus making these variable spaces as metric spaces.</p>
+<p>Also, these metric has a normalized version:</p>
+<p>&lsquo;&lsquo;$!
+D(X,Y) = 1 - \frac{I(X,Y)}{H(X,Y)}
+$!&rsquo;&rsquo;</p>
+
+    </div>
+    <div class="post-footer">
+      <div class="info">
+        
+<span class="separator"><a class="category" href="/categories/study/">study</a></span>
+
+        
+    <span class="separator"><a class="tag" href="/tags/statistics/">statistics</a><a class="tag" href="/tags/econometrics/">econometrics</a></span>
+
       </div>
     </div>
-  </div>
-  
-  <div class="post animated fadeInDown">
-    <div class="post-title">
-      <h3><a href="/post/tempmath/"></a>
-      </h3>
-    </div>
-    <div class="post-content"><div class="p_part"><p></p></div>
-  
-  <div class="p_part"><p></p></div></div>
-    <div class="post-footer">
-      <div class="meta">
-        <div class="info"><i class="fa fa-sun-o"></i><span class="date">Mon, Jan 1, 0001</span>
-                 
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <div class="post animated fadeInDown">
-    <div class="post-title">
-      <h3><a href="/post/markdown-syntax/">Markdown Syntax Guide</a>
-      </h3>
-    </div>
-    <div class="post-content"><div class="p_part"><p><p>This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.</p></p></div>
-  
-  <div class="p_part"><p></p></div></div>
-    <div class="post-footer">
-      <div class="meta">
-        <div class="info"><i class="fa fa-sun-o"></i><span class="date">Mon, Jan 1, 0001</span>
-          <a class="tag" href="/tags/markdown/">markdown</a><a class="tag" href="/tags/css/">css</a><a class="tag" href="/tags/html/">html</a><a class="tag" href="/tags/themes/">themes</a>       
-        </div>
-      </div>
-    </div>
-  </div>
-  
-<div class="pagination">
-  
 
-<ul class="pagination">
     
-    <li class="page-item">
-        <a href="/" class="page-link" aria-label="First"><span aria-hidden="true">&laquo;&laquo;</span></a>
-    </li>
+           
     
-    <li class="page-item">
-    <a href="/page/2/" class="page-link" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
-    </li>
-    
-    
-    
-    
-    
-    
-    
-        
-        
-    
-    
-    <li class="page-item"><a class="page-link" href="/">1</a></li>
-    
-    
-    
-    
-    
-    
-        
-        
-    
-    
-    <li class="page-item"><a class="page-link" href="/page/2/">2</a></li>
-    
-    
-    
-    
-    
-    
-        
-        
-    
-    
-    <li class="page-item active"><a class="page-link" href="/page/3/">3</a></li>
-    
-    
-    <li class="page-item disabled">
-    <a  class="page-link" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
-    </li>
-    
-    <li class="page-item">
-        <a href="/page/3/" class="page-link" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
-    </li>
-    
-</ul>
-
-
 </div>
+
 
                 </div>
             </div>
