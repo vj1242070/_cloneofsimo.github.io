@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:3000/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <link rel="icon" href="http://localhost:3000/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="Web site created using create-react-app">
+    <link rel="apple-touch-icon" href="http://localhost:3000/logo192.png">
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="http://localhost:3000/manifest.json">
+    <!--
+      Notice the use of  in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+  <style>* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.problem-page {
+  min-height: 80vh;
+  margin-left: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+
+.problem-documents {
+  min-height: 30vh;
+  display: flex;
+  flex-direction: column; }
+  .problem-documents h1 {
+    color: #021152;
+    padding: 0.7rem; }
+  .problem-documents h2 {
+    padding: 0.5rem 1rem;
+    text-align: right; }
+  .problem-documents h3 {
+    padding: 1rem;
+    font-size: 1.2rem;
+    font-style: italic; }
+  .problem-documents p {
+    background-color: #d9ffff;
+    padding: 1rem;
+    font-size: 2rem; }
+
+.proposed-solutions {
+  padding-top: 2em;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-bottom: 2em;
+  display: flex;
+  flex-direction: column;
+  border-radius: 2em;
+  justify-content: space-around;
+  background-color: #f4f5fb; }
+
+.RecSys {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20rem;
+  height: 100%;
+  background: lightcyan;
+  box-shadow: 2px 2px 20px;
+  overflow-y: auto; }
+
+*::-webkit-scrollbar {
+  width: 12px;
+  /* width of the entire scrollbar */ }
+
+*::-webkit-scrollbar-track {
+  background: orange;
+  /* color of the tracking area */ }
+
+.probContainer {
+  padding: 0.2rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #e5f6fb;
+  border-radius: 2em; }
+
+.prob-in-container {
+  padding: 0.2rem;
+  background-color: #b9efff;
+  margin-top: 2rem; }
+  .prob-in-container h2 {
+    font-size: 1.2rem;
+    padding: 0.25rem; }
+  .prob-in-container h3 {
+    text-align: right;
+    padding: 0.2rem;
+    font-size: 1rem; }
+
+.candidate-sol {
+  min-height: 20vh;
+  padding: 0.2em; }
+  .candidate-sol h3 {
+    background-color: #d2edff;
+    padding: 0.5em;
+    border-radius: 0.5em; }
+  .candidate-sol p {
+    background-color: #e3f6ff;
+    min-height: 20vh;
+    padding: 1em;
+    border-radius: 2em; }
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9zcmMvc3R5bGVzL2FwcC5zY3NzIiwid2VicGFjazovL3NyYy9zdHlsZXMvX3Byb2JsZW1wYWdlLnNjc3MiLCJ3ZWJwYWNrOi8vc3JjL3N0eWxlcy9fcmVjc3lzLnNjc3MiLCJ3ZWJwYWNrOi8vc3JjL3N0eWxlcy9fcmVjc3lzcHJvYi5zY3NzIiwid2VicGFjazovL3NyYy9zdHlsZXMvX2NhbmRpZGF0ZXNvbHV0aW9ucy5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsU0FBUztFQUNULFVBQVU7RUFDVixzQkFBc0IsRUFBQTs7QUNIeEI7RUFDRSxnQkFBZ0I7RUFDaEIsa0JBQWtCO0VBQ2xCLGFBQWE7RUFDYixzQkFBc0I7RUFDdEIsOEJBQThCLEVBQUE7O0FBR2hDO0VBQ0UsZ0JBQWdCO0VBQ2hCLGFBQWE7RUFDYixzQkFBc0IsRUFBQTtFQUh4QjtJQUtJLGNBQWM7SUFDZCxlQUFlLEVBQUE7RUFObkI7SUFTSSxvQkFBb0I7SUFDcEIsaUJBQWlCLEVBQUE7RUFWckI7SUFhSSxhQUFhO0lBQ2IsaUJBQWlCO0lBQ2pCLGtCQUFrQixFQUFBO0VBZnRCO0lBa0JJLHlCQUF5QjtJQUN6QixhQUFhO0lBQ2IsZUFBZSxFQUFBOztBQUluQjtFQUNFLGdCQUFnQjtFQUNoQixpQkFBaUI7RUFDakIsa0JBQWtCO0VBQ2xCLG1CQUFtQjtFQUNuQixhQUFhO0VBQ2Isc0JBQXNCO0VBQ3RCLGtCQUFrQjtFQUNsQiw2QkFBNkI7RUFFN0IseUJBQW9DLEVBQUE7O0FDMUN0QztFQUNFLGVBQWU7RUFDZixNQUFNO0VBQ04sT0FBTztFQUNQLFlBQVk7RUFDWixZQUFZO0VBQ1oscUJBQXFCO0VBQ3JCLHdCQUF3QjtFQUN4QixnQkFBZ0IsRUFBQTs7QUFHbEI7RUFDRSxXQUFXO0VBQUUsa0NBQUEsRUFBbUM7O0FBR2xEO0VBQ0Usa0JBQWtCO0VBQUUsK0JBQUEsRUFBZ0M7O0FBR3REO0VBQ0UsZUFBZTtFQUNmLGFBQWE7RUFDYixtQkFBbUI7RUFDbkIsc0JBQXNCO0VBQ3RCLHlCQUF5QjtFQUN6QixrQkFBa0IsRUFBQTs7QUN6QnBCO0VBQ0UsZUFBZTtFQUNmLHlCQUF5QjtFQUN6QixnQkFBZ0IsRUFBQTtFQUhsQjtJQUtJLGlCQUFpQjtJQUNqQixnQkFBZ0IsRUFBQTtFQU5wQjtJQVNJLGlCQUFpQjtJQUNqQixlQUFlO0lBQ2YsZUFBZSxFQUFBOztBQ1huQjtFQUNFLGdCQUFnQjtFQUNoQixjQUFjLEVBQUE7RUFGaEI7SUFLSSx5QkFBeUI7SUFDekIsY0FBYztJQUNkLG9CQUFvQixFQUFBO0VBUHhCO0lBV0kseUJBQXlCO0lBQ3pCLGdCQUFnQjtJQUNoQixZQUFZO0lBQ1osa0JBQWtCLEVBQUEiLCJzb3VyY2VzQ29udGVudCI6WyIqIHtcclxuICBtYXJnaW46IDA7XHJcbiAgcGFkZGluZzogMDtcclxuICBib3gtc2l6aW5nOiBib3JkZXItYm94O1xyXG59XHJcblxyXG5AaW1wb3J0IFwiLi9wcm9ibGVtcGFnZVwiO1xyXG5AaW1wb3J0IFwiLi9yZWNzeXNcIjtcclxuQGltcG9ydCBcIi4vcmVjc3lzcHJvYlwiO1xyXG5AaW1wb3J0IFwiLi9jYW5kaWRhdGVzb2x1dGlvbnNcIjtcclxuIiwiLnByb2JsZW0tcGFnZSB7XHJcbiAgbWluLWhlaWdodDogODB2aDtcclxuICBtYXJnaW4tbGVmdDogMjByZW07XHJcbiAgZGlzcGxheTogZmxleDtcclxuICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xyXG4gIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcclxufVxyXG5cclxuLnByb2JsZW0tZG9jdW1lbnRzIHtcclxuICBtaW4taGVpZ2h0OiAzMHZoO1xyXG4gIGRpc3BsYXk6IGZsZXg7XHJcbiAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcclxuICBoMSB7XHJcbiAgICBjb2xvcjogIzAyMTE1MjtcclxuICAgIHBhZGRpbmc6IDAuN3JlbTtcclxuICB9XHJcbiAgaDIge1xyXG4gICAgcGFkZGluZzogMC41cmVtIDFyZW07XHJcbiAgICB0ZXh0LWFsaWduOiByaWdodDtcclxuICB9XHJcbiAgaDMge1xyXG4gICAgcGFkZGluZzogMXJlbTtcclxuICAgIGZvbnQtc2l6ZTogMS4ycmVtO1xyXG4gICAgZm9udC1zdHlsZTogaXRhbGljO1xyXG4gIH1cclxuICBwIHtcclxuICAgIGJhY2tncm91bmQtY29sb3I6ICNkOWZmZmY7XHJcbiAgICBwYWRkaW5nOiAxcmVtO1xyXG4gICAgZm9udC1zaXplOiAycmVtO1xyXG4gIH1cclxufVxyXG5cclxuLnByb3Bvc2VkLXNvbHV0aW9ucyB7XHJcbiAgcGFkZGluZy10b3A6IDJlbTtcclxuICBwYWRkaW5nLWxlZnQ6IDFlbTtcclxuICBwYWRkaW5nLXJpZ2h0OiAxZW07XHJcbiAgcGFkZGluZy1ib3R0b206IDJlbTtcclxuICBkaXNwbGF5OiBmbGV4O1xyXG4gIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XHJcbiAgYm9yZGVyLXJhZGl1czogMmVtO1xyXG4gIGp1c3RpZnktY29udGVudDogc3BhY2UtYXJvdW5kO1xyXG5cclxuICBiYWNrZ3JvdW5kLWNvbG9yOiBoc2woMjMyLCA1MCUsIDk3JSk7XHJcbn1cclxuIiwiLlJlY1N5cyB7XHJcbiAgcG9zaXRpb246IGZpeGVkO1xyXG4gIHRvcDogMDtcclxuICBsZWZ0OiAwO1xyXG4gIHdpZHRoOiAyMHJlbTtcclxuICBoZWlnaHQ6IDEwMCU7XHJcbiAgYmFja2dyb3VuZDogbGlnaHRjeWFuO1xyXG4gIGJveC1zaGFkb3c6IDJweCAycHggMjBweDtcclxuICBvdmVyZmxvdy15OiBhdXRvO1xyXG59XHJcblxyXG4qOjotd2Via2l0LXNjcm9sbGJhciB7XHJcbiAgd2lkdGg6IDEycHg7IC8qIHdpZHRoIG9mIHRoZSBlbnRpcmUgc2Nyb2xsYmFyICovXHJcbn1cclxuXHJcbio6Oi13ZWJraXQtc2Nyb2xsYmFyLXRyYWNrIHtcclxuICBiYWNrZ3JvdW5kOiBvcmFuZ2U7IC8qIGNvbG9yIG9mIHRoZSB0cmFja2luZyBhcmVhICovXHJcbn1cclxuXHJcbi5wcm9iQ29udGFpbmVyIHtcclxuICBwYWRkaW5nOiAwLjJyZW07XHJcbiAgZGlzcGxheTogZmxleDtcclxuICBhbGlnbi1pdGVtczogY2VudGVyO1xyXG4gIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XHJcbiAgYmFja2dyb3VuZC1jb2xvcjogI2U1ZjZmYjtcclxuICBib3JkZXItcmFkaXVzOiAyZW07XHJcbn1cclxuIiwiLnByb2ItaW4tY29udGFpbmVyIHtcclxuICBwYWRkaW5nOiAwLjJyZW07XHJcbiAgYmFja2dyb3VuZC1jb2xvcjogI2I5ZWZmZjtcclxuICBtYXJnaW4tdG9wOiAycmVtO1xyXG4gIGgyIHtcclxuICAgIGZvbnQtc2l6ZTogMS4ycmVtO1xyXG4gICAgcGFkZGluZzogMC4yNXJlbTtcclxuICB9XHJcbiAgaDMge1xyXG4gICAgdGV4dC1hbGlnbjogcmlnaHQ7XHJcbiAgICBwYWRkaW5nOiAwLjJyZW07XHJcbiAgICBmb250LXNpemU6IDFyZW07XHJcbiAgfVxyXG59XHJcbiIsIi5jYW5kaWRhdGUtc29sIHtcclxuICBtaW4taGVpZ2h0OiAyMHZoO1xyXG4gIHBhZGRpbmc6IDAuMmVtO1xyXG5cclxuICBoMyB7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjZDJlZGZmO1xyXG4gICAgcGFkZGluZzogMC41ZW07XHJcbiAgICBib3JkZXItcmFkaXVzOiAwLjVlbTtcclxuICB9XHJcblxyXG4gIHAge1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogI2UzZjZmZjtcclxuICAgIG1pbi1oZWlnaHQ6IDIwdmg7XHJcbiAgICBwYWRkaW5nOiAxZW07XHJcbiAgICBib3JkZXItcmFkaXVzOiAyZW07XHJcbiAgfVxyXG59XHJcbiJdLCJzb3VyY2VSb290IjoiIn0= */</style><script charset="utf-8" src="./tmp_proto_files/main.998dda61e39e140e7ce3.hot-update.js.다운로드"></script></head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"><div class="App"><div class="problem-page"><div class="problem-documents"><h1>Solve this 2 Differential equation using numerical method</h1><h2>Posted by Albert Einstein</h2><h2>Win 2$</h2><h2>Requires answer in 100days</h2><h3>Problem Description</h3><p>Solve this equation please </p></div><div class="proposed-solutions"><h2>Proposed Solutions</h2><div class="candidate-sol"><h3>Solution by anaonymous352d32dd-1b63-4506-a9a9-b12e73dd7819</h3><p>To view the answer, you must request, or wait until the problem is over</p></div><div class="candidate-sol"><h3>Solution by anaonymous943c318c-0d32-43fe-8c1d-451f678c87ac</h3><p>To view the answer, you must request, or wait until the problem is over</p></div><div class="candidate-sol"><h3>Solution by anaonymousb9f46651-78a3-4c7f-b0e4-9344ca4d8752</h3><p>To view the answer, you must request, or wait until the problem is over</p></div></div></div><div class="RecSys"><h2>Recommended Problems : sorted in Bounty</h2><div class="probContainer"><div class="prob-in-container"><h2>Linux decompiling approach : How would you debug this software?</h2><h3>Bounty 51$</h3><h3>by Google Engineering Team</h3></div><div class="prob-in-container"><h2>Are homogenous, positive definite form always some of squares?</h2><h3>Bounty 12$</h3><h3>by Hilbert</h3></div><div class="prob-in-container"><h2>Logo design for fusion chinese restorant in Venice</h2><h3>Bounty 5$</h3><h3>by Gordan Ramsey</h3></div><div class="prob-in-container"><h2>Solve this 1 Differential equation using numerical method</h2><h3>Bounty 2$</h3><h3>by Albert Einstein</h3></div><div class="prob-in-container"><h2>Solve this 2 Differential equation using numerical method</h2><h3>Bounty 2$</h3><h3>by Albert Einstein</h3></div><div class="prob-in-container"><h2>Solve this 3 Differential equation using numerical method</h2><h3>Bounty 2$</h3><h3>by Albert Einstein</h3></div><div class="prob-in-container"><h2>Solve this 4 Differential equation using numerical method</h2><h3>Bounty 2$</h3><h3>by Albert Einstein</h3></div><div class="prob-in-container"><h2>Solve this 5 Differential equation using numerical method</h2><h3>Bounty 2$</h3><h3>by Albert Einstein</h3></div></div></div></div></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  <script src="./tmp_proto_files/bundle.js.다운로드"></script><script src="./tmp_proto_files/0.chunk.js.다운로드"></script><script src="./tmp_proto_files/main.chunk.js.다운로드"></script>
+
+</body></html>
