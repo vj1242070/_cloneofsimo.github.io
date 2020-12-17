@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:3000/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <link rel="icon" href="http://localhost:3000/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000000">
+    <meta name="TrustyWork" content="Platform Where you can trust!">
+    <link rel="apple-touch-icon" href="http://localhost:3000/logo192.png">
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="http://localhost:3000/manifest.json">
+    <!--
+      Notice the use of  in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>TrustyWork</title>
+  <style>* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.problem-page {
+  min-height: 80vh;
+  margin-left: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+
+.problem-documents {
+  min-height: 30vh;
+  display: flex;
+  flex-direction: column; }
+  .problem-documents h1 {
+    color: #021152;
+    padding: 0.7rem; }
+  .problem-documents h2 {
+    padding: 0.5rem 1rem;
+    text-align: right; }
+  .problem-documents h3 {
+    padding: 1rem;
+    font-size: 1.2rem;
+    font-style: italic; }
+  .problem-documents p {
+    background-color: #d9ffff;
+    padding: 1rem;
+    font-size: 1.1rem; }
+
+.proposed-solutions {
+  padding-top: 2em;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-bottom: 2em;
+  display: flex;
+  flex-direction: column;
+  border-radius: 2em;
+  justify-content: space-around;
+  background-color: #f4f5fb; }
+
+.RecSys {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20rem;
+  height: 100%;
+  background: lightcyan;
+  box-shadow: 2px 2px 20px;
+  overflow-y: auto; }
+
+*::-webkit-scrollbar {
+  width: 12px;
+  /* width of the entire scrollbar */ }
+
+*::-webkit-scrollbar-track {
+  background: black;
+  /* color of the tracking area */ }
+
+.probContainer {
+  padding: 0.2rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #e5f6fb;
+  border-radius: 2em; }
+
+.prob-in-container {
+  padding: 0.2rem;
+  background-color: #b9efff;
+  margin-top: 2rem; }
+  .prob-in-container h2 {
+    font-size: 1.2rem;
+    padding: 0.25rem; }
+  .prob-in-container h3 {
+    text-align: right;
+    padding: 0.2rem;
+    font-size: 1rem; }
+
+.candidate-sol {
+  min-height: 20vh;
+  padding: 0.2em; }
+  .candidate-sol h3 {
+    background-color: #d2edff;
+    padding: 0.5em;
+    border-radius: 0.5em; }
+  .candidate-sol p {
+    background-color: #e3f6ff;
+    min-height: 20vh;
+    padding: 1em;
+    border-radius: 2em; }
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9zcmMvc3R5bGVzL2FwcC5zY3NzIiwid2VicGFjazovL3NyYy9zdHlsZXMvX3Byb2JsZW1wYWdlLnNjc3MiLCJ3ZWJwYWNrOi8vc3JjL3N0eWxlcy9fcmVjc3lzLnNjc3MiLCJ3ZWJwYWNrOi8vc3JjL3N0eWxlcy9fcmVjc3lzcHJvYi5zY3NzIiwid2VicGFjazovL3NyYy9zdHlsZXMvX2NhbmRpZGF0ZXNvbHV0aW9ucy5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsU0FBUztFQUNULFVBQVU7RUFDVixzQkFBc0IsRUFBQTs7QUNIeEI7RUFDRSxnQkFBZ0I7RUFDaEIsa0JBQWtCO0VBQ2xCLGFBQWE7RUFDYixzQkFBc0I7RUFDdEIsOEJBQThCLEVBQUE7O0FBR2hDO0VBQ0UsZ0JBQWdCO0VBQ2hCLGFBQWE7RUFDYixzQkFBc0IsRUFBQTtFQUh4QjtJQUtJLGNBQWM7SUFDZCxlQUFlLEVBQUE7RUFObkI7SUFTSSxvQkFBb0I7SUFDcEIsaUJBQWlCLEVBQUE7RUFWckI7SUFhSSxhQUFhO0lBQ2IsaUJBQWlCO0lBQ2pCLGtCQUFrQixFQUFBO0VBZnRCO0lBa0JJLHlCQUF5QjtJQUN6QixhQUFhO0lBQ2IsaUJBQWlCLEVBQUE7O0FBSXJCO0VBQ0UsZ0JBQWdCO0VBQ2hCLGlCQUFpQjtFQUNqQixrQkFBa0I7RUFDbEIsbUJBQW1CO0VBQ25CLGFBQWE7RUFDYixzQkFBc0I7RUFDdEIsa0JBQWtCO0VBQ2xCLDZCQUE2QjtFQUU3Qix5QkFBb0MsRUFBQTs7QUMxQ3RDO0VBQ0UsZUFBZTtFQUNmLE1BQU07RUFDTixPQUFPO0VBQ1AsWUFBWTtFQUNaLFlBQVk7RUFDWixxQkFBcUI7RUFDckIsd0JBQXdCO0VBQ3hCLGdCQUFnQixFQUFBOztBQUdsQjtFQUNFLFdBQVc7RUFBRSxrQ0FBQSxFQUFtQzs7QUFHbEQ7RUFDRSxpQkFBaUI7RUFBRSwrQkFBQSxFQUFnQzs7QUFHckQ7RUFDRSxlQUFlO0VBQ2YsYUFBYTtFQUNiLG1CQUFtQjtFQUNuQixzQkFBc0I7RUFDdEIseUJBQXlCO0VBQ3pCLGtCQUFrQixFQUFBOztBQ3pCcEI7RUFDRSxlQUFlO0VBQ2YseUJBQXlCO0VBQ3pCLGdCQUFnQixFQUFBO0VBSGxCO0lBS0ksaUJBQWlCO0lBQ2pCLGdCQUFnQixFQUFBO0VBTnBCO0lBU0ksaUJBQWlCO0lBQ2pCLGVBQWU7SUFDZixlQUFlLEVBQUE7O0FDWG5CO0VBQ0UsZ0JBQWdCO0VBQ2hCLGNBQWMsRUFBQTtFQUZoQjtJQUtJLHlCQUF5QjtJQUN6QixjQUFjO0lBQ2Qsb0JBQW9CLEVBQUE7RUFQeEI7SUFXSSx5QkFBeUI7SUFDekIsZ0JBQWdCO0lBQ2hCLFlBQVk7SUFDWixrQkFBa0IsRUFBQSIsInNvdXJjZXNDb250ZW50IjpbIioge1xyXG4gIG1hcmdpbjogMDtcclxuICBwYWRkaW5nOiAwO1xyXG4gIGJveC1zaXppbmc6IGJvcmRlci1ib3g7XHJcbn1cclxuXHJcbkBpbXBvcnQgXCIuL3Byb2JsZW1wYWdlXCI7XHJcbkBpbXBvcnQgXCIuL3JlY3N5c1wiO1xyXG5AaW1wb3J0IFwiLi9yZWNzeXNwcm9iXCI7XHJcbkBpbXBvcnQgXCIuL2NhbmRpZGF0ZXNvbHV0aW9uc1wiO1xyXG4iLCIucHJvYmxlbS1wYWdlIHtcclxuICBtaW4taGVpZ2h0OiA4MHZoO1xyXG4gIG1hcmdpbi1sZWZ0OiAyMHJlbTtcclxuICBkaXNwbGF5OiBmbGV4O1xyXG4gIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XHJcbiAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xyXG59XHJcblxyXG4ucHJvYmxlbS1kb2N1bWVudHMge1xyXG4gIG1pbi1oZWlnaHQ6IDMwdmg7XHJcbiAgZGlzcGxheTogZmxleDtcclxuICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xyXG4gIGgxIHtcclxuICAgIGNvbG9yOiAjMDIxMTUyO1xyXG4gICAgcGFkZGluZzogMC43cmVtO1xyXG4gIH1cclxuICBoMiB7XHJcbiAgICBwYWRkaW5nOiAwLjVyZW0gMXJlbTtcclxuICAgIHRleHQtYWxpZ246IHJpZ2h0O1xyXG4gIH1cclxuICBoMyB7XHJcbiAgICBwYWRkaW5nOiAxcmVtO1xyXG4gICAgZm9udC1zaXplOiAxLjJyZW07XHJcbiAgICBmb250LXN0eWxlOiBpdGFsaWM7XHJcbiAgfVxyXG4gIHAge1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogI2Q5ZmZmZjtcclxuICAgIHBhZGRpbmc6IDFyZW07XHJcbiAgICBmb250LXNpemU6IDEuMXJlbTtcclxuICB9XHJcbn1cclxuXHJcbi5wcm9wb3NlZC1zb2x1dGlvbnMge1xyXG4gIHBhZGRpbmctdG9wOiAyZW07XHJcbiAgcGFkZGluZy1sZWZ0OiAxZW07XHJcbiAgcGFkZGluZy1yaWdodDogMWVtO1xyXG4gIHBhZGRpbmctYm90dG9tOiAyZW07XHJcbiAgZGlzcGxheTogZmxleDtcclxuICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xyXG4gIGJvcmRlci1yYWRpdXM6IDJlbTtcclxuICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWFyb3VuZDtcclxuXHJcbiAgYmFja2dyb3VuZC1jb2xvcjogaHNsKDIzMiwgNTAlLCA5NyUpO1xyXG59XHJcbiIsIi5SZWNTeXMge1xyXG4gIHBvc2l0aW9uOiBmaXhlZDtcclxuICB0b3A6IDA7XHJcbiAgbGVmdDogMDtcclxuICB3aWR0aDogMjByZW07XHJcbiAgaGVpZ2h0OiAxMDAlO1xyXG4gIGJhY2tncm91bmQ6IGxpZ2h0Y3lhbjtcclxuICBib3gtc2hhZG93OiAycHggMnB4IDIwcHg7XHJcbiAgb3ZlcmZsb3cteTogYXV0bztcclxufVxyXG5cclxuKjo6LXdlYmtpdC1zY3JvbGxiYXIge1xyXG4gIHdpZHRoOiAxMnB4OyAvKiB3aWR0aCBvZiB0aGUgZW50aXJlIHNjcm9sbGJhciAqL1xyXG59XHJcblxyXG4qOjotd2Via2l0LXNjcm9sbGJhci10cmFjayB7XHJcbiAgYmFja2dyb3VuZDogYmxhY2s7IC8qIGNvbG9yIG9mIHRoZSB0cmFja2luZyBhcmVhICovXHJcbn1cclxuXHJcbi5wcm9iQ29udGFpbmVyIHtcclxuICBwYWRkaW5nOiAwLjJyZW07XHJcbiAgZGlzcGxheTogZmxleDtcclxuICBhbGlnbi1pdGVtczogY2VudGVyO1xyXG4gIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XHJcbiAgYmFja2dyb3VuZC1jb2xvcjogI2U1ZjZmYjtcclxuICBib3JkZXItcmFkaXVzOiAyZW07XHJcbn1cclxuIiwiLnByb2ItaW4tY29udGFpbmVyIHtcclxuICBwYWRkaW5nOiAwLjJyZW07XHJcbiAgYmFja2dyb3VuZC1jb2xvcjogI2I5ZWZmZjtcclxuICBtYXJnaW4tdG9wOiAycmVtO1xyXG4gIGgyIHtcclxuICAgIGZvbnQtc2l6ZTogMS4ycmVtO1xyXG4gICAgcGFkZGluZzogMC4yNXJlbTtcclxuICB9XHJcbiAgaDMge1xyXG4gICAgdGV4dC1hbGlnbjogcmlnaHQ7XHJcbiAgICBwYWRkaW5nOiAwLjJyZW07XHJcbiAgICBmb250LXNpemU6IDFyZW07XHJcbiAgfVxyXG59XHJcbiIsIi5jYW5kaWRhdGUtc29sIHtcclxuICBtaW4taGVpZ2h0OiAyMHZoO1xyXG4gIHBhZGRpbmc6IDAuMmVtO1xyXG5cclxuICBoMyB7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjZDJlZGZmO1xyXG4gICAgcGFkZGluZzogMC41ZW07XHJcbiAgICBib3JkZXItcmFkaXVzOiAwLjVlbTtcclxuICB9XHJcblxyXG4gIHAge1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogI2UzZjZmZjtcclxuICAgIG1pbi1oZWlnaHQ6IDIwdmg7XHJcbiAgICBwYWRkaW5nOiAxZW07XHJcbiAgICBib3JkZXItcmFkaXVzOiAyZW07XHJcbiAgfVxyXG59XHJcbiJdLCJzb3VyY2VSb290IjoiIn0= */</style><script charset="utf-8" src="./mvp_proto_files/main.8e6d3653d5bb0b085682.hot-update.js.다운로드"></script></head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"><div class="App"><div class="problem-page"><div class="problem-documents"><h1>Given a multivariate polynomial that takes only non-negative values over reals, can it be represented as sum of squraes of rational functins?</h1><h2>Posted by Hilbert</h2><h2>Win 12$</h2><h2>Requires answer in 1days</h2><h3>Problem Description</h3><p>I need strict proof for this problem. Any near-proof will be payed equaly anyways.</p></div><div class="proposed-solutions"><h2>Proposed Solutions</h2><div class="candidate-sol"><h3>Solution by anaonymousa978ea8b-0c95-4e09-96d7-337743901303</h3><p>To view the answer, you must request, or wait until the problem is over</p></div><div class="candidate-sol"><h3>Solution by anaonymousa14938a0-300c-4a97-b5b6-99efa3e86dc8</h3><p>To view the answer, you must request, or wait until the problem is over</p></div><div class="candidate-sol"><h3>Solution by anaonymousb7cdf88b-98e9-423e-8013-3f099cda4961</h3><p>To view the answer, you must request, or wait until the problem is over</p></div></div></div><div class="RecSys"><h2>Recommended Problems : sorted in Bounty</h2><div class="probContainer"><div class="prob-in-container"><h2>Linux application decompiling approach : How would you reverse-engineer this software?</h2><h3>Bounty 51$</h3><h3>by Google Engineering Team</h3></div><div class="prob-in-container"><h2>븽그래 베트남 진출 도전기 : 최고의 광고를 기획하라.</h2><h3>Bounty 12$</h3><h3>by 븽그래</h3></div><div class="prob-in-container"><h2>Given a multivariate polynomial that takes only non-negative values over reals, can it be represented as sum of squraes of rational functins?</h2><h3>Bounty 12$</h3><h3>by Hilbert</h3></div><div class="prob-in-container"><h2>챕터 번역 의뢰 : The Lean Startup 챕터 2</h2><h3>Bounty 11$</h3><h3>by 김기혁</h3></div><div class="prob-in-container"><h2>Logo design for fusion chinese restorant in Venice</h2><h3>Bounty 10$</h3><h3>by Gordan Ramsey</h3></div><div class="prob-in-container"><h2>엄청 급함!! 아들이 열이 나고 빈혈 증상을 보이는데....</h2><h3>Bounty 5$</h3><h3>by 승우 아빠</h3></div><div class="prob-in-container"><h2>Solve this 1 Differential equation using numerical method</h2><h3>Bounty 2$</h3><h3>by Albert Einstein</h3></div><div class="prob-in-container"><h2>Solve this 2 Differential equation using numerical method</h2><h3>Bounty 2$</h3><h3>by Albert Einstein</h3></div><div class="prob-in-container"><h2>Solve this 3 Differential equation using numerical method</h2><h3>Bounty 2$</h3><h3>by Albert Einstein</h3></div><div class="prob-in-container"><h2>Solve this 4 Differential equation using numerical method</h2><h3>Bounty 2$</h3><h3>by Albert Einstein</h3></div><div class="prob-in-container"><h2>Solve this 5 Differential equation using numerical method</h2><h3>Bounty 2$</h3><h3>by Albert Einstein</h3></div></div></div></div></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  <script src="./mvp_proto_files/bundle.js.다운로드"></script><script src="./mvp_proto_files/0.chunk.js.다운로드"></script><script src="./mvp_proto_files/main.chunk.js.다운로드"></script>
+
+</body></html>
