@@ -1,0 +1,1275 @@
+(this["webpackJsonpcorca"] = this["webpackJsonpcorca"] || []).push([["main"],{
+
+/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/index.css":
+/*!**************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--5-oneOf-4-1!./node_modules/postcss-loader/src??postcss!./src/index.css ***!
+  \**************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
+// Imports
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(true);
+// Module
+___CSS_LOADER_EXPORT___.push([module.i, "\r\n/* cspell:disable-file */\r\n/* webkit printing magic: print all background colors */\r\nhtml {\r\n\t-webkit-print-color-adjust: exact;\r\n}\r\n* {\r\n\tbox-sizing: border-box;\r\n\t-webkit-print-color-adjust: exact;\r\n}\r\n\r\nhtml,\r\nbody {\r\n\tmargin: 0;\r\n\tpadding: 0;\r\n}\r\n@media only screen {\r\n\tbody {\r\n\t\tmargin: 2em auto;\r\n\t\tmax-width: 900px;\r\n\t\tcolor: rgb(55, 53, 47);\r\n\t}\r\n}\r\n\r\nbody {\r\n\tline-height: 1.5;\r\n\twhite-space: pre-wrap;\r\n}\r\n\r\na,\r\na.visited {\r\n\tcolor: inherit;\r\n\ttext-decoration: underline;\r\n}\r\n\r\n.pdf-relative-link-path {\r\n\tfont-size: 80%;\r\n\tcolor: #444;\r\n}\r\n\r\nh1,\r\nh2,\r\nh3 {\r\n\tletter-spacing: -0.01em;\r\n\tline-height: 1.2;\r\n\tfont-weight: 600;\r\n\tmargin-bottom: 0;\r\n}\r\n\r\n.page-title {\r\n\tfont-size: 2.5rem;\r\n\tfont-weight: 700;\r\n\tmargin-top: 0;\r\n\tmargin-bottom: 0.75em;\r\n}\r\n\r\nh1 {\r\n\tfont-size: 1.875rem;\r\n\tmargin-top: 1.875rem;\r\n}\r\n\r\nh2 {\r\n\tfont-size: 1.5rem;\r\n\tmargin-top: 1.5rem;\r\n}\r\n\r\nh3 {\r\n\tfont-size: 1.25rem;\r\n\tmargin-top: 1.25rem;\r\n}\r\n\r\n.source {\r\n\tborder: 1px solid #ddd;\r\n\tborder-radius: 3px;\r\n\tpadding: 1.5em;\r\n\tword-break: break-all;\r\n}\r\n\r\n.callout {\r\n\tborder-radius: 3px;\r\n\tpadding: 1rem;\r\n}\r\n\r\nfigure {\r\n\tmargin: 1.25em 0;\r\n\tpage-break-inside: avoid;\r\n}\r\n\r\nfigcaption {\r\n\topacity: 0.5;\r\n\tfont-size: 85%;\r\n\tmargin-top: 0.5em;\r\n}\r\n\r\nmark {\r\n\tbackground-color: transparent;\r\n}\r\n\r\n.indented {\r\n\tpadding-left: 1.5em;\r\n}\r\n\r\nhr {\r\n\tbackground: transparent;\r\n\tdisplay: block;\r\n\twidth: 100%;\r\n\theight: 1px;\r\n\tvisibility: visible;\r\n\tborder: none;\r\n\tborder-bottom: 1px solid rgba(55, 53, 47, 0.09);\r\n}\r\n\r\nimg {\r\n\tmax-width: 100%;\r\n}\r\n\r\n@media only print {\r\n\timg {\r\n\t\tmax-height: 100vh;\r\n\t\tobject-fit: contain;\r\n\t}\r\n}\r\n\r\n@page {\r\n\tmargin: 1in;\r\n}\r\n\r\n.collection-content {\r\n\tfont-size: 0.875rem;\r\n}\r\n\r\n.column-list {\r\n\tdisplay: flex;\r\n\tjustify-content: space-between;\r\n}\r\n\r\n.column {\r\n\tpadding: 0 1em;\r\n}\r\n\r\n.column:first-child {\r\n\tpadding-left: 0;\r\n}\r\n\r\n.column:last-child {\r\n\tpadding-right: 0;\r\n}\r\n\r\n.table_of_contents-item {\r\n\tdisplay: block;\r\n\tfont-size: 0.875rem;\r\n\tline-height: 1.3;\r\n\tpadding: 0.125rem;\r\n}\r\n\r\n.table_of_contents-indent-1 {\r\n\tmargin-left: 1.5rem;\r\n}\r\n\r\n.table_of_contents-indent-2 {\r\n\tmargin-left: 3rem;\r\n}\r\n\r\n.table_of_contents-indent-3 {\r\n\tmargin-left: 4.5rem;\r\n}\r\n\r\n.table_of_contents-link {\r\n\ttext-decoration: none;\r\n\topacity: 0.7;\r\n\tborder-bottom: 1px solid rgba(55, 53, 47, 0.18);\r\n}\r\n\r\ntable,\r\nth,\r\ntd {\r\n\tborder: 1px solid rgba(55, 53, 47, 0.09);\r\n\tborder-collapse: collapse;\r\n}\r\n\r\ntable {\r\n\tborder-left: none;\r\n\tborder-right: none;\r\n}\r\n\r\nth,\r\ntd {\r\n\tfont-weight: normal;\r\n\tpadding: 0.25em 0.5em;\r\n\tline-height: 1.5;\r\n\tmin-height: 1.5em;\r\n\ttext-align: left;\r\n}\r\n\r\nth {\r\n\tcolor: rgba(55, 53, 47, 0.6);\r\n}\r\n\r\nol,\r\nul {\r\n\tmargin: 0;\r\n\tmargin-block-start: 0.6em;\r\n\tmargin-block-end: 0.6em;\r\n}\r\n\r\nli > ol:first-child,\r\nli > ul:first-child {\r\n\tmargin-block-start: 0.6em;\r\n}\r\n\r\nul > li {\r\n\tlist-style: disc;\r\n}\r\n\r\nul.to-do-list {\r\n\ttext-indent: -1.7em;\r\n}\r\n\r\nul.to-do-list > li {\r\n\tlist-style: none;\r\n}\r\n\r\n.to-do-children-checked {\r\n\ttext-decoration: line-through;\r\n\topacity: 0.375;\r\n}\r\n\r\nul.toggle > li {\r\n\tlist-style: none;\r\n}\r\n\r\nul {\r\n\tpadding-inline-start: 1.7em;\r\n}\r\n\r\nul > li {\r\n\tpadding-left: 0.1em;\r\n}\r\n\r\nol {\r\n\tpadding-inline-start: 1.6em;\r\n}\r\n\r\nol > li {\r\n\tpadding-left: 0.2em;\r\n}\r\n\r\n.mono ol {\r\n\tpadding-inline-start: 2em;\r\n}\r\n\r\n.mono ol > li {\r\n\ttext-indent: -0.4em;\r\n}\r\n\r\n.toggle {\r\n\tpadding-inline-start: 0em;\r\n\tlist-style-type: none;\r\n}\r\n\r\n/* Indent toggle children */\r\n.toggle > li > details {\r\n\tpadding-left: 1.7em;\r\n}\r\n\r\n.toggle > li > details > summary {\r\n\tmargin-left: -1.1em;\r\n}\r\n\r\n.selected-value {\r\n\tdisplay: inline-block;\r\n\tpadding: 0 0.5em;\r\n\tbackground: rgba(206, 205, 202, 0.5);\r\n\tborder-radius: 3px;\r\n\tmargin-right: 0.5em;\r\n\tmargin-top: 0.3em;\r\n\tmargin-bottom: 0.3em;\r\n\twhite-space: nowrap;\r\n}\r\n\r\n.collection-title {\r\n\tdisplay: inline-block;\r\n\tmargin-right: 1em;\r\n}\r\n\r\ntime {\r\n\topacity: 0.5;\r\n}\r\n\r\n.icon {\r\n\tdisplay: inline-block;\r\n\tmax-width: 1.2em;\r\n\tmax-height: 1.2em;\r\n\ttext-decoration: none;\r\n\tvertical-align: text-bottom;\r\n\tmargin-right: 0.5em;\r\n}\r\n\r\nimg.icon {\r\n\tborder-radius: 3px;\r\n}\r\n\r\n.user-icon {\r\n\twidth: 1.5em;\r\n\theight: 1.5em;\r\n\tborder-radius: 100%;\r\n\tmargin-right: 0.5rem;\r\n}\r\n\r\n.user-icon-inner {\r\n\tfont-size: 0.8em;\r\n}\r\n\r\n.text-icon {\r\n\tborder: 1px solid #000;\r\n\ttext-align: center;\r\n}\r\n\r\n.page-cover-image {\r\n\tdisplay: block;\r\n\tobject-fit: cover;\r\n\twidth: 100%;\r\n\theight: 30vh;\r\n}\r\n\r\n.page-header-icon {\r\n\tfont-size: 3rem;\r\n\tmargin-bottom: 1rem;\r\n}\r\n\r\n.page-header-icon-with-cover {\r\n\tmargin-top: -0.72em;\r\n\tmargin-left: 0.07em;\r\n}\r\n\r\n.page-header-icon img {\r\n\tborder-radius: 3px;\r\n}\r\n\r\n.link-to-page {\r\n\tmargin: 1em 0;\r\n\tpadding: 0;\r\n\tborder: none;\r\n\tfont-weight: 500;\r\n}\r\n\r\np > .user {\r\n\topacity: 0.5;\r\n}\r\n\r\ntd > .user,\r\ntd > time {\r\n\twhite-space: nowrap;\r\n}\r\n\r\ninput[type=\"checkbox\"] {\r\n\ttransform: scale(1.5);\r\n\tmargin-right: 0.6em;\r\n\tvertical-align: middle;\r\n}\r\n\r\np {\r\n\tmargin-top: 0.5em;\r\n\tmargin-bottom: 0.5em;\r\n}\r\n\r\n.image {\r\n\tborder: none;\r\n\tmargin: 1.5em 0;\r\n\tpadding: 0;\r\n\tborder-radius: 0;\r\n\ttext-align: center;\r\n}\r\n\r\n.code,\r\ncode {\r\n\tbackground: rgba(135, 131, 120, 0.15);\r\n\tborder-radius: 3px;\r\n\tpadding: 0.2em 0.4em;\r\n\tborder-radius: 3px;\r\n\tfont-size: 85%;\r\n\t-moz-tab-size: 2;\r\n\t     tab-size: 2;\r\n}\r\n\r\ncode {\r\n\tcolor: #eb5757;\r\n}\r\n\r\n.code {\r\n\tpadding: 1.5em 1em;\r\n}\r\n\r\n.code-wrap {\r\n\twhite-space: pre-wrap;\r\n\tword-break: break-all;\r\n}\r\n\r\n.code > code {\r\n\tbackground: none;\r\n\tpadding: 0;\r\n\tfont-size: 100%;\r\n\tcolor: inherit;\r\n}\r\n\r\nblockquote {\r\n\tfont-size: 1.25em;\r\n\tmargin: 1em 0;\r\n\tpadding-left: 1em;\r\n\tborder-left: 3px solid rgb(55, 53, 47);\r\n}\r\n\r\n.bookmark {\r\n\ttext-decoration: none;\r\n\tmax-height: 8em;\r\n\tpadding: 0;\r\n\tdisplay: flex;\r\n\twidth: 100%;\r\n\talign-items: stretch;\r\n}\r\n\r\n.bookmark-title {\r\n\tfont-size: 0.85em;\r\n\toverflow: hidden;\r\n\ttext-overflow: ellipsis;\r\n\theight: 1.75em;\r\n\twhite-space: nowrap;\r\n}\r\n\r\n.bookmark-text {\r\n\tdisplay: flex;\r\n\tflex-direction: column;\r\n}\r\n\r\n.bookmark-info {\r\n\tflex: 4 1 180px;\r\n\tpadding: 12px 14px 14px;\r\n\tdisplay: flex;\r\n\tflex-direction: column;\r\n\tjustify-content: space-between;\r\n}\r\n\r\n.bookmark-image {\r\n\twidth: 33%;\r\n\tflex: 1 1 180px;\r\n\tdisplay: block;\r\n\tposition: relative;\r\n\tobject-fit: cover;\r\n\tborder-radius: 1px;\r\n}\r\n\r\n.bookmark-description {\r\n\tcolor: rgba(55, 53, 47, 0.6);\r\n\tfont-size: 0.75em;\r\n\toverflow: hidden;\r\n\tmax-height: 4.5em;\r\n\tword-break: break-word;\r\n}\r\n\r\n.bookmark-href {\r\n\tfont-size: 0.75em;\r\n\tmargin-top: 0.25em;\r\n}\r\n\r\n.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Helvetica, \"Apple Color Emoji\", Arial, sans-serif, \"Segoe UI Emoji\", \"Segoe UI Symbol\"; }\r\n.code { font-family: \"SFMono-Regular\", Menlo, Consolas, \"PT Mono\", \"Liberation Mono\", Courier, monospace; }\r\n.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }\r\n.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }\r\n.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Helvetica, \"Apple Color Emoji\", Arial, sans-serif, \"Segoe UI Emoji\", \"Segoe UI Symbol\", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }\r\n.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Helvetica, \"Apple Color Emoji\", Arial, sans-serif, \"Segoe UI Emoji\", \"Segoe UI Symbol\", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }\r\n.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Helvetica, \"Apple Color Emoji\", Arial, sans-serif, \"Segoe UI Emoji\", \"Segoe UI Symbol\", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }\r\n.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Helvetica, \"Apple Color Emoji\", Arial, sans-serif, \"Segoe UI Emoji\", \"Segoe UI Symbol\", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }\r\n.pdf .code { font-family: Source Code Pro, \"SFMono-Regular\", Menlo, Consolas, \"PT Mono\", \"Liberation Mono\", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }\r\n.pdf:lang(zh-CN) .code { font-family: Source Code Pro, \"SFMono-Regular\", Menlo, Consolas, \"PT Mono\", \"Liberation Mono\", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }\r\n.pdf:lang(zh-TW) .code { font-family: Source Code Pro, \"SFMono-Regular\", Menlo, Consolas, \"PT Mono\", \"Liberation Mono\", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }\r\n.pdf:lang(ko-KR) .code { font-family: Source Code Pro, \"SFMono-Regular\", Menlo, Consolas, \"PT Mono\", \"Liberation Mono\", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }\r\n.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }\r\n.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }\r\n.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }\r\n.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }\r\n.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }\r\n.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }\r\n.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }\r\n.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }\r\n.highlight-default {\r\n}\r\n.highlight-gray {\r\n\tcolor: rgb(155,154,151);\r\n}\r\n.highlight-brown {\r\n\tcolor: rgb(100,71,58);\r\n}\r\n.highlight-orange {\r\n\tcolor: rgb(217,115,13);\r\n}\r\n.highlight-yellow {\r\n\tcolor: rgb(223,171,1);\r\n}\r\n.highlight-teal {\r\n\tcolor: rgb(15,123,108);\r\n}\r\n.highlight-blue {\r\n\tcolor: rgb(11,110,153);\r\n}\r\n.highlight-purple {\r\n\tcolor: rgb(105,64,165);\r\n}\r\n.highlight-pink {\r\n\tcolor: rgb(173,26,114);\r\n}\r\n.highlight-red {\r\n\tcolor: rgb(224,62,62);\r\n}\r\n.highlight-gray_background {\r\n\tbackground: rgb(235,236,237);\r\n}\r\n.highlight-brown_background {\r\n\tbackground: rgb(233,229,227);\r\n}\r\n.highlight-orange_background {\r\n\tbackground: rgb(250,235,221);\r\n}\r\n.highlight-yellow_background {\r\n\tbackground: rgb(251,243,219);\r\n}\r\n.highlight-teal_background {\r\n\tbackground: rgb(221,237,234);\r\n}\r\n.highlight-blue_background {\r\n\tbackground: rgb(221,235,241);\r\n}\r\n.highlight-purple_background {\r\n\tbackground: rgb(234,228,242);\r\n}\r\n.highlight-pink_background {\r\n\tbackground: rgb(244,223,235);\r\n}\r\n.highlight-red_background {\r\n\tbackground: rgb(251,228,228);\r\n}\r\n.block-color-default {\r\n\tcolor: inherit;\r\n\tfill: inherit;\r\n}\r\n.block-color-gray {\r\n\tcolor: rgba(55, 53, 47, 0.6);\r\n\tfill: rgba(55, 53, 47, 0.6);\r\n}\r\n.block-color-brown {\r\n\tcolor: rgb(100,71,58);\r\n\tfill: rgb(100,71,58);\r\n}\r\n.block-color-orange {\r\n\tcolor: rgb(217,115,13);\r\n\tfill: rgb(217,115,13);\r\n}\r\n.block-color-yellow {\r\n\tcolor: rgb(223,171,1);\r\n\tfill: rgb(223,171,1);\r\n}\r\n.block-color-teal {\r\n\tcolor: rgb(15,123,108);\r\n\tfill: rgb(15,123,108);\r\n}\r\n.block-color-blue {\r\n\tcolor: rgb(11,110,153);\r\n\tfill: rgb(11,110,153);\r\n}\r\n.block-color-purple {\r\n\tcolor: rgb(105,64,165);\r\n\tfill: rgb(105,64,165);\r\n}\r\n.block-color-pink {\r\n\tcolor: rgb(173,26,114);\r\n\tfill: rgb(173,26,114);\r\n}\r\n.block-color-red {\r\n\tcolor: rgb(224,62,62);\r\n\tfill: rgb(224,62,62);\r\n}\r\n.block-color-gray_background {\r\n\tbackground: rgb(235,236,237);\r\n}\r\n.block-color-brown_background {\r\n\tbackground: rgb(233,229,227);\r\n}\r\n.block-color-orange_background {\r\n\tbackground: rgb(250,235,221);\r\n}\r\n.block-color-yellow_background {\r\n\tbackground: rgb(251,243,219);\r\n}\r\n.block-color-teal_background {\r\n\tbackground: rgb(221,237,234);\r\n}\r\n.block-color-blue_background {\r\n\tbackground: rgb(221,235,241);\r\n}\r\n.block-color-purple_background {\r\n\tbackground: rgb(234,228,242);\r\n}\r\n.block-color-pink_background {\r\n\tbackground: rgb(244,223,235);\r\n}\r\n.block-color-red_background {\r\n\tbackground: rgb(251,228,228);\r\n}\r\n.select-value-color-default { background-color: rgba(206,205,202,0.5); }\r\n.select-value-color-gray { background-color: rgba(155,154,151, 0.4); }\r\n.select-value-color-brown { background-color: rgba(140,46,0,0.2); }\r\n.select-value-color-orange { background-color: rgba(245,93,0,0.2); }\r\n.select-value-color-yellow { background-color: rgba(233,168,0,0.2); }\r\n.select-value-color-green { background-color: rgba(0,135,107,0.2); }\r\n.select-value-color-blue { background-color: rgba(0,120,223,0.2); }\r\n.select-value-color-purple { background-color: rgba(103,36,222,0.2); }\r\n.select-value-color-pink { background-color: rgba(221,0,129,0.2); }\r\n.select-value-color-red { background-color: rgba(255,0,26,0.2); }\r\n\r\n.checkbox {\r\n\tdisplay: inline-flex;\r\n\tvertical-align: text-bottom;\r\n\twidth: 16;\r\n\theight: 16;\r\n\tbackground-size: 16px;\r\n\tmargin-left: 2px;\r\n\tmargin-right: 5px;\r\n}\r\n\r\n.checkbox-on {\r\n\tbackground-image: url(\"data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E\");\r\n}\r\n\r\n.checkbox-off {\r\n\tbackground-image: url(\"data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E\");\r\n}\r\n\t", "",{"version":3,"sources":["webpack://src/index.css"],"names":[],"mappings":"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","sourcesContent":["\r\n/* cspell:disable-file */\r\n/* webkit printing magic: print all background colors */\r\nhtml {\r\n\t-webkit-print-color-adjust: exact;\r\n}\r\n* {\r\n\tbox-sizing: border-box;\r\n\t-webkit-print-color-adjust: exact;\r\n}\r\n\r\nhtml,\r\nbody {\r\n\tmargin: 0;\r\n\tpadding: 0;\r\n}\r\n@media only screen {\r\n\tbody {\r\n\t\tmargin: 2em auto;\r\n\t\tmax-width: 900px;\r\n\t\tcolor: rgb(55, 53, 47);\r\n\t}\r\n}\r\n\r\nbody {\r\n\tline-height: 1.5;\r\n\twhite-space: pre-wrap;\r\n}\r\n\r\na,\r\na.visited {\r\n\tcolor: inherit;\r\n\ttext-decoration: underline;\r\n}\r\n\r\n.pdf-relative-link-path {\r\n\tfont-size: 80%;\r\n\tcolor: #444;\r\n}\r\n\r\nh1,\r\nh2,\r\nh3 {\r\n\tletter-spacing: -0.01em;\r\n\tline-height: 1.2;\r\n\tfont-weight: 600;\r\n\tmargin-bottom: 0;\r\n}\r\n\r\n.page-title {\r\n\tfont-size: 2.5rem;\r\n\tfont-weight: 700;\r\n\tmargin-top: 0;\r\n\tmargin-bottom: 0.75em;\r\n}\r\n\r\nh1 {\r\n\tfont-size: 1.875rem;\r\n\tmargin-top: 1.875rem;\r\n}\r\n\r\nh2 {\r\n\tfont-size: 1.5rem;\r\n\tmargin-top: 1.5rem;\r\n}\r\n\r\nh3 {\r\n\tfont-size: 1.25rem;\r\n\tmargin-top: 1.25rem;\r\n}\r\n\r\n.source {\r\n\tborder: 1px solid #ddd;\r\n\tborder-radius: 3px;\r\n\tpadding: 1.5em;\r\n\tword-break: break-all;\r\n}\r\n\r\n.callout {\r\n\tborder-radius: 3px;\r\n\tpadding: 1rem;\r\n}\r\n\r\nfigure {\r\n\tmargin: 1.25em 0;\r\n\tpage-break-inside: avoid;\r\n}\r\n\r\nfigcaption {\r\n\topacity: 0.5;\r\n\tfont-size: 85%;\r\n\tmargin-top: 0.5em;\r\n}\r\n\r\nmark {\r\n\tbackground-color: transparent;\r\n}\r\n\r\n.indented {\r\n\tpadding-left: 1.5em;\r\n}\r\n\r\nhr {\r\n\tbackground: transparent;\r\n\tdisplay: block;\r\n\twidth: 100%;\r\n\theight: 1px;\r\n\tvisibility: visible;\r\n\tborder: none;\r\n\tborder-bottom: 1px solid rgba(55, 53, 47, 0.09);\r\n}\r\n\r\nimg {\r\n\tmax-width: 100%;\r\n}\r\n\r\n@media only print {\r\n\timg {\r\n\t\tmax-height: 100vh;\r\n\t\tobject-fit: contain;\r\n\t}\r\n}\r\n\r\n@page {\r\n\tmargin: 1in;\r\n}\r\n\r\n.collection-content {\r\n\tfont-size: 0.875rem;\r\n}\r\n\r\n.column-list {\r\n\tdisplay: flex;\r\n\tjustify-content: space-between;\r\n}\r\n\r\n.column {\r\n\tpadding: 0 1em;\r\n}\r\n\r\n.column:first-child {\r\n\tpadding-left: 0;\r\n}\r\n\r\n.column:last-child {\r\n\tpadding-right: 0;\r\n}\r\n\r\n.table_of_contents-item {\r\n\tdisplay: block;\r\n\tfont-size: 0.875rem;\r\n\tline-height: 1.3;\r\n\tpadding: 0.125rem;\r\n}\r\n\r\n.table_of_contents-indent-1 {\r\n\tmargin-left: 1.5rem;\r\n}\r\n\r\n.table_of_contents-indent-2 {\r\n\tmargin-left: 3rem;\r\n}\r\n\r\n.table_of_contents-indent-3 {\r\n\tmargin-left: 4.5rem;\r\n}\r\n\r\n.table_of_contents-link {\r\n\ttext-decoration: none;\r\n\topacity: 0.7;\r\n\tborder-bottom: 1px solid rgba(55, 53, 47, 0.18);\r\n}\r\n\r\ntable,\r\nth,\r\ntd {\r\n\tborder: 1px solid rgba(55, 53, 47, 0.09);\r\n\tborder-collapse: collapse;\r\n}\r\n\r\ntable {\r\n\tborder-left: none;\r\n\tborder-right: none;\r\n}\r\n\r\nth,\r\ntd {\r\n\tfont-weight: normal;\r\n\tpadding: 0.25em 0.5em;\r\n\tline-height: 1.5;\r\n\tmin-height: 1.5em;\r\n\ttext-align: left;\r\n}\r\n\r\nth {\r\n\tcolor: rgba(55, 53, 47, 0.6);\r\n}\r\n\r\nol,\r\nul {\r\n\tmargin: 0;\r\n\tmargin-block-start: 0.6em;\r\n\tmargin-block-end: 0.6em;\r\n}\r\n\r\nli > ol:first-child,\r\nli > ul:first-child {\r\n\tmargin-block-start: 0.6em;\r\n}\r\n\r\nul > li {\r\n\tlist-style: disc;\r\n}\r\n\r\nul.to-do-list {\r\n\ttext-indent: -1.7em;\r\n}\r\n\r\nul.to-do-list > li {\r\n\tlist-style: none;\r\n}\r\n\r\n.to-do-children-checked {\r\n\ttext-decoration: line-through;\r\n\topacity: 0.375;\r\n}\r\n\r\nul.toggle > li {\r\n\tlist-style: none;\r\n}\r\n\r\nul {\r\n\tpadding-inline-start: 1.7em;\r\n}\r\n\r\nul > li {\r\n\tpadding-left: 0.1em;\r\n}\r\n\r\nol {\r\n\tpadding-inline-start: 1.6em;\r\n}\r\n\r\nol > li {\r\n\tpadding-left: 0.2em;\r\n}\r\n\r\n.mono ol {\r\n\tpadding-inline-start: 2em;\r\n}\r\n\r\n.mono ol > li {\r\n\ttext-indent: -0.4em;\r\n}\r\n\r\n.toggle {\r\n\tpadding-inline-start: 0em;\r\n\tlist-style-type: none;\r\n}\r\n\r\n/* Indent toggle children */\r\n.toggle > li > details {\r\n\tpadding-left: 1.7em;\r\n}\r\n\r\n.toggle > li > details > summary {\r\n\tmargin-left: -1.1em;\r\n}\r\n\r\n.selected-value {\r\n\tdisplay: inline-block;\r\n\tpadding: 0 0.5em;\r\n\tbackground: rgba(206, 205, 202, 0.5);\r\n\tborder-radius: 3px;\r\n\tmargin-right: 0.5em;\r\n\tmargin-top: 0.3em;\r\n\tmargin-bottom: 0.3em;\r\n\twhite-space: nowrap;\r\n}\r\n\r\n.collection-title {\r\n\tdisplay: inline-block;\r\n\tmargin-right: 1em;\r\n}\r\n\r\ntime {\r\n\topacity: 0.5;\r\n}\r\n\r\n.icon {\r\n\tdisplay: inline-block;\r\n\tmax-width: 1.2em;\r\n\tmax-height: 1.2em;\r\n\ttext-decoration: none;\r\n\tvertical-align: text-bottom;\r\n\tmargin-right: 0.5em;\r\n}\r\n\r\nimg.icon {\r\n\tborder-radius: 3px;\r\n}\r\n\r\n.user-icon {\r\n\twidth: 1.5em;\r\n\theight: 1.5em;\r\n\tborder-radius: 100%;\r\n\tmargin-right: 0.5rem;\r\n}\r\n\r\n.user-icon-inner {\r\n\tfont-size: 0.8em;\r\n}\r\n\r\n.text-icon {\r\n\tborder: 1px solid #000;\r\n\ttext-align: center;\r\n}\r\n\r\n.page-cover-image {\r\n\tdisplay: block;\r\n\tobject-fit: cover;\r\n\twidth: 100%;\r\n\theight: 30vh;\r\n}\r\n\r\n.page-header-icon {\r\n\tfont-size: 3rem;\r\n\tmargin-bottom: 1rem;\r\n}\r\n\r\n.page-header-icon-with-cover {\r\n\tmargin-top: -0.72em;\r\n\tmargin-left: 0.07em;\r\n}\r\n\r\n.page-header-icon img {\r\n\tborder-radius: 3px;\r\n}\r\n\r\n.link-to-page {\r\n\tmargin: 1em 0;\r\n\tpadding: 0;\r\n\tborder: none;\r\n\tfont-weight: 500;\r\n}\r\n\r\np > .user {\r\n\topacity: 0.5;\r\n}\r\n\r\ntd > .user,\r\ntd > time {\r\n\twhite-space: nowrap;\r\n}\r\n\r\ninput[type=\"checkbox\"] {\r\n\ttransform: scale(1.5);\r\n\tmargin-right: 0.6em;\r\n\tvertical-align: middle;\r\n}\r\n\r\np {\r\n\tmargin-top: 0.5em;\r\n\tmargin-bottom: 0.5em;\r\n}\r\n\r\n.image {\r\n\tborder: none;\r\n\tmargin: 1.5em 0;\r\n\tpadding: 0;\r\n\tborder-radius: 0;\r\n\ttext-align: center;\r\n}\r\n\r\n.code,\r\ncode {\r\n\tbackground: rgba(135, 131, 120, 0.15);\r\n\tborder-radius: 3px;\r\n\tpadding: 0.2em 0.4em;\r\n\tborder-radius: 3px;\r\n\tfont-size: 85%;\r\n\ttab-size: 2;\r\n}\r\n\r\ncode {\r\n\tcolor: #eb5757;\r\n}\r\n\r\n.code {\r\n\tpadding: 1.5em 1em;\r\n}\r\n\r\n.code-wrap {\r\n\twhite-space: pre-wrap;\r\n\tword-break: break-all;\r\n}\r\n\r\n.code > code {\r\n\tbackground: none;\r\n\tpadding: 0;\r\n\tfont-size: 100%;\r\n\tcolor: inherit;\r\n}\r\n\r\nblockquote {\r\n\tfont-size: 1.25em;\r\n\tmargin: 1em 0;\r\n\tpadding-left: 1em;\r\n\tborder-left: 3px solid rgb(55, 53, 47);\r\n}\r\n\r\n.bookmark {\r\n\ttext-decoration: none;\r\n\tmax-height: 8em;\r\n\tpadding: 0;\r\n\tdisplay: flex;\r\n\twidth: 100%;\r\n\talign-items: stretch;\r\n}\r\n\r\n.bookmark-title {\r\n\tfont-size: 0.85em;\r\n\toverflow: hidden;\r\n\ttext-overflow: ellipsis;\r\n\theight: 1.75em;\r\n\twhite-space: nowrap;\r\n}\r\n\r\n.bookmark-text {\r\n\tdisplay: flex;\r\n\tflex-direction: column;\r\n}\r\n\r\n.bookmark-info {\r\n\tflex: 4 1 180px;\r\n\tpadding: 12px 14px 14px;\r\n\tdisplay: flex;\r\n\tflex-direction: column;\r\n\tjustify-content: space-between;\r\n}\r\n\r\n.bookmark-image {\r\n\twidth: 33%;\r\n\tflex: 1 1 180px;\r\n\tdisplay: block;\r\n\tposition: relative;\r\n\tobject-fit: cover;\r\n\tborder-radius: 1px;\r\n}\r\n\r\n.bookmark-description {\r\n\tcolor: rgba(55, 53, 47, 0.6);\r\n\tfont-size: 0.75em;\r\n\toverflow: hidden;\r\n\tmax-height: 4.5em;\r\n\tword-break: break-word;\r\n}\r\n\r\n.bookmark-href {\r\n\tfont-size: 0.75em;\r\n\tmargin-top: 0.25em;\r\n}\r\n\r\n.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Helvetica, \"Apple Color Emoji\", Arial, sans-serif, \"Segoe UI Emoji\", \"Segoe UI Symbol\"; }\r\n.code { font-family: \"SFMono-Regular\", Menlo, Consolas, \"PT Mono\", \"Liberation Mono\", Courier, monospace; }\r\n.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }\r\n.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }\r\n.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Helvetica, \"Apple Color Emoji\", Arial, sans-serif, \"Segoe UI Emoji\", \"Segoe UI Symbol\", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }\r\n.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Helvetica, \"Apple Color Emoji\", Arial, sans-serif, \"Segoe UI Emoji\", \"Segoe UI Symbol\", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }\r\n.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Helvetica, \"Apple Color Emoji\", Arial, sans-serif, \"Segoe UI Emoji\", \"Segoe UI Symbol\", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }\r\n.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Helvetica, \"Apple Color Emoji\", Arial, sans-serif, \"Segoe UI Emoji\", \"Segoe UI Symbol\", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }\r\n.pdf .code { font-family: Source Code Pro, \"SFMono-Regular\", Menlo, Consolas, \"PT Mono\", \"Liberation Mono\", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }\r\n.pdf:lang(zh-CN) .code { font-family: Source Code Pro, \"SFMono-Regular\", Menlo, Consolas, \"PT Mono\", \"Liberation Mono\", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }\r\n.pdf:lang(zh-TW) .code { font-family: Source Code Pro, \"SFMono-Regular\", Menlo, Consolas, \"PT Mono\", \"Liberation Mono\", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }\r\n.pdf:lang(ko-KR) .code { font-family: Source Code Pro, \"SFMono-Regular\", Menlo, Consolas, \"PT Mono\", \"Liberation Mono\", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }\r\n.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }\r\n.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }\r\n.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }\r\n.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }\r\n.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }\r\n.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }\r\n.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }\r\n.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }\r\n.highlight-default {\r\n}\r\n.highlight-gray {\r\n\tcolor: rgb(155,154,151);\r\n}\r\n.highlight-brown {\r\n\tcolor: rgb(100,71,58);\r\n}\r\n.highlight-orange {\r\n\tcolor: rgb(217,115,13);\r\n}\r\n.highlight-yellow {\r\n\tcolor: rgb(223,171,1);\r\n}\r\n.highlight-teal {\r\n\tcolor: rgb(15,123,108);\r\n}\r\n.highlight-blue {\r\n\tcolor: rgb(11,110,153);\r\n}\r\n.highlight-purple {\r\n\tcolor: rgb(105,64,165);\r\n}\r\n.highlight-pink {\r\n\tcolor: rgb(173,26,114);\r\n}\r\n.highlight-red {\r\n\tcolor: rgb(224,62,62);\r\n}\r\n.highlight-gray_background {\r\n\tbackground: rgb(235,236,237);\r\n}\r\n.highlight-brown_background {\r\n\tbackground: rgb(233,229,227);\r\n}\r\n.highlight-orange_background {\r\n\tbackground: rgb(250,235,221);\r\n}\r\n.highlight-yellow_background {\r\n\tbackground: rgb(251,243,219);\r\n}\r\n.highlight-teal_background {\r\n\tbackground: rgb(221,237,234);\r\n}\r\n.highlight-blue_background {\r\n\tbackground: rgb(221,235,241);\r\n}\r\n.highlight-purple_background {\r\n\tbackground: rgb(234,228,242);\r\n}\r\n.highlight-pink_background {\r\n\tbackground: rgb(244,223,235);\r\n}\r\n.highlight-red_background {\r\n\tbackground: rgb(251,228,228);\r\n}\r\n.block-color-default {\r\n\tcolor: inherit;\r\n\tfill: inherit;\r\n}\r\n.block-color-gray {\r\n\tcolor: rgba(55, 53, 47, 0.6);\r\n\tfill: rgba(55, 53, 47, 0.6);\r\n}\r\n.block-color-brown {\r\n\tcolor: rgb(100,71,58);\r\n\tfill: rgb(100,71,58);\r\n}\r\n.block-color-orange {\r\n\tcolor: rgb(217,115,13);\r\n\tfill: rgb(217,115,13);\r\n}\r\n.block-color-yellow {\r\n\tcolor: rgb(223,171,1);\r\n\tfill: rgb(223,171,1);\r\n}\r\n.block-color-teal {\r\n\tcolor: rgb(15,123,108);\r\n\tfill: rgb(15,123,108);\r\n}\r\n.block-color-blue {\r\n\tcolor: rgb(11,110,153);\r\n\tfill: rgb(11,110,153);\r\n}\r\n.block-color-purple {\r\n\tcolor: rgb(105,64,165);\r\n\tfill: rgb(105,64,165);\r\n}\r\n.block-color-pink {\r\n\tcolor: rgb(173,26,114);\r\n\tfill: rgb(173,26,114);\r\n}\r\n.block-color-red {\r\n\tcolor: rgb(224,62,62);\r\n\tfill: rgb(224,62,62);\r\n}\r\n.block-color-gray_background {\r\n\tbackground: rgb(235,236,237);\r\n}\r\n.block-color-brown_background {\r\n\tbackground: rgb(233,229,227);\r\n}\r\n.block-color-orange_background {\r\n\tbackground: rgb(250,235,221);\r\n}\r\n.block-color-yellow_background {\r\n\tbackground: rgb(251,243,219);\r\n}\r\n.block-color-teal_background {\r\n\tbackground: rgb(221,237,234);\r\n}\r\n.block-color-blue_background {\r\n\tbackground: rgb(221,235,241);\r\n}\r\n.block-color-purple_background {\r\n\tbackground: rgb(234,228,242);\r\n}\r\n.block-color-pink_background {\r\n\tbackground: rgb(244,223,235);\r\n}\r\n.block-color-red_background {\r\n\tbackground: rgb(251,228,228);\r\n}\r\n.select-value-color-default { background-color: rgba(206,205,202,0.5); }\r\n.select-value-color-gray { background-color: rgba(155,154,151, 0.4); }\r\n.select-value-color-brown { background-color: rgba(140,46,0,0.2); }\r\n.select-value-color-orange { background-color: rgba(245,93,0,0.2); }\r\n.select-value-color-yellow { background-color: rgba(233,168,0,0.2); }\r\n.select-value-color-green { background-color: rgba(0,135,107,0.2); }\r\n.select-value-color-blue { background-color: rgba(0,120,223,0.2); }\r\n.select-value-color-purple { background-color: rgba(103,36,222,0.2); }\r\n.select-value-color-pink { background-color: rgba(221,0,129,0.2); }\r\n.select-value-color-red { background-color: rgba(255,0,26,0.2); }\r\n\r\n.checkbox {\r\n\tdisplay: inline-flex;\r\n\tvertical-align: text-bottom;\r\n\twidth: 16;\r\n\theight: 16;\r\n\tbackground-size: 16px;\r\n\tmargin-left: 2px;\r\n\tmargin-right: 5px;\r\n}\r\n\r\n.checkbox-on {\r\n\tbackground-image: url(\"data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E\");\r\n}\r\n\r\n.checkbox-off {\r\n\tbackground-image: url(\"data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E\");\r\n}\r\n\t"],"sourceRoot":""}]);
+// Exports
+/* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
+/***/ "./src/App.js":
+/*!********************!*\
+  !*** ./src/App.js ***!
+  \********************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* WEBPACK VAR INJECTION */(function(__react_refresh_utils__, __react_refresh_error_overlay__) {/* harmony import */ var _logo_svg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./logo.svg */ "./src/logo.svg");
+/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-dev-runtime */ "./node_modules/react/jsx-dev-runtime.js");
+/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__);
+__webpack_require__.$Refresh$.runtime = __webpack_require__(/*! ./node_modules/react-refresh/runtime.js */ "./node_modules/react-refresh/runtime.js");
+__webpack_require__.$Refresh$.setup(module.i);
+
+var _jsxFileName = "C:\\Users\\clone\\Documents\\2021_summer\\corca\\corca\\src\\App.js";
+
+
+
+function App() {
+  return /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__["jsxDEV"])("div", {
+    className: "App",
+    children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__["jsxDEV"])("header", {
+      className: "App-header",
+      children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__["jsxDEV"])("img", {
+        src: _logo_svg__WEBPACK_IMPORTED_MODULE_0__["default"],
+        className: "App-logo",
+        alt: "logo"
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 7,
+        columnNumber: 9
+      }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__["jsxDEV"])("p", {
+        children: ["Edit ", /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__["jsxDEV"])("code", {
+          children: "src/App.js"
+        }, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 9,
+          columnNumber: 16
+        }, this), " and save to reload."]
+      }, void 0, true, {
+        fileName: _jsxFileName,
+        lineNumber: 8,
+        columnNumber: 9
+      }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__["jsxDEV"])("a", {
+        className: "App-link",
+        href: "https://reactjs.org",
+        target: "_blank",
+        rel: "noopener noreferrer",
+        children: "Learn React"
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 11,
+        columnNumber: 9
+      }, this)]
+    }, void 0, true, {
+      fileName: _jsxFileName,
+      lineNumber: 6,
+      columnNumber: 7
+    }, this)
+  }, void 0, false, {
+    fileName: _jsxFileName,
+    lineNumber: 5,
+    columnNumber: 5
+  }, this);
+}
+
+_c = App;
+/* harmony default export */ __webpack_exports__["default"] = (App);
+
+var _c;
+
+__webpack_require__.$Refresh$.register(_c, "App");
+
+const currentExports = __react_refresh_utils__.getModuleExports(module.i);
+__react_refresh_utils__.registerExportsForReactRefresh(currentExports, module.i);
+
+if (true) {
+  const isHotUpdate = !!module.hot.data;
+  const prevExports = isHotUpdate ? module.hot.data.prevExports : null;
+
+  if (__react_refresh_utils__.isReactRefreshBoundary(currentExports)) {
+    module.hot.dispose(
+      /**
+       * A callback to performs a full refresh if React has unrecoverable errors,
+       * and also caches the to-be-disposed module.
+       * @param {*} data A hot module data object from Webpack HMR.
+       * @returns {void}
+       */
+      function hotDisposeCallback(data) {
+        // We have to mutate the data object to get data registered and cached
+        data.prevExports = currentExports;
+      }
+    );
+    module.hot.accept(
+      /**
+       * An error handler to allow self-recovering behaviours.
+       * @param {Error} error An error occurred during evaluation of a module.
+       * @returns {void}
+       */
+      function hotErrorHandler(error) {
+        if (
+          typeof __react_refresh_error_overlay__ !== 'undefined' &&
+          __react_refresh_error_overlay__
+        ) {
+          __react_refresh_error_overlay__.handleRuntimeError(error);
+        }
+
+        if (typeof __react_refresh_test__ !== 'undefined' && __react_refresh_test__) {
+          if (window.onHotAcceptError) {
+            window.onHotAcceptError(error.message);
+          }
+        }
+
+        __webpack_require__.c[module.i].hot.accept(hotErrorHandler);
+      }
+    );
+
+    if (isHotUpdate) {
+      if (
+        __react_refresh_utils__.isReactRefreshBoundary(prevExports) &&
+        __react_refresh_utils__.shouldInvalidateReactRefreshBoundary(prevExports, currentExports)
+      ) {
+        module.hot.invalidate();
+      } else {
+        __react_refresh_utils__.enqueueUpdate(
+          /**
+           * A function to dismiss the error overlay after performing React refresh.
+           * @returns {void}
+           */
+          function updateCallback() {
+            if (
+              typeof __react_refresh_error_overlay__ !== 'undefined' &&
+              __react_refresh_error_overlay__
+            ) {
+              __react_refresh_error_overlay__.clearRuntimeErrors();
+            }
+          }
+        );
+      }
+    }
+  } else {
+    if (isHotUpdate && __react_refresh_utils__.isReactRefreshBoundary(prevExports)) {
+      module.hot.invalidate();
+    }
+  }
+}
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js */ "./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js"), __webpack_require__(/*! ./node_modules/react-dev-utils/refreshOverlayInterop.js */ "./node_modules/react-dev-utils/refreshOverlayInterop.js")))
+
+/***/ }),
+
+/***/ "./src/atoms/RandomRectangle.jsx":
+/*!***************************************!*\
+  !*** ./src/atoms/RandomRectangle.jsx ***!
+  \***************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* WEBPACK VAR INJECTION */(function(__react_refresh_utils__, __react_refresh_error_overlay__) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return RandomRectangle; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _react_three_fiber__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @react-three/fiber */ "./node_modules/@react-three/fiber/dist/react-three-fiber.esm.js");
+/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-dev-runtime */ "./node_modules/react/jsx-dev-runtime.js");
+/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__);
+__webpack_require__.$Refresh$.runtime = __webpack_require__(/*! ./node_modules/react-refresh/runtime.js */ "./node_modules/react-refresh/runtime.js");
+__webpack_require__.$Refresh$.setup(module.i);
+
+var _jsxFileName = "C:\\Users\\clone\\Documents\\2021_summer\\corca\\corca\\src\\atoms\\RandomRectangle.jsx",
+    _s = __webpack_require__.$Refresh$.signature();
+
+
+
+
+function RandomRectangle(props) {
+  _s();
+
+  // This reference will give us direct access to the THREE.Mesh object
+  const mesh = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])();
+  const {
+    position
+  } = props; // Set up state for the hovered and active state
+
+  const [hovered, setHover] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
+  const [active, setActive] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
+  console.log(position); // Subscribe this component to the render-loop, rotate the mesh every frame
+
+  Object(_react_three_fiber__WEBPACK_IMPORTED_MODULE_1__["useFrame"])((state, delta) => mesh.current.position.z -= mesh.current.position.z < -30 ? -60 : 0.1); // Return the view, these are regular Threejs elements expressed in JSX
+
+  return /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__["jsxDEV"])("mesh", {
+    castShadow: true,
+    position: position,
+    ref: mesh,
+    rotation: [Math.random(), Math.random(), Math.random()] //scale={active ? 1.5 : 1}
+    ,
+    onClick: event => setActive(!active),
+    onPointerOver: event => setHover(true),
+    onPointerOut: event => setHover(false),
+    children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__["jsxDEV"])("boxGeometry", {
+      args: [0.5, 0.5, 0.5]
+    }, void 0, false, {
+      fileName: _jsxFileName,
+      lineNumber: 30,
+      columnNumber: 13
+    }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__["jsxDEV"])("meshStandardMaterial", {
+      color: hovered ? 'black' : 'lightblue'
+    }, void 0, false, {
+      fileName: _jsxFileName,
+      lineNumber: 31,
+      columnNumber: 13
+    }, this)]
+  }, void 0, true, {
+    fileName: _jsxFileName,
+    lineNumber: 21,
+    columnNumber: 9
+  }, this);
+}
+
+_s(RandomRectangle, "Gf95ovYMxCkb+HRFcD1+zMTFs6g=", false, function () {
+  return [_react_three_fiber__WEBPACK_IMPORTED_MODULE_1__["useFrame"]];
+});
+
+_c = RandomRectangle;
+
+var _c;
+
+__webpack_require__.$Refresh$.register(_c, "RandomRectangle");
+
+const currentExports = __react_refresh_utils__.getModuleExports(module.i);
+__react_refresh_utils__.registerExportsForReactRefresh(currentExports, module.i);
+
+if (true) {
+  const isHotUpdate = !!module.hot.data;
+  const prevExports = isHotUpdate ? module.hot.data.prevExports : null;
+
+  if (__react_refresh_utils__.isReactRefreshBoundary(currentExports)) {
+    module.hot.dispose(
+      /**
+       * A callback to performs a full refresh if React has unrecoverable errors,
+       * and also caches the to-be-disposed module.
+       * @param {*} data A hot module data object from Webpack HMR.
+       * @returns {void}
+       */
+      function hotDisposeCallback(data) {
+        // We have to mutate the data object to get data registered and cached
+        data.prevExports = currentExports;
+      }
+    );
+    module.hot.accept(
+      /**
+       * An error handler to allow self-recovering behaviours.
+       * @param {Error} error An error occurred during evaluation of a module.
+       * @returns {void}
+       */
+      function hotErrorHandler(error) {
+        if (
+          typeof __react_refresh_error_overlay__ !== 'undefined' &&
+          __react_refresh_error_overlay__
+        ) {
+          __react_refresh_error_overlay__.handleRuntimeError(error);
+        }
+
+        if (typeof __react_refresh_test__ !== 'undefined' && __react_refresh_test__) {
+          if (window.onHotAcceptError) {
+            window.onHotAcceptError(error.message);
+          }
+        }
+
+        __webpack_require__.c[module.i].hot.accept(hotErrorHandler);
+      }
+    );
+
+    if (isHotUpdate) {
+      if (
+        __react_refresh_utils__.isReactRefreshBoundary(prevExports) &&
+        __react_refresh_utils__.shouldInvalidateReactRefreshBoundary(prevExports, currentExports)
+      ) {
+        module.hot.invalidate();
+      } else {
+        __react_refresh_utils__.enqueueUpdate(
+          /**
+           * A function to dismiss the error overlay after performing React refresh.
+           * @returns {void}
+           */
+          function updateCallback() {
+            if (
+              typeof __react_refresh_error_overlay__ !== 'undefined' &&
+              __react_refresh_error_overlay__
+            ) {
+              __react_refresh_error_overlay__.clearRuntimeErrors();
+            }
+          }
+        );
+      }
+    }
+  } else {
+    if (isHotUpdate && __react_refresh_utils__.isReactRefreshBoundary(prevExports)) {
+      module.hot.invalidate();
+    }
+  }
+}
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js */ "./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js"), __webpack_require__(/*! ./node_modules/react-dev-utils/refreshOverlayInterop.js */ "./node_modules/react-dev-utils/refreshOverlayInterop.js")))
+
+/***/ }),
+
+/***/ "./src/components/Blog.jsx":
+/*!*********************************!*\
+  !*** ./src/components/Blog.jsx ***!
+  \*********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* WEBPACK VAR INJECTION */(function(__react_refresh_utils__, __react_refresh_error_overlay__) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Blog; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-dev-runtime */ "./node_modules/react/jsx-dev-runtime.js");
+/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__);
+__webpack_require__.$Refresh$.runtime = __webpack_require__(/*! ./node_modules/react-refresh/runtime.js */ "./node_modules/react-refresh/runtime.js");
+__webpack_require__.$Refresh$.setup(module.i);
+
+var _jsxFileName = "C:\\Users\\clone\\Documents\\2021_summer\\corca\\corca\\src\\components\\Blog.jsx";
+
+
+const rawHTML = `
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Corca AI</title></head><body><article id="1d107da4-bb32-4a66-8e23-1fa48ec23ec0" class="page sans"><header><div class="page-header-icon page-header-icon-with-cover"></div><h1 class="page-title">Corca AI</h1></header><div class="page-body"><nav id="b9a04637-3d59-4063-8e65-405760a91828" class="block-color-gray table_of_contents"><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#5d6fd508-b113-4bdf-97d1-21809356cf88">🚀 Our Story</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#199e0585-0849-4d98-a753-f57439d5b7c0">🌐 Open Positions</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#67131b98-ad44-4e54-ae03-e329a9a3a96d">📤 지원 방법</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#f03bf068-5527-480f-995e-0abc57865a65">🎁 Benefits &amp; Welfare</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#42d4c032-d641-497a-b4fe-856aef1c3c4b">🏢 사무실 위치</a></div></nav><h1 id="5d6fd508-b113-4bdf-97d1-21809356cf88" class="">🚀 Our Story</h1><p id="5731df75-a73c-406d-92bc-e4c19ac8758c" class="">작년에 국내 모 대기업의 머신러닝 프로젝트를 수행하여 실제 현장에 적용 하였는데 성과가 매우 좋아서 2021년에도 함께 하게 되었습니다. 이 클라이언트 외에도 글로벌 기업 등의 프로젝트를 수행하게 되어서 본격적으로 🚀 을 쏘기 위해 팀 빌딩 중입니다.</p><p id="aa00a752-0df4-45c3-8358-c6ccd0ccbcee" class="">비즈니스에 실제로 도움이 되는 머신러닝 솔루션을 제공하는 것을 목표로, 해당 분야 리서치를 통해 AI 기술을 적재적소에 적용하고자 하고 있습니다. 국내외 대학연구실 및 AI스타트업들과 파트너쉽을 맺고 프로젝트를 진행하고 있습니다.</p><p id="811735db-5822-46a3-9acf-01340ca5c02f" class="">AI/빅데이터에 관심이 많고, 이를 현실에 적용해서 세상을 바꾸는 과정을 함께 하고 싶으신 실력있는 ML 엔지니어 및 데이터사이언티스트분들과 이쪽으로 커리어를 찾고자 하는 쥬니어 분들의 많은 관심 부탁드립니다.</p><h1 id="199e0585-0849-4d98-a753-f57439d5b7c0" class="">🌐 Open Positions</h1><hr id="b24e7fdb-0306-4b5b-b561-b68b95b0683a"/><ul id="684076ca-91e2-4d59-8f35-82d1db7f27d1" class="toggle"><li><details open=""><summary>📈 <strong>Machine Learning Engineer</strong></summary><blockquote id="b85d39c8-cac7-4742-a61c-9427af39bf9f" class="">머신러닝 알고리즘 개발 및 운영</blockquote><p id="7cd6cbfe-3107-45ac-bc31-f072255483c3" class=""><strong>필수 역량</strong></p><ul id="052ba845-2b17-4c65-8407-cadcdf0c8a9a" class="bulleted-list"><li>PyTorch, TensorFlow 등을 이용한 모델 구현 경험이 있으신 분</li></ul><ul id="277709eb-462e-435a-9f6a-c0a45a117de0" class="bulleted-list"><li>Python을 자유롭게 사용 가능하신 분</li></ul><ul id="48f68c7c-694b-4c44-ba1c-ee020c3b8126" class="bulleted-list"><li>최신 AI 논문을 이해하고 구현 가능하신 분</li></ul><p id="f17b9a30-bfdf-4f1d-acf4-ad8e208faf67" class=""><strong>우대 역량</strong></p><ul id="35b80cb2-f6ea-4495-ae31-23cbcf1b4349" class="bulleted-list"><li>kaggle 경험이 있으신 분</li></ul><ul id="01f1a780-ceb5-4862-9417-e8426e893023" class="bulleted-list"><li>시계열 예측 모델 구현 경험이 있으신 분</li></ul><p id="5f4c766e-4539-4188-824d-f4d1fe36a88a" class="">
+</p></details></li></ul><ul id="42bb12ef-d169-4762-a0a2-f686b1783a8d" class="toggle"><li><details open=""><summary>📊 <strong>Data Scientist/Researcher</strong></summary><blockquote id="c265f025-cffe-4534-bbbc-8ad9252fd0d4" class="">빅데이터 분석 및 데이터 가공, 시각화</blockquote><p id="dbce4b14-151a-4b51-80c4-01470a161d5c" class=""><strong>필수 역량</strong></p><ul id="2eda767e-f9c1-4477-8b83-715ef628b30a" class="bulleted-list"><li>Python을 자유롭게 사용 가능하신 분</li></ul><p id="2c2723cb-a7ef-48fb-9660-23782d0266a9" class=""><strong>우대 역량</strong></p><ul id="ade00a56-2e2d-4aa3-9a71-eb2aa50272b7" class="bulleted-list"><li>pandas, numpy를 자유롭게 사용가능하신 분</li></ul><ul id="cbd993de-5d6c-4c64-935e-056ff7c4b2f6" class="bulleted-list"><li>컴퓨터공학/통계/경영학/수학 등 데이터 분석 관련 전공 및 경험이 있으신 분</li></ul><ul id="778b30e7-2d22-4739-8d89-54ea25c552f1" class="bulleted-list"><li>온오프라인 커머스 업계 분석 경험이 있으신 분</li></ul><ul id="6b012a04-c0af-4731-b548-0ea30dc39628" class="bulleted-list"><li>kaggle 경험이 있으신 분</li></ul><p id="752b534b-9fdc-4b96-8d56-e9810b0b8010" class="">
+</p></details></li></ul><ul id="c978c2cc-b684-4ded-9e72-b1f13a0e4038" class="toggle"><li><details open=""><summary>☁️ <strong>Cloud Architect</strong></summary><blockquote id="4f8d8707-e628-4945-a567-1963951b9158" class="">빅데이터 분석 및 처리를 위한 실시간/배치 처리 솔루션 개발 및 운영</blockquote><p id="88531592-9ee3-4edd-b996-6a01a9424094" class=""><strong>필수 역량</strong></p><ul id="376136f1-aeb3-4cff-9605-71777fee4551" class="bulleted-list"><li>nodejs, django와 같은 백엔드 프레임워크를 다룰 수 있는 분</li></ul><ul id="556928e7-8946-4290-bbef-62defc7053b1" class="bulleted-list"><li>API 서버 제작 경험이 있으신 분</li></ul><p id="feae24d2-6efa-4ff5-b524-f9fec360e68d" class=""><strong>우대 역량</strong></p><ul id="9b272161-92a1-4ad2-bb72-13ce2fb96799" class="bulleted-list"><li>실시간 데이터 처리 경험이 있으신 분</li></ul><ul id="e27e351a-b805-478b-8c8e-2943a67f494f" class="bulleted-list"><li>AWS, GCP 등의 서비스 인프라 관리 경험이 있으신 분</li></ul></details></li></ul><p id="757d9475-a12d-473e-8ea1-a03fc7e9bfa4" class="">
+</p><hr id="96a47be6-577d-4e00-9d4d-b90f0f39414c"/><h3 id="67131b98-ad44-4e54-ae03-e329a9a3a96d" class="">📤 지원 방법</h3><ul id="6c08704c-351e-4665-8e2b-40f0e5bdf2f3" class="bulleted-list"><li><strong>contact@corca.ai</strong> 로 이력서(CV)를 보내주세요.</li></ul><ul id="d77dd5cf-2d47-48fd-a6fb-efe2f61e2c11" class="bulleted-list"><li>github나 개인 블로그 주소를 이력서에 포함시켜주시면 더 좋습니다.</li></ul><ul id="78695979-b397-4ff0-946d-bf88e46653d4" class="bulleted-list"><li>기타 문의 사항은 위 메일로 연락 부탁드립니다.</li></ul><h1 id="f03bf068-5527-480f-995e-0abc57865a65" class="">🎁 Benefits &amp; Welfare</h1><hr id="890f6b6e-095c-453e-b95d-c8a843e8eede"/><div id="16f92220-f33a-4fb6-a23b-b7af4993c7c3" class="column-list"><div id="71c475dc-fd5d-4899-9d86-3c89d5f748c9" style="width:50%" class="column"><p id="3f41034d-8b83-4b64-95af-7e012f0f107f" class="block-color-blue_background"><strong>졸리면 좀 더 자고 와</strong></p><ul id="fd64c026-f2a5-47a6-8460-eadb826827dc" class="bulleted-list"><li>탄력근무제로 유연하게 조정할 수 있습니다.</li></ul><p id="706eca51-96b2-44a7-b6ae-2db33408cb97" class="">
+</p><p id="f038acaf-7c46-4464-8d8d-dbbc856e72ae" class="block-color-blue_background"><strong>말만 해 다 사줄게</strong></p><ul id="7e5daa4a-be4d-430d-a0d8-3ae20e6df3ba" class="bulleted-list"><li>업무에 도움이 되는 장비를 적극 지원합니다.</li></ul><p id="a8d317fd-f72f-469b-9daf-f99946663a32" class="">
+</p><p id="d4344b60-3f22-42b7-a748-0002e77ddab4" class="block-color-blue_background"><strong>회식은 즐겁게</strong></p><ul id="918a4e33-582e-4345-b3e3-64ddc45d106b" class="bulleted-list"><li>방역 지침을 잘 따릅니다^^</li></ul></div><div id="c7e84fd9-73b1-40e4-8fed-5891b3ea7b01" style="width:50%" class="column"><p id="4287c34b-bed8-4d5b-846f-1a2a75c849b7" class="block-color-blue_background"><strong>밥은 잘 먹자!</strong></p><ul id="8d56f5f6-2541-4853-900e-0f4004b96105" class="bulleted-list"><li>점심&amp;저녁 식대 전액 지원합니다.</li></ul><p id="88ff0107-5410-43a9-ad14-c99df2aabfce" class="">
+</p><p id="82a06a4f-8df3-4e59-870a-30c082728e1c" class="block-color-blue_background"><strong>무한 성장 동력</strong></p><ul id="ae06cc1a-29aa-4375-bb8d-3c9c3f832319" class="bulleted-list"><li>구성원들의 성장을 적극 지원합니다. </li></ul><ul id="870e9ca3-afc5-4f44-8640-306f525f5b8e" class="bulleted-list"><li>업무 관련 세미나, 사내 스터디, 컨퍼런스, 도서 등 모두 지원합니다.</li></ul><p id="96ec6d94-e81c-413d-bb68-6c6219182cfe" class="">
+</p><p id="7ffa2ed8-0ad4-46f7-8fcb-24e876cfbbfd" class="block-color-blue_background"><strong>코엑스 안 가본 사람?</strong></p><ul id="eb58d4b5-e70c-4871-ac8e-70cc0c86f580" class="bulleted-list"><li>삼성역에서 도보 5분 거리 위치</li></ul><ul id="d63ea54f-00d9-4976-96f0-1c7be257662a" class="bulleted-list"><li>코엑스에서 도보 5분 거리 위치</li></ul></div></div><hr id="35478b5b-d3ad-4a8a-a735-0b4cafc8d915"/><div id="ac9d9156-11de-456a-b995-9bc4e29359a3" class="column-list"><div id="ea11075f-d655-4896-b4a8-f7f776377d18" style="width:37.5%" class="column"><h2 id="42d4c032-d641-497a-b4fe-856aef1c3c4b" class="">🏢 사무실 위치</h2><p id="14965717-2d9d-4e24-b6b0-65dc77865b0c" class=""><strong>서울시 강남구 영동대로85길 34 (스파크플러스 삼성2호점) 405호</strong></p><p id="8b60964d-a943-42d8-88c3-842be56b0352" class=""><strong>주식회사 코르카에이아이</strong></p><p id="bf320a5c-d370-478f-8f33-9b5dc44e55d4" class="">우편번호 06180</p><p id="fef7722b-6b2c-407e-a5b7-0ee1d844ff0c" class="">
+</p><p id="f9cda937-c567-413f-8fee-a2d278422d6b" class="">`;
+function Blog() {
+  return /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__["jsxDEV"])("div", {
+    style: {
+      marginTop: '600px',
+      width: '100%',
+      backgroundColor: `rgba(${255}, ${255}, ${255}, ${0.85})`,
+      padding: '30px'
+    },
+    children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__["jsxDEV"])("div", {
+      dangerouslySetInnerHTML: {
+        __html: rawHTML
+      }
+    }, void 0, false, {
+      fileName: _jsxFileName,
+      lineNumber: 19,
+      columnNumber: 8
+    }, this)
+  }, void 0, false, {
+    fileName: _jsxFileName,
+    lineNumber: 18,
+    columnNumber: 5
+  }, this);
+}
+_c = Blog;
+
+var _c;
+
+__webpack_require__.$Refresh$.register(_c, "Blog");
+
+const currentExports = __react_refresh_utils__.getModuleExports(module.i);
+__react_refresh_utils__.registerExportsForReactRefresh(currentExports, module.i);
+
+if (true) {
+  const isHotUpdate = !!module.hot.data;
+  const prevExports = isHotUpdate ? module.hot.data.prevExports : null;
+
+  if (__react_refresh_utils__.isReactRefreshBoundary(currentExports)) {
+    module.hot.dispose(
+      /**
+       * A callback to performs a full refresh if React has unrecoverable errors,
+       * and also caches the to-be-disposed module.
+       * @param {*} data A hot module data object from Webpack HMR.
+       * @returns {void}
+       */
+      function hotDisposeCallback(data) {
+        // We have to mutate the data object to get data registered and cached
+        data.prevExports = currentExports;
+      }
+    );
+    module.hot.accept(
+      /**
+       * An error handler to allow self-recovering behaviours.
+       * @param {Error} error An error occurred during evaluation of a module.
+       * @returns {void}
+       */
+      function hotErrorHandler(error) {
+        if (
+          typeof __react_refresh_error_overlay__ !== 'undefined' &&
+          __react_refresh_error_overlay__
+        ) {
+          __react_refresh_error_overlay__.handleRuntimeError(error);
+        }
+
+        if (typeof __react_refresh_test__ !== 'undefined' && __react_refresh_test__) {
+          if (window.onHotAcceptError) {
+            window.onHotAcceptError(error.message);
+          }
+        }
+
+        __webpack_require__.c[module.i].hot.accept(hotErrorHandler);
+      }
+    );
+
+    if (isHotUpdate) {
+      if (
+        __react_refresh_utils__.isReactRefreshBoundary(prevExports) &&
+        __react_refresh_utils__.shouldInvalidateReactRefreshBoundary(prevExports, currentExports)
+      ) {
+        module.hot.invalidate();
+      } else {
+        __react_refresh_utils__.enqueueUpdate(
+          /**
+           * A function to dismiss the error overlay after performing React refresh.
+           * @returns {void}
+           */
+          function updateCallback() {
+            if (
+              typeof __react_refresh_error_overlay__ !== 'undefined' &&
+              __react_refresh_error_overlay__
+            ) {
+              __react_refresh_error_overlay__.clearRuntimeErrors();
+            }
+          }
+        );
+      }
+    }
+  } else {
+    if (isHotUpdate && __react_refresh_utils__.isReactRefreshBoundary(prevExports)) {
+      module.hot.invalidate();
+    }
+  }
+}
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js */ "./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js"), __webpack_require__(/*! ./node_modules/react-dev-utils/refreshOverlayInterop.js */ "./node_modules/react-dev-utils/refreshOverlayInterop.js")))
+
+/***/ }),
+
+/***/ "./src/components/Orca.jsx":
+/*!*********************************!*\
+  !*** ./src/components/Orca.jsx ***!
+  \*********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* WEBPACK VAR INJECTION */(function(__react_refresh_utils__, __react_refresh_error_overlay__) {/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_three_fiber__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-three-fiber */ "./node_modules/react-three-fiber/dist/react-three-fiber.esm.js");
+/* harmony import */ var three_examples_jsm_loaders_GLTFLoader__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! three/examples/jsm/loaders/GLTFLoader */ "./node_modules/three/examples/jsm/loaders/GLTFLoader.js");
+/* harmony import */ var three__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! three */ "./node_modules/three/build/three.module.js");
+/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-dev-runtime */ "./node_modules/react/jsx-dev-runtime.js");
+/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__);
+__webpack_require__.$Refresh$.runtime = __webpack_require__(/*! ./node_modules/react-refresh/runtime.js */ "./node_modules/react-refresh/runtime.js");
+__webpack_require__.$Refresh$.setup(module.i);
+
+var _jsxFileName = "C:\\Users\\clone\\Documents\\2021_summer\\corca\\corca\\src\\components\\Orca.jsx",
+    _s = __webpack_require__.$Refresh$.signature();
+
+
+
+
+
+
+
+const Orca = props => {
+  _s();
+
+  const model = Object(react_three_fiber__WEBPACK_IMPORTED_MODULE_1__["useLoader"])(three_examples_jsm_loaders_GLTFLoader__WEBPACK_IMPORTED_MODULE_2__["GLTFLoader"], './static/glftmodels/scene.gltf'); // Here's the animation part
+  // ************************* 
+
+  let mixer;
+
+  if (model.animations.length) {
+    mixer = new three__WEBPACK_IMPORTED_MODULE_3__["AnimationMixer"](model.scene);
+    model.animations.forEach(clip => {
+      const action = mixer.clipAction(clip);
+      action.play();
+    });
+  }
+
+  Object(react_three_fiber__WEBPACK_IMPORTED_MODULE_1__["useFrame"])((state, delta) => {
+    var _mixer;
+
+    (_mixer = mixer) === null || _mixer === void 0 ? void 0 : _mixer.update(delta);
+  }); // *************************
+
+  model.scene.traverse(child => {
+    if (child.isMesh) {
+      child.castShadow = true;
+      child.receiveShadow = true;
+      child.material.side = three__WEBPACK_IMPORTED_MODULE_3__["FrontSide"]; //child.material = THREE.MeshPhysicalMaterial
+    }
+  });
+  return /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__["jsxDEV"])("primitive", {
+    object: model.scene,
+    scale: 0.1
+  }, void 0, false, {
+    fileName: _jsxFileName,
+    lineNumber: 41,
+    columnNumber: 9
+  }, undefined);
+};
+
+_s(Orca, "PsLhkUpEZtwq1R28vnbCNufp9QU=", false, function () {
+  return [react_three_fiber__WEBPACK_IMPORTED_MODULE_1__["useLoader"], react_three_fiber__WEBPACK_IMPORTED_MODULE_1__["useFrame"]];
+});
+
+_c = Orca;
+/* harmony default export */ __webpack_exports__["default"] = (Orca);
+
+var _c;
+
+__webpack_require__.$Refresh$.register(_c, "Orca");
+
+const currentExports = __react_refresh_utils__.getModuleExports(module.i);
+__react_refresh_utils__.registerExportsForReactRefresh(currentExports, module.i);
+
+if (true) {
+  const isHotUpdate = !!module.hot.data;
+  const prevExports = isHotUpdate ? module.hot.data.prevExports : null;
+
+  if (__react_refresh_utils__.isReactRefreshBoundary(currentExports)) {
+    module.hot.dispose(
+      /**
+       * A callback to performs a full refresh if React has unrecoverable errors,
+       * and also caches the to-be-disposed module.
+       * @param {*} data A hot module data object from Webpack HMR.
+       * @returns {void}
+       */
+      function hotDisposeCallback(data) {
+        // We have to mutate the data object to get data registered and cached
+        data.prevExports = currentExports;
+      }
+    );
+    module.hot.accept(
+      /**
+       * An error handler to allow self-recovering behaviours.
+       * @param {Error} error An error occurred during evaluation of a module.
+       * @returns {void}
+       */
+      function hotErrorHandler(error) {
+        if (
+          typeof __react_refresh_error_overlay__ !== 'undefined' &&
+          __react_refresh_error_overlay__
+        ) {
+          __react_refresh_error_overlay__.handleRuntimeError(error);
+        }
+
+        if (typeof __react_refresh_test__ !== 'undefined' && __react_refresh_test__) {
+          if (window.onHotAcceptError) {
+            window.onHotAcceptError(error.message);
+          }
+        }
+
+        __webpack_require__.c[module.i].hot.accept(hotErrorHandler);
+      }
+    );
+
+    if (isHotUpdate) {
+      if (
+        __react_refresh_utils__.isReactRefreshBoundary(prevExports) &&
+        __react_refresh_utils__.shouldInvalidateReactRefreshBoundary(prevExports, currentExports)
+      ) {
+        module.hot.invalidate();
+      } else {
+        __react_refresh_utils__.enqueueUpdate(
+          /**
+           * A function to dismiss the error overlay after performing React refresh.
+           * @returns {void}
+           */
+          function updateCallback() {
+            if (
+              typeof __react_refresh_error_overlay__ !== 'undefined' &&
+              __react_refresh_error_overlay__
+            ) {
+              __react_refresh_error_overlay__.clearRuntimeErrors();
+            }
+          }
+        );
+      }
+    }
+  } else {
+    if (isHotUpdate && __react_refresh_utils__.isReactRefreshBoundary(prevExports)) {
+      module.hot.invalidate();
+    }
+  }
+}
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js */ "./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js"), __webpack_require__(/*! ./node_modules/react-dev-utils/refreshOverlayInterop.js */ "./node_modules/react-dev-utils/refreshOverlayInterop.js")))
+
+/***/ }),
+
+/***/ "./src/components/RectangleBundle.jsx":
+/*!********************************************!*\
+  !*** ./src/components/RectangleBundle.jsx ***!
+  \********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* WEBPACK VAR INJECTION */(function(__react_refresh_utils__, __react_refresh_error_overlay__) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return RectangleBundle; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var atoms_RandomRectangle__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! atoms/RandomRectangle */ "./src/atoms/RandomRectangle.jsx");
+/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-dev-runtime */ "./node_modules/react/jsx-dev-runtime.js");
+/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__);
+__webpack_require__.$Refresh$.runtime = __webpack_require__(/*! ./node_modules/react-refresh/runtime.js */ "./node_modules/react-refresh/runtime.js");
+__webpack_require__.$Refresh$.setup(module.i);
+
+var _jsxFileName = "C:\\Users\\clone\\Documents\\2021_summer\\corca\\corca\\src\\components\\RectangleBundle.jsx",
+    _s = __webpack_require__.$Refresh$.signature();
+
+
+
+
+
+const D = 120;
+function RectangleBundle(props) {
+  _s();
+
+  const [poss, setPoss] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]);
+
+  const pushOrg = x => {
+    return (Math.abs(x) + 1) * (x > 0 ? 1 : -1);
+  };
+
+  const avoidNrandom = () => {
+    let v = [Math.random() * D - 0.5 * D, pushOrg(Math.random() * D - 0.5 * D), pushOrg(Math.random() * D - 0.5 * D)];
+    return v;
+  };
+
+  const init = async () => {
+    setPoss([...Array.from({
+      length: 400
+    }, (v, idx) => {
+      return avoidNrandom();
+    })]); //console.log("POSSES", poss);
+  };
+
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
+    init();
+  }, []);
+  return /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__["jsxDEV"])(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__["Fragment"], {
+    children: poss.map(x => /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__["jsxDEV"])(atoms_RandomRectangle__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      position: x
+    }, void 0, false, {
+      fileName: _jsxFileName,
+      lineNumber: 33,
+      columnNumber: 29
+    }, this))
+  }, void 0, false);
+}
+
+_s(RectangleBundle, "+Pr6ubVa54THFw8bI6KteX7WVdg=");
+
+_c = RectangleBundle;
+
+var _c;
+
+__webpack_require__.$Refresh$.register(_c, "RectangleBundle");
+
+const currentExports = __react_refresh_utils__.getModuleExports(module.i);
+__react_refresh_utils__.registerExportsForReactRefresh(currentExports, module.i);
+
+if (true) {
+  const isHotUpdate = !!module.hot.data;
+  const prevExports = isHotUpdate ? module.hot.data.prevExports : null;
+
+  if (__react_refresh_utils__.isReactRefreshBoundary(currentExports)) {
+    module.hot.dispose(
+      /**
+       * A callback to performs a full refresh if React has unrecoverable errors,
+       * and also caches the to-be-disposed module.
+       * @param {*} data A hot module data object from Webpack HMR.
+       * @returns {void}
+       */
+      function hotDisposeCallback(data) {
+        // We have to mutate the data object to get data registered and cached
+        data.prevExports = currentExports;
+      }
+    );
+    module.hot.accept(
+      /**
+       * An error handler to allow self-recovering behaviours.
+       * @param {Error} error An error occurred during evaluation of a module.
+       * @returns {void}
+       */
+      function hotErrorHandler(error) {
+        if (
+          typeof __react_refresh_error_overlay__ !== 'undefined' &&
+          __react_refresh_error_overlay__
+        ) {
+          __react_refresh_error_overlay__.handleRuntimeError(error);
+        }
+
+        if (typeof __react_refresh_test__ !== 'undefined' && __react_refresh_test__) {
+          if (window.onHotAcceptError) {
+            window.onHotAcceptError(error.message);
+          }
+        }
+
+        __webpack_require__.c[module.i].hot.accept(hotErrorHandler);
+      }
+    );
+
+    if (isHotUpdate) {
+      if (
+        __react_refresh_utils__.isReactRefreshBoundary(prevExports) &&
+        __react_refresh_utils__.shouldInvalidateReactRefreshBoundary(prevExports, currentExports)
+      ) {
+        module.hot.invalidate();
+      } else {
+        __react_refresh_utils__.enqueueUpdate(
+          /**
+           * A function to dismiss the error overlay after performing React refresh.
+           * @returns {void}
+           */
+          function updateCallback() {
+            if (
+              typeof __react_refresh_error_overlay__ !== 'undefined' &&
+              __react_refresh_error_overlay__
+            ) {
+              __react_refresh_error_overlay__.clearRuntimeErrors();
+            }
+          }
+        );
+      }
+    }
+  } else {
+    if (isHotUpdate && __react_refresh_utils__.isReactRefreshBoundary(prevExports)) {
+      module.hot.invalidate();
+    }
+  }
+}
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js */ "./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js"), __webpack_require__(/*! ./node_modules/react-dev-utils/refreshOverlayInterop.js */ "./node_modules/react-dev-utils/refreshOverlayInterop.js")))
+
+/***/ }),
+
+/***/ "./src/index.css":
+/*!***********************!*\
+  !*** ./src/index.css ***!
+  \***********************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var api = __webpack_require__(/*! ../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+            var content = __webpack_require__(/*! !../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-4-1!../node_modules/postcss-loader/src??postcss!./index.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/index.css");
+
+            content = content.__esModule ? content.default : content;
+
+            if (typeof content === 'string') {
+              content = [[module.i, content, '']];
+            }
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = api(content, options);
+
+
+if (true) {
+  if (!content.locals || module.hot.invalidate) {
+    var isEqualLocals = function isEqualLocals(a, b, isNamedExport) {
+  if (!a && b || a && !b) {
+    return false;
+  }
+
+  var p;
+
+  for (p in a) {
+    if (isNamedExport && p === 'default') {
+      // eslint-disable-next-line no-continue
+      continue;
+    }
+
+    if (a[p] !== b[p]) {
+      return false;
+    }
+  }
+
+  for (p in b) {
+    if (isNamedExport && p === 'default') {
+      // eslint-disable-next-line no-continue
+      continue;
+    }
+
+    if (!a[p]) {
+      return false;
+    }
+  }
+
+  return true;
+};
+    var oldLocals = content.locals;
+
+    module.hot.accept(
+      /*! !../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-4-1!../node_modules/postcss-loader/src??postcss!./index.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/index.css",
+      function () {
+        content = __webpack_require__(/*! !../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-4-1!../node_modules/postcss-loader/src??postcss!./index.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/index.css");
+
+              content = content.__esModule ? content.default : content;
+
+              if (typeof content === 'string') {
+                content = [[module.i, content, '']];
+              }
+
+              if (!isEqualLocals(oldLocals, content.locals)) {
+                module.hot.invalidate();
+
+                return;
+              }
+
+              oldLocals = content.locals;
+
+              update(content);
+      }
+    )
+  }
+
+  module.hot.dispose(function() {
+    update();
+  });
+}
+
+module.exports = content.locals || {};
+
+/***/ }),
+
+/***/ "./src/index.js":
+/*!**********************!*\
+  !*** ./src/index.js ***!
+  \**********************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* WEBPACK VAR INJECTION */(function(__react_refresh_utils__, __react_refresh_error_overlay__) {/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./index.css */ "./src/index.css");
+/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_index_css__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var App__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! App */ "./src/App.js");
+/* harmony import */ var _pages__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./pages */ "./src/pages/index.js");
+/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react/jsx-dev-runtime */ "./node_modules/react/jsx-dev-runtime.js");
+/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__);
+__webpack_require__.$Refresh$.runtime = __webpack_require__(/*! ./node_modules/react-refresh/runtime.js */ "./node_modules/react-refresh/runtime.js");
+__webpack_require__.$Refresh$.setup(module.i);
+
+var _jsxFileName = "C:\\Users\\clone\\Documents\\2021_summer\\corca\\corca\\src\\index.js";
+
+
+
+
+
+
+react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render( /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__["jsxDEV"])(_pages__WEBPACK_IMPORTED_MODULE_4__["default"], {}, void 0, false, {
+  fileName: _jsxFileName,
+  lineNumber: 10,
+  columnNumber: 3
+}, undefined), document.getElementById('root'));
+
+const currentExports = __react_refresh_utils__.getModuleExports(module.i);
+__react_refresh_utils__.registerExportsForReactRefresh(currentExports, module.i);
+
+if (true) {
+  const isHotUpdate = !!module.hot.data;
+  const prevExports = isHotUpdate ? module.hot.data.prevExports : null;
+
+  if (__react_refresh_utils__.isReactRefreshBoundary(currentExports)) {
+    module.hot.dispose(
+      /**
+       * A callback to performs a full refresh if React has unrecoverable errors,
+       * and also caches the to-be-disposed module.
+       * @param {*} data A hot module data object from Webpack HMR.
+       * @returns {void}
+       */
+      function hotDisposeCallback(data) {
+        // We have to mutate the data object to get data registered and cached
+        data.prevExports = currentExports;
+      }
+    );
+    module.hot.accept(
+      /**
+       * An error handler to allow self-recovering behaviours.
+       * @param {Error} error An error occurred during evaluation of a module.
+       * @returns {void}
+       */
+      function hotErrorHandler(error) {
+        if (
+          typeof __react_refresh_error_overlay__ !== 'undefined' &&
+          __react_refresh_error_overlay__
+        ) {
+          __react_refresh_error_overlay__.handleRuntimeError(error);
+        }
+
+        if (typeof __react_refresh_test__ !== 'undefined' && __react_refresh_test__) {
+          if (window.onHotAcceptError) {
+            window.onHotAcceptError(error.message);
+          }
+        }
+
+        __webpack_require__.c[module.i].hot.accept(hotErrorHandler);
+      }
+    );
+
+    if (isHotUpdate) {
+      if (
+        __react_refresh_utils__.isReactRefreshBoundary(prevExports) &&
+        __react_refresh_utils__.shouldInvalidateReactRefreshBoundary(prevExports, currentExports)
+      ) {
+        module.hot.invalidate();
+      } else {
+        __react_refresh_utils__.enqueueUpdate(
+          /**
+           * A function to dismiss the error overlay after performing React refresh.
+           * @returns {void}
+           */
+          function updateCallback() {
+            if (
+              typeof __react_refresh_error_overlay__ !== 'undefined' &&
+              __react_refresh_error_overlay__
+            ) {
+              __react_refresh_error_overlay__.clearRuntimeErrors();
+            }
+          }
+        );
+      }
+    }
+  } else {
+    if (isHotUpdate && __react_refresh_utils__.isReactRefreshBoundary(prevExports)) {
+      module.hot.invalidate();
+    }
+  }
+}
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js */ "./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js"), __webpack_require__(/*! ./node_modules/react-dev-utils/refreshOverlayInterop.js */ "./node_modules/react-dev-utils/refreshOverlayInterop.js")))
+
+/***/ }),
+
+/***/ "./src/logo.svg":
+/*!**********************!*\
+  !*** ./src/logo.svg ***!
+  \**********************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (__webpack_require__.p + "static/media/logo.6ce24c58.svg");
+
+/***/ }),
+
+/***/ "./src/pages/index.js":
+/*!****************************!*\
+  !*** ./src/pages/index.js ***!
+  \****************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* WEBPACK VAR INJECTION */(function(__react_refresh_utils__, __react_refresh_error_overlay__) {/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var three_examples_jsm_controls_OrbitControls__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! three/examples/jsm/controls/OrbitControls */ "./node_modules/three/examples/jsm/controls/OrbitControls.js");
+/* harmony import */ var _react_three_fiber__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @react-three/fiber */ "./node_modules/@react-three/fiber/dist/react-three-fiber.esm.js");
+/* harmony import */ var components_RectangleBundle__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! components/RectangleBundle */ "./src/components/RectangleBundle.jsx");
+/* harmony import */ var components_Blog__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! components/Blog */ "./src/components/Blog.jsx");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var three__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! three */ "./node_modules/three/build/three.module.js");
+/* harmony import */ var components_Orca__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! components/Orca */ "./src/components/Orca.jsx");
+/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react/jsx-dev-runtime */ "./node_modules/react/jsx-dev-runtime.js");
+/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__);
+__webpack_require__.$Refresh$.runtime = __webpack_require__(/*! ./node_modules/react-refresh/runtime.js */ "./node_modules/react-refresh/runtime.js");
+__webpack_require__.$Refresh$.setup(module.i);
+
+var _jsxFileName = "C:\\Users\\clone\\Documents\\2021_summer\\corca\\corca\\src\\pages\\index.js",
+    _s = __webpack_require__.$Refresh$.signature();
+
+
+
+
+
+
+
+
+
+
+
+
+Object(_react_three_fiber__WEBPACK_IMPORTED_MODULE_2__["extend"])({
+  OrbitControls: three_examples_jsm_controls_OrbitControls__WEBPACK_IMPORTED_MODULE_1__["OrbitControls"]
+});
+const OCEAN_COLOR = '#010F4D';
+const CenterDiv = styled_components__WEBPACK_IMPORTED_MODULE_5__["default"].div`
+display: flex;
+justify-content: center;
+align-items: center;
+`;
+_c = CenterDiv;
+const CanvasWrapper = styled_components__WEBPACK_IMPORTED_MODULE_5__["default"].div`
+background : #010FAD;
+height: 100%;
+width: 100%;
+left: 0;
+top: 0;
+overflow: hidden;
+position: fixed;
+z-index : -50;
+-webkit-filter: blur(3px);
+`;
+_c2 = CanvasWrapper;
+
+const Controls = () => {
+  _s();
+
+  const orbitRef = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])();
+  const {
+    camera,
+    gl
+  } = Object(_react_three_fiber__WEBPACK_IMPORTED_MODULE_2__["useThree"])();
+  Object(_react_three_fiber__WEBPACK_IMPORTED_MODULE_2__["useFrame"])(() => {
+    orbitRef.current.update();
+  });
+  return /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__["jsxDEV"])("orbitControls", {
+    autoRotate: true,
+    minDistance: 15,
+    maxDistance: 15,
+    enableRotate: false,
+    enableZoom: false,
+    maxPolarAngle: Math.PI,
+    minPolarAngle: Math.PI / 3,
+    args: [camera, gl.domElement],
+    ref: orbitRef
+  }, void 0, false, {
+    fileName: _jsxFileName,
+    lineNumber: 43,
+    columnNumber: 5
+  }, undefined);
+};
+
+_s(Controls, "leuGxDqsZSDbqTrswy2ewBmPPyU=", false, function () {
+  return [_react_three_fiber__WEBPACK_IMPORTED_MODULE_2__["useThree"], _react_three_fiber__WEBPACK_IMPORTED_MODULE_2__["useFrame"]];
+});
+
+_c3 = Controls;
+
+const IndexPage = () => {
+  return /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__["jsxDEV"])(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__["Fragment"], {
+    children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__["jsxDEV"])(CanvasWrapper, {
+      children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__["jsxDEV"])(react__WEBPACK_IMPORTED_MODULE_0__["Suspense"], {
+        fallback: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__["jsxDEV"])("p", {
+          children: " Loading... "
+        }, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 63,
+          columnNumber: 29
+        }, undefined),
+        children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__["jsxDEV"])(_react_three_fiber__WEBPACK_IMPORTED_MODULE_2__["Canvas"], {
+          camera: {
+            position: [0, 0, -5]
+          },
+          onCreated: ({
+            gl
+          }) => {
+            gl.shadowMap.enabled = true;
+            gl.shadowMap.type = three__WEBPACK_IMPORTED_MODULE_6__["PCFSoftShadowMap"];
+          },
+          children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__["jsxDEV"])("color", {
+            attach: "background",
+            args: [0x010F4D]
+          }, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 71,
+            columnNumber: 13
+          }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__["jsxDEV"])("ambientLight", {
+            intensity: 0.3
+          }, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 73,
+            columnNumber: 13
+          }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__["jsxDEV"])("spotLight", {
+            position: [15, 20, 5],
+            penumbra: 1,
+            castShadow: true
+          }, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 74,
+            columnNumber: 13
+          }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__["jsxDEV"])("fog", {
+            attach: "fog",
+            args: [OCEAN_COLOR, 10, 25]
+          }, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 76,
+            columnNumber: 13
+          }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__["jsxDEV"])(Controls, {}, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 77,
+            columnNumber: 13
+          }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__["jsxDEV"])(components_RectangleBundle__WEBPACK_IMPORTED_MODULE_3__["default"], {}, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 78,
+            columnNumber: 13
+          }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__["jsxDEV"])(components_Orca__WEBPACK_IMPORTED_MODULE_7__["default"], {
+            scale: 1.6
+          }, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 79,
+            columnNumber: 13
+          }, undefined)]
+        }, void 0, true, {
+          fileName: _jsxFileName,
+          lineNumber: 64,
+          columnNumber: 11
+        }, undefined)
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 63,
+        columnNumber: 9
+      }, undefined)
+    }, void 0, false, {
+      fileName: _jsxFileName,
+      lineNumber: 61,
+      columnNumber: 7
+    }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__["jsxDEV"])(CenterDiv, {
+      children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__["jsxDEV"])(components_Blog__WEBPACK_IMPORTED_MODULE_4__["default"], {}, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 85,
+        columnNumber: 9
+      }, undefined)
+    }, void 0, false, {
+      fileName: _jsxFileName,
+      lineNumber: 84,
+      columnNumber: 7
+    }, undefined)]
+  }, void 0, true);
+};
+
+_c4 = IndexPage;
+/* harmony default export */ __webpack_exports__["default"] = (IndexPage);
+
+var _c, _c2, _c3, _c4;
+
+__webpack_require__.$Refresh$.register(_c, "CenterDiv");
+__webpack_require__.$Refresh$.register(_c2, "CanvasWrapper");
+__webpack_require__.$Refresh$.register(_c3, "Controls");
+__webpack_require__.$Refresh$.register(_c4, "IndexPage");
+
+const currentExports = __react_refresh_utils__.getModuleExports(module.i);
+__react_refresh_utils__.registerExportsForReactRefresh(currentExports, module.i);
+
+if (true) {
+  const isHotUpdate = !!module.hot.data;
+  const prevExports = isHotUpdate ? module.hot.data.prevExports : null;
+
+  if (__react_refresh_utils__.isReactRefreshBoundary(currentExports)) {
+    module.hot.dispose(
+      /**
+       * A callback to performs a full refresh if React has unrecoverable errors,
+       * and also caches the to-be-disposed module.
+       * @param {*} data A hot module data object from Webpack HMR.
+       * @returns {void}
+       */
+      function hotDisposeCallback(data) {
+        // We have to mutate the data object to get data registered and cached
+        data.prevExports = currentExports;
+      }
+    );
+    module.hot.accept(
+      /**
+       * An error handler to allow self-recovering behaviours.
+       * @param {Error} error An error occurred during evaluation of a module.
+       * @returns {void}
+       */
+      function hotErrorHandler(error) {
+        if (
+          typeof __react_refresh_error_overlay__ !== 'undefined' &&
+          __react_refresh_error_overlay__
+        ) {
+          __react_refresh_error_overlay__.handleRuntimeError(error);
+        }
+
+        if (typeof __react_refresh_test__ !== 'undefined' && __react_refresh_test__) {
+          if (window.onHotAcceptError) {
+            window.onHotAcceptError(error.message);
+          }
+        }
+
+        __webpack_require__.c[module.i].hot.accept(hotErrorHandler);
+      }
+    );
+
+    if (isHotUpdate) {
+      if (
+        __react_refresh_utils__.isReactRefreshBoundary(prevExports) &&
+        __react_refresh_utils__.shouldInvalidateReactRefreshBoundary(prevExports, currentExports)
+      ) {
+        module.hot.invalidate();
+      } else {
+        __react_refresh_utils__.enqueueUpdate(
+          /**
+           * A function to dismiss the error overlay after performing React refresh.
+           * @returns {void}
+           */
+          function updateCallback() {
+            if (
+              typeof __react_refresh_error_overlay__ !== 'undefined' &&
+              __react_refresh_error_overlay__
+            ) {
+              __react_refresh_error_overlay__.clearRuntimeErrors();
+            }
+          }
+        );
+      }
+    }
+  } else {
+    if (isHotUpdate && __react_refresh_utils__.isReactRefreshBoundary(prevExports)) {
+      module.hot.invalidate();
+    }
+  }
+}
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js */ "./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js"), __webpack_require__(/*! ./node_modules/react-dev-utils/refreshOverlayInterop.js */ "./node_modules/react-dev-utils/refreshOverlayInterop.js")))
+
+/***/ }),
+
+/***/ 1:
+/*!**********************************************************************************************************************************************************************************************!*\
+  !*** multi (webpack)/hot/dev-server.js ./node_modules/@pmmmwh/react-refresh-webpack-plugin/client/ReactRefreshEntry.js ./node_modules/react-dev-utils/webpackHotDevClient.js ./src/index.js ***!
+  \**********************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(/*! C:\Users\clone\Documents\2021_summer\corca\corca\node_modules\webpack\hot\dev-server.js */"./node_modules/webpack/hot/dev-server.js");
+__webpack_require__(/*! C:\Users\clone\Documents\2021_summer\corca\corca\node_modules\@pmmmwh\react-refresh-webpack-plugin\client\ReactRefreshEntry.js */"./node_modules/@pmmmwh/react-refresh-webpack-plugin/client/ReactRefreshEntry.js");
+__webpack_require__(/*! C:\Users\clone\Documents\2021_summer\corca\corca\node_modules\react-dev-utils\webpackHotDevClient.js */"./node_modules/react-dev-utils/webpackHotDevClient.js");
+module.exports = __webpack_require__(/*! C:\Users\clone\Documents\2021_summer\corca\corca\src\index.js */"./src/index.js");
+
+
+/***/ })
+
+},[[1,"runtime-main","vendors~main"]]]);
+//# sourceMappingURL=main.chunk.js.map
